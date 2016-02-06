@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mr. Woodman</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <script src="lib/angular/angular.min.js"></script>
+    <script src="lib/angular/angular-sanitize.min.js"></script>
+    <script src="lib/fontfit/fontfit.js"></script>
+    <script src="lib/typogrid/typogrid.js"></script>
+    <script src="lib/jquery/jquery-2.1.1.min.js"></script>
+    <script src="js/each-selector.js"></script>
+    <script src="js/match-selector.js"></script>
+    <script src="js/delegate.js"></script>
+    <script src="js/trigger-event.js"></script>
+    <script src="js/toggle.js"></script>
+    <script src="js/collapse.js"></script>
+    <script src="js/scripts.js"></script>
+</head>
+
+<body ng-app="MrWoodman" ng-init="help = false;" style="position: relative;">
+
+    <!-- Контакты -->
+    <section id="contacts" class="dulltree" ng-controller="ContactsCtrl">
+    	<figure>
+    		<figcaption>
+    			<p>Меня зовут</p>
+    			<h2 class="smaller">Виталий Кулешин</h2>
+    		</figcaption>
+
+    		<img src="images/vitla-avatar-03.png" alt="Виталий Кулешин">
+
+    		<figcaption>
+    			<h2 class="smaller"><a href="mailto:antivitla@gmail.com" target="_blank">antivitla@gmail.com</a></h2>
+    			<p ng-bind-html="iam">верстаю</p>
+    		</figcaption>
+    	</figure>
+        <script>
+            angular.module("MrWoodman")
+                .controller("ContactsCtrl", ["$scope", function($scope) {
+                    var titles = [
+                        "и я верстаю + немножечко&trade; javascriptю&#769;",
+                        "и я html/css/js колдун",
+                        "и я ветеран-frontendовик"
+                    ];
+                    $scope.iam = titles[Math.floor(Math.random()*titles.length)];
+                }]);
+        </script>
+    </section>
+
+    <!-- Статьи -->
+    <section id="articles" class="collapsing" data-persist-active>
+        <toggle data-toggle="#articles"></toggle>
+        <h1 data-toggle="#articles">Статьи</h1>
+        <ul class="links">
+            <li>
+                <icon class="fa fa-legal" style="color: #03D5F9;"></icon>&ensp;Менеджер создаёт определённость а не просит её<br>
+                <small><a href="http://articles.mr-woodman.ru/2016-menedzher-sozdaet-opredelennost-a-ne-prosit-ejo.html" target="_blank">articles.mr-woodman.ru/2016-menedzher-sozdaet-opredelennost-a-ne-prosit-ejo.html</a></small>
+            </li>
+        </ul>
+    </section>
+
+    <!-- Ссылки -->
+    <section id="resources" class="collapsing" data-persist-active>
+        <toggle data-toggle="#resources"></toggle>
+        <h1 data-toggle="#resources">Полезные ссылки</h1>
+        <ul class="links"></ul>
+    </section>
+    <script src="js/resources.js"></script>
+    <script>
+        for(var i = 0; i < MrWoodman.resources.length; i++) {
+            $("#resources").find("ul").append(getResourceHTML(MrWoodman.resources[i]));
+        }
+    </script>
+
+    <!-- Работы -->
+    <section id="works" class="help-{{help}} collapsing" ng-controller="WorksCtrl" ng-class="ios" data-persist-active>
+        <toggle data-toggle="#works"></toggle>
+        <h1 data-toggle="#works">Работы</h1>
+        <div class="current-work" ng-class="work.devices">
+            <!-- Info -->
+            <div class="h1group">
+                <h1 class="smaller"><span class="work-title">{{work.title}}</span></h1>
+
+                <p class="hero" ng-bind-html="work.description"></p>
+                <p>&nbsp;</p>
+                <p>
+                    <small>
+                        <a ng-href="{{getPath(work)}}" target="_blank">вёрстка в новом окне</a>
+                        &nbsp; <span class="icon-link"></span> &nbsp;
+                        <a ng-if="work.alive" ng-href="{{work.alive}}" target="_blank">{{getAlive(work)}}</a></span>
+                    </small>
+                </p>
+            </div>
+
+            <a class="work-prev" ng-click="prevWork()" title="Предыдущая работа"></a>
+            <a class="work-next" ng-click="nextWork()" title="Следующая работа"></a>
+
+            <!-- Screen -->
+            <div ng-if="hasDesktop(work)" class="device desktop">
+                <div class="iframe-holder"><iframe ng-src="{{getPath(work)}}" height="100%"></iframe></div>
+            </div>
+            <div ng-if="hasTablet(work)"  class="device tablet">
+                <div class="iframe-holder"><iframe ng-src="{{getPath(work)}}" height="100%"></iframe></div>
+            </div>
+            <div ng-if="hasMobile(work)"  class="device mobile">
+                <div class="iframe-holder"><iframe ng-src="{{getPath(work)}}" height="100%"></iframe></div>
+            </div>
+            <nav class="pages" ng-if="work.pages.length > 1">
+                <a ng-repeat="dot in work.pages" ng-click="setPage($index)" ng-class="{ active: work.pages.indexOf(page) == $index }" class="dot"></a>
+            </nav>
+        </div>
+
+        <div class="all-works" ng-init="showall = false">
+            <p>
+                <a ng-click="showall = !showall"><span ng-show="!showall">показать все работы</span><span ng-show="showall">свернуть все работы</span></a> &nbsp;
+                <span ng-if="!showall">&darr;</span>
+                <span ng-if="showall">&uarr;</span>
+            </p>
+            <ul ng-show="showall">
+                <li ng-repeat="somework in works">
+                    <a ng-click="selectWork(works.indexOf(somework))" href="#works" title="Посмотреть">
+                        <h3>{{somework.title}}</h3>
+                        <p ng-bind-html="somework.description"></p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <script src="js/works.js"></script>
+    </section>
+
+    <!-- Проекты -->
+    <section id="projects">
+        <ul class="projects">
+            <li>
+                <h2><a href="http://mr-woodman.ru/timer/" target="_blank">Таймер 3.0</a></h2>
+                <p>Спасение для фрилансера. Минималистичный но мощный <strong>таймер времени и денег</strong> (сам пользуюсь). Данные сохраняются в хранилище броузера, синхронизация в примитиве.</p>
+                <p><small><em>#Angularjs</em></small></p>
+                <p>&nbsp;</p>
+                <p class="download"><a href="http://mr-woodman.ru/timer/" target="_blank">Окунуться в мир почасовой оплаты</a></p>
+            </li>
+            <li>
+                <h2><a href="http://mr-woodman.ru/epic-thread/" target="_blank">Эпик-тред анализ</a></h2>
+                <p>Графики отражающие беспощадную правду о <strong>степени эпичности facebook-треда</strong> и диванности военов-каментаторов - кто сколько получил лайков, кто самый флудер и кто враг народа.</p>
+                <p><small><em>#SVG, #Angularjs, #D3js</em></small></p>
+                <p>&nbsp;</p>
+                <p class="download"><a href="http://mr-woodman.ru/epic-thread/" target="_blank">Анализировать эпичность тредов</a></p>
+            </li>
+            <li>
+                <h2><a href="lib/typogrid/typogrid.js" target="_blank">Типографическая сеточка</a></h2>
+                <p>Есть такая техника дизайна и вёрстки - все вертикальные расстояния подчинять базовой высоте строки, <a href="https://www.google.ru/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#newwindow=1&q=css%20vertical%20rhythm" target="_blank"><q>вертикальный ритм</q></a> называется. <strong>Нажмите клавишу "G" сейчас.</strong> Видите разлиновку по базовой высоте строки?</p>
+                <p>&nbsp;</p>
+                <p class="download"><a href="lib/typogrid/typogrid.js" target="_blank">Скачать typogrid.js</a></p>
+            </li>
+            <li id="fontfit">
+                <!-- <h2><a href="lib/fontfit/fontfit.js" target="_blank">Фонт-фит</a></h2> -->
+                <div style="text-align: center; margin-top: 54px;">
+                    <a href="lib/fontfit/fontfit.js" target="_blank" style=" text-decoration: none;"><div data-fontfit style="font-weight: 700; letter-spacing: -0.0375rem;">FONTFIT.JS</div></a>
+                    <div data-fontfit>&mdash; чтоб текст</div>
+                    <div data-fontfit>на всю доступную ширину</div>
+                    <div data-fontfit style="font-weight: 800; letter-spacing: -0.0375rem;">ВЛАЗИЛ</div>
+                </div>
+                <p>&nbsp;</p>
+                <p style="text-align: justify;">Line-height подбирается кратно базовому (согласно концепции <a href="https://www.google.ru/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#newwindow=1&q=css%20vertical%20rhythm" target="_blank"><q>вертикального ритма</q></a>)</p>
+                <p>&nbsp;</p>
+                <p style="font-size: 3rem; line-height: 3rem; text-align: center;">
+                    <a onclick="lessWidth()" title="Уменьшить ширину блока" style="box-shadow: none;">-</a> &ensp;
+                    <a onclick="moreWidth()" title="Увеличить ширину блока" style="box-shadow: none;">+</a>
+                </p>
+                <p>&nbsp;</p>
+                <p class="download"><a href="lib/fontfit/fontfit.js" target="_blank">Скачать fontfit.js</a></p>
+                <script>
+                    function lessWidth() {
+                        $("#fontfit").width($("#fontfit").width() - 30);
+                        fontfit($("#fontfit").find("[data-fontfit]"));
+                    }
+                    function moreWidth() {
+                        $("#fontfit").width($("#fontfit").width() + 30);
+                        fontfit($("#fontfit").find("[data-fontfit]"));
+                    }
+                </script>
+            </li>
+        </ul>
+
+        <!-- Прдвал -->
+
+        <footer>
+            <span>Мегасайт of Mr. Woodman 4.0</span>
+            <br>
+            <small>сделано на левом берегу&trade;</small>
+            <br><br>
+            <img src="images/cat-preloader.gif">
+        </footer>
+    </section>
+
+</body>
+</html>
