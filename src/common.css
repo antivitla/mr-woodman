@@ -1,0 +1,302 @@
+@charset "utf-8";
+
+@import url(http://fonts.googleapis.com/css?family=Exo+2:100,200,300,400,400italic,500,600,700,800,900&subset=cyrillic);
+
+@font-face {
+  font-family: 'PeterSkoropis';
+  src: url('../fonts/2BA14D_0_0.eot');
+  src: url('../fonts/2BA14D_0_0.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/2BA14D_0_0.woff') format('woff'),
+      url('../fonts/2BA14D_0_0.ttf') format('truetype');
+}
+
+html {
+  font-size: 18px;
+  line-height: 27px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border-top: 0;
+
+}
+
+select, input, textarea, option {
+  font-family: "Exo 2", sans-serif;
+  line-height: 1.5rem;
+  font-size: 1rem;
+}
+
+body {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 300;
+  line-height: 1.5rem;
+  font-size: 1rem;
+  color: #222;
+  background-color: ghostwhite;
+  min-width: 320px;
+  overflow-x: hidden;
+}
+
+strong {
+  font-weight: 600;
+  vertical-align: top;
+}
+
+small {
+  font-weight: 400;
+  font-size: 0.724rem;
+  vertical-align: top;
+}
+
+em {
+  vertical-align: top;
+}
+
+code {
+  font-family: monospace;
+  font-size: 0.875rem;
+  vertical-align: baseline;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+q:before {
+  content: "«";
+}
+
+q:after {
+  content: "»";
+}
+
+a {
+  /*color: rgb(100, 159, 223);*/
+  color: inherit;
+  cursor: pointer;
+  box-shadow: 0px 1px 0px 0px #ccc;
+  text-decoration: none;
+  -webkit-transition: color 0.2s ease-out, background-color 0.2s ease-out;
+  -moz-transition: color 0.2s ease-out, background-color 0.2s ease-out;
+  transition: color 0.2s ease-out, background-color 0.2s ease-out;
+  vertical-align: top;
+}
+
+a:hover {
+  box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.5);
+  background-color: rgba(0,0,0,0.075);
+}
+
+h1 {
+  line-height: 2.5rem;
+  font-size: 2rem;
+  font-weight: 200;
+  text-align: center;
+}
+
+@media screen and (min-width: 1180px) {
+  h1 {
+    font-size: 4rem;
+    line-height: 4.6
+  }
+}
+
+@media screen and (min-width: 768px) {
+  h1 {
+    font-size: 3rem;
+    line-height: 4rem;
+  }
+}
+
+h1.smaller {
+  font-size: 3.648rem;
+  font-weight: 200;
+  line-height: 4.5rem;
+}
+
+h2 {
+  line-height: 3rem;
+  font-size: 2.618rem;
+  font-weight: 200;
+}
+
+h2.smaller {
+  font-size: 1.75rem;
+  line-height: 2.5rem;
+}
+
+h3 {
+  line-height: 3rem;
+  font-size: 1.618rem;
+  font-weight: 200;
+}
+
+h4 {
+  font-size: 2.618rem;
+  font-weight: 200;
+}
+
+p.hero {
+  font-size: 1.382rem;
+  line-height: 2rem;
+  font-weight: 300;
+}
+
+.h1group {
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+
+/* Итемы */
+
+.items {
+  text-align: center;
+  max-width: 1600px;
+  margin: auto;
+}
+
+.items li {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 0rem;
+  padding-left: 4rem;
+  margin-bottom: 3rem;
+  width: 15rem;
+  text-align: left;
+  overflow-x: hidden;
+}
+
+.items.horz {
+  display: flex;
+}
+
+.items.horz li {
+  max-width: 20rem;
+  width: auto;
+  flex-grow: 1;
+  padding-left: 0;
+}
+
+.items.horz li + li {
+  margin-left: 2rem;
+}
+
+.items small {
+  display: block;
+  line-height: 1.25rem;
+  opacity: 0.75;
+}
+
+.items .title {
+  margin-bottom: 0.125rem;
+  font-weight: 500;
+}
+
+.items figure {
+  display: block;
+  margin: 0 auto;
+  height: 6em;
+  text-shadow: none;
+  box-sizing: border-box;
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.items figure.graphic {
+  height: 6rem;
+}
+
+.items figure.element {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 10%;
+  background-color: #333;
+  color: ghostwhite;
+  font-weight: 600;
+  font-size: 3rem;
+  line-height: 5rem;
+  border: solid rgba(255,255,255,0.5) 0.125rem;
+  box-shadow: 0px 0px 0px 1px rgba(0,0,0,0.1), 0px 2px 5px 0px rgba(0,0,0,0.1);
+}
+
+.items figure + * {
+  margin-top: 1rem;
+}
+
+
+/* Features */
+
+.items.features {
+  padding-top: 4rem;
+}
+
+.items.features small {
+  opacity: 1;
+}
+
+.items.features li {
+  width: 10rem;
+  padding-left: 0rem;
+  margin: 0 2rem 5rem 2rem;
+  text-align: center;
+}
+
+.items.features .title {
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  /*font-weight: 600;*/
+}
+
+
+/* Media */
+
+.media {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+
+.media-key {
+  width: 15rem;
+  max-width: 15rem;
+  max-height: 15rem;
+  flex-grow: 1;
+}
+
+.media-key img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 15rem;
+  max-height: 15rem;
+}
+
+.media-key.smaller {
+  width: 10rem;
+  max-width: 10rem;
+  max-height: 10rem;
+}
+
+.media-key.smaller img {
+  max-width: 10rem;
+  max-height: 10rem;
+}
+
+.media-key:first-child {
+  margin-right: 4rem;
+}
+
+.media-key:last-child {
+  margin-left: 4rem;
+}
+
+.media-value {
+  width: 100%;
+}
+
+.media-value:first-child:not(:last-child) {
+  text-align: right;
+}

@@ -1,0 +1,25 @@
+{
+  "name": "mr-woodman",
+  "homepage": "http://mr-woodmna.ru",
+  "authors": [
+    "Виталий Кулешин <antivitla@gmail.com>"
+  ],
+  "description": "Персональный сайт",
+  "main": "index.html",
+  "license": "UNLICENSED",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "mr-utils": "^0.1.5",
+    "angular": "^1.5.8",
+    "jquery": "^3.1.0",
+    "angular-sanitize": "^1.5.8",
+    "testwood": "^0.2.4"
+  }
+}

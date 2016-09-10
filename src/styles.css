@@ -1,0 +1,433 @@
+
+/* Контакты */
+
+#contacts {
+	overflow-x: hidden;
+	/*height: 60rem;*/
+	background: #d1c9b0 url(../images/crimea-koktebel-1939.jpg) center -8rem;
+	padding-top: 5rem;
+	padding-bottom: 7rem;
+	z-index: 10;
+	text-shadow: -1px -1px 2px rgba(255,255,255,0.25),
+				1px -1px 2px rgba(255,255,255,0.25),
+				-1px 1px 2px rgba(255,255,255,0.25),
+				1px 1px 2px rgba(255,255,255,0.25);
+	font-weight: 400;
+	/*background-size: auto calc(100% + 8rem);*/
+}
+
+#contacts:before {
+	content: " ";
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	/*background-color: rgba(255,255,255,0.5);*/
+	/*background-color: rgba(240, 220, 183, 0.46);*/
+	z-index: 0;
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f0dcb7+0,f0dcb7+100&0.75+0,0+100 */
+background: -moz-radial-gradient(center, ellipse cover,  rgba(240,220,183,0.75) 0%, rgba(240,220,183,0.1) 100%); /* FF3.6-15 */
+background: -webkit-radial-gradient(center, ellipse cover,  rgba(240,220,183,0.75) 0%,rgba(240,220,183,0.1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: radial-gradient(ellipse at center,  rgba(240,220,183,0.75) 0%,rgba(240,220,183,0.1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bff0dcb7', endColorstr='#00f0dcb7',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+}
+
+#contacts > * {
+	z-index: 1;
+	position: relative;
+}
+
+#contacts img[alt="Виталий Кулешин"] {
+	width: 9.5rem;
+	height: 9.5rem;
+	border-radius: 30%;
+	border: solid #ffffff 0.25rem;
+	position: relative;
+	box-shadow: 0px 0px 0px 1px rgba(0,0,0,0.1), 0px 2px 7px 0px rgba(0,0,0,0.1);
+	margin-right: 1.75rem;
+	margin-left: 1.75rem;
+}
+
+#contacts .card {
+	display: inline-block;
+	min-height: 10.5rem;
+}
+
+#contacts a,
+#contacts toggle {
+	box-shadow: 0px 1px 0px 0px rgba(0,0,0,0.2);
+}
+
+#contacts a:hover,
+#contacts toggle:hover {
+	box-shadow: 0px 1px 0px 0px rgba(0,0,0,0.5);
+}
+
+/*#contacts .card:before {
+	content: " ";
+	position: absolute;
+	left: -15%;
+	top: -30%;
+	width: 160%;
+	height: 130%;
+	z-index: -1;
+	background: -moz-radial-gradient(center, ellipse cover,  rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.15) 67%, rgba(255,255,255,0) 100%);
+	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(255, 255, 255, 0.5)), color-stop(67%,rgba(255, 255, 255, 0.15)), color-stop(100%,rgba(255,255,255,0)));
+	background: -webkit-radial-gradient(center, ellipse cover,  rgba(255, 255, 255, 0.5) 0%,rgba(255, 255, 255, 0.15) 67%,rgba(255,255,255,0) 100%);
+	background: -o-radial-gradient(center, ellipse cover,  rgba(255, 255, 255, 0.5) 0%,rgba(255, 255, 255, 0.15) 67%,rgba(255,255,255,0) 100%);
+	background: -ms-radial-gradient(center, ellipse cover,  rgba(255, 255, 255, 0.5) 0%,rgba(255, 255, 255, 0.15) 67%,rgba(255,255,255,0) 100%);
+	background: radial-gradient(ellipse at center,  rgba(255, 255, 255, 0.5) 0%,rgba(255, 255, 255, 0.15) 67%,rgba(255,255,255,0) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#17000000', endColorstr='#00000000',GradientType=1 );
+}*/
+
+#contacts .card > img {
+  display: inline-block;
+  vertical-align: top;
+}
+
+#contacts .card > figcaption {
+	width: 22rem;
+  display: inline-block;
+  vertical-align: top;
+  text-align: left;
+}
+
+#contacts .card figcaption:nth-child(1) {
+	text-align: right;
+	padding-top: 1.75rem;
+}
+
+#contacts .card figcaption:nth-child(3) {
+	text-align: left;
+	padding-top: 3.25rem;
+}
+
+#contacts h2 {
+	font-weight: 400;
+}
+
+@media screen and (max-width: 1200px) {
+	#contacts {
+		padding-top: 3rem;
+		/*height: 18rem;*/
+	}
+
+	#contacts h2 {
+		font-size: 1.618rem;
+		line-height: 3rem;
+	}
+
+	#contacts .card figcaption {
+		width: 15rem;
+	}
+
+	#contacts img[alt="Виталий Кулешин"] {
+		margin-left: 1.15rem;
+		margin-right: 1.15rem;
+		width: 9.5rem;
+		height: 9.5rem;
+	}
+}
+
+@media screen and (max-width: 900px) {
+	#contacts {
+		height: auto;
+		overflow: hidden;
+		padding-top: 1.5rem;
+		padding-bottom: 4.5rem;
+	}
+
+	#contacts .card figcaption,
+	#contacts .card figcaption:nth-child(1),
+	#contacts .card figcaption:nth-child(3) {
+		display: block;
+		width: auto;
+		text-align: center;
+	}
+
+	#contacts .card figcaption:nth-child(1) {
+		margin-bottom: 12rem;
+		padding-top: 0;
+	}
+
+	#contacts .card figcaption:nth-child(3) {
+		padding-top: 1.5rem;
+	}
+
+	#contacts h2 {
+		font-size: 1.5rem;
+		line-height: 2.5rem;
+		font-weight: 500;
+	}
+
+	#contacts img[alt="Виталий Кулешин"] {
+		position: absolute;
+		left: 50%;
+		margin-left: -5.25rem;
+		top: 7.25rem;
+	}
+}
+
+/* About */
+
+.story {
+	max-width: 35em;
+	margin: 3rem auto 2rem auto;
+	text-align: left;
+	padding: 0 1rem;
+}
+
+#projects .story {
+	max-width: 45em;
+}
+
+.story > *,
+.story p {
+	margin: 1rem auto;
+}
+
+.story .float-logo {
+	opacity: 0.75;
+	float: right;
+	height: 10rem;
+	margin: 0 0 1rem 2rem;
+}
+
+#contacts .story:before {
+	content: "”";
+	font-size: 3rem;
+	display: block;
+	text-align: center;
+	margin-bottom: -0.25rem;
+}
+
+.story h2 {
+	margin-top: 4rem;
+}
+
+.story h3 {
+	font-weight: 300;
+}
+
+.story .media {
+	margin: 3rem auto;
+}
+
+
+
+/* Ресурсы */
+
+#resources {
+	position: relative;
+	z-index: 60;
+}
+
+#resources:before {
+	content: " ";
+	background-color: #ececec;
+	left: -20%;
+	right: -20%;
+	position: absolute;
+	width: 140%;
+	top: -3rem;
+	height: 20rem;
+	border-radius: 50%;
+	z-index: -1;
+	background: #333;
+	box-shadow: inset 0 10px 20px -10px rgba(0,0,0,0.75), 0 -1px 0px 0px rgba(0,0,0,0.325);
+}
+
+/*#resources .links li.highlight:before {
+	content: "* ";
+	color: rgb(100, 159, 223);
+	font-size: 120%;
+	line-height: inherit;
+	vertical-align: top;
+}
+
+@media screen and (max-width: 700px) {
+	#resources h1 {
+		top: -1.5rem;
+	}
+
+	#resources .links {
+		max-width: 100%;
+	}
+
+	#resources .links li {
+		display: block;
+		width: auto;
+		text-align: center;
+		margin-left: 1.5rem;
+		margin-right: 1.5rem;
+		margin-bottom: 1.5rem;
+		padding-left: 0;
+	}
+
+	#resources .links li:last-child {
+		margin-bottom: 0;
+	}
+}*/
+
+
+/* Проекты */
+
+#projects {
+	position: relative;
+	z-index: 50;
+	color: #4c4744;
+	padding-top: 5rem;
+	padding-bottom: 7rem;
+	font-weight: 400;
+	background: #f0dcb7 url(../images/projects-background.jpg) left top;
+}
+
+#projects a.help {
+	top: 6.75rem;
+}
+
+#projects a {
+	color: #b95e4b;
+	box-shadow: 0px 1px 0px 0px rgba(185, 94, 75, 0.2);
+}
+
+#projects h2 {
+	color: #b95e4b;
+}
+
+#projects p a,
+#projects .download a {
+	border-radius: 2px;
+	padding: 0 5px;
+}
+
+#projects p a:hover,
+#projects .download a:hover {
+	box-shadow: 0px 1px 0px 0px rgba(185, 94, 75, 0.7);
+	background-color: #b95e4b;
+	color: #EDDBB5;
+}
+
+#projects h2 {
+	font-family: "PeterSkoropis";
+	margin-top: 1.5rem;
+	margin-bottom: 1.5rem;
+}
+
+#projects h2 a {
+	text-decoration: none;
+	box-shadow: none;
+}
+
+#projects h2 a:hover {
+	box-shadow: none;
+}
+
+#projects:before {
+	content: " ";
+	width: 100%;
+	width: calc(100% + 2rem);
+	position: absolute;
+	left: -1rem;
+	height: 7rem;
+	display: block;
+	background: #f0dcb7 url(../images/top-projects-border.jpg) no-repeat center -2rem;
+	background-size: auto 100%;
+	box-shadow: inset 0 15px 30px -15px rgba(0,0,0,0.75), 0px -1px 0px 0px #888;
+	transform: rotate(2deg);
+	top: -2rem;
+}
+
+/*#projects:after {
+	content: " ";
+	width: 100%;
+	width: calc(100% + 2rem);
+	position: absolute;
+	left: -1rem;
+	height: 7rem;
+	display: block;
+	background: #f0dcb7 url(../images/projects-background.jpg) left top;
+	background-size: auto 100%;
+	box-shadow: inset 0 -15px 30px -15px rgba(0,0,0,0.75);
+	transform: rotate(-2deg);
+	bottom: -2rem;
+}*/
+
+/*#projects:after {
+	content: " ";
+	background-color: #ececec;
+	left: -20%;
+	right: -20%;
+	position: absolute;
+	width: 140%;
+	bottom: -3rem;
+	height: 20rem;
+	border-radius: 50%;
+	z-index: -1;
+	background: #f0dcb7 url(../images/projects-background.jpg) left top;
+	box-shadow: inset 0 -10px 20px -10px rgba(0,0,0,0.25), 0 1px 0px 0px rgba(0,0,0,0.325);
+}*/
+
+.projects {
+	text-align: center;
+	list-style: none;
+	overflow: hidden;
+}
+
+.projects li {
+	display: inline-block;
+	vertical-align: top;
+	margin-right: 4rem;
+	margin-left: 4rem;
+	margin-bottom: 3rem;
+	width: 25rem;
+	text-align: center;
+}
+
+.projects li p {
+	text-align: left;
+}
+
+.projects li h2 a:hover {
+	background-color: transparent;
+}
+
+.projects li p.download {
+	text-align: center;
+}
+
+@media screen and (max-width: 1250px) {
+	.projects li {
+		margin-left: 3rem;
+		margin-right: 3rem;
+		width: 20rem;
+	}
+}
+
+@media screen and (max-width: 950px) {
+	.projects li {
+		margin-left: 1.5rem;
+		margin-right: 1.5rem;
+		margin-bottom: 6rem;
+		width: auto;
+		display: block;
+	}
+}
+
+
+/*	Футер	*/
+
+footer {
+	margin-top: 5rem;
+}
+
+body > footer {
+	text-align: center;
+	position: relative;
+	padding-top: 5rem;
+	padding-bottom: 3rem;
+	background: #ebebeb;
+}
+

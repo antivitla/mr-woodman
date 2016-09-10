@@ -4,83 +4,43 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Mr. Woodman</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/lib.min.css">
+    <link rel="stylesheet" href="css/app.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <script src="lib/angular/angular.min.js"></script>
-    <script src="lib/angular/angular-sanitize.min.js"></script>
-    <script src="lib/fontfit/fontfit.js"></script>
-    <script src="lib/typogrid/typogrid.js"></script>
-    <script src="lib/jquery/jquery-2.1.1.min.js"></script>
-    <script src="js/each-selector.js"></script>
-    <script src="js/match-selector.js"></script>
-    <script src="js/delegate.js"></script>
-    <script src="js/trigger-event.js"></script>
-    <script src="js/toggle.js"></script>
-    <script src="js/collapse.js"></script>
-    <script src="js/scripts.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="js/lib.min.js"></script>
 </head>
 
 <body ng-app="MrWoodman" ng-init="help = false;" style="position: relative;">
 
+    <div data-test>
+
+
+
     <!-- Контакты -->
-    <section id="contacts" class="dulltree" ng-controller="ContactsCtrl">
-    	<figure>
+    <section id="contacts" class="dulltree">
+    	<figure class="card">
     		<figcaption>
     			<p>Меня зовут</p>
     			<h2 class="smaller">Виталий Кулешин</h2>
-    		</figcaption>
-
-    		<img src="images/vitla-avatar-03.png" alt="Виталий Кулешин">
-
-    		<figcaption>
+            </figcaption>
+            <img src="images/vitla-14-avatar.png" alt="Виталий Кулешин">
+            <figcaption>
     			<h2 class="smaller"><a href="mailto:antivitla@gmail.com" target="_blank">antivitla@gmail.com</a></h2>
-    			<p ng-bind-html="iam">верстаю</p>
+    			<p data-random-content="и я верстаю + немножечко&trade; javascriptю&#769;/и я веб-колдун/и я ветеран-frontendовик">верстаю</p>
     		</figcaption>
     	</figure>
-        <script>
-            angular.module("MrWoodman")
-                .controller("ContactsCtrl", ["$scope", function($scope) {
-                    var titles = [
-                        "и я верстаю + немножечко&trade; javascriptю&#769;",
-                        "и я html/css/js колдун",
-                        "и я ветеран-frontendовик"
-                    ];
-                    $scope.iam = titles[Math.floor(Math.random()*titles.length)];
-                }]);
-        </script>
+        <article id="about-me-preview" class="story" data-persist-active></article>
+        <div style="margin-top: -1rem;">
+            <a data-scroll-to="#about-me-article" style="position: relative;">
+                <small>Читать полностью <i class="material-icons" style="position: absolute; left: 50%; bottom: -1.75rem; margin-left: -12px; font-size: 1.25rem;">&#xE5DB;</i></small>
+            </a>
+        </div>
     </section>
-
-    <!-- Статьи -->
-    <section id="articles" class="collapsing" data-persist-active>
-        <toggle data-toggle="#articles"></toggle>
-        <h1 data-toggle="#articles">Статьи</h1>
-        <ul class="links">
-            <li>
-                <icon class="fa fa-legal" style="color: #03D5F9;"></icon>&ensp;Менеджер создаёт определённость а не просит её<br>
-                <small><a href="http://articles.mr-woodman.ru/2016-menedzher-sozdaet-opredelennost-a-ne-prosit-ejo.html" target="_blank">articles.mr-woodman.ru/2016-menedzher-sozdaet-opredelennost-a-ne-prosit-ejo.html</a></small>
-            </li>
-        </ul>
-    </section>
-
-    <!-- Ссылки -->
-    <section id="resources" class="collapsing" data-persist-active>
-        <toggle data-toggle="#resources"></toggle>
-        <h1 data-toggle="#resources">Полезные ссылки</h1>
-        <ul class="links"></ul>
-    </section>
-    <script src="js/resources.js"></script>
-    <script>
-        for(var i = 0; i < MrWoodman.resources.length; i++) {
-            $("#resources").find("ul").append(getResourceHTML(MrWoodman.resources[i]));
-        }
-    </script>
 
     <!-- Работы -->
-    <section id="works" class="help-{{help}} collapsing" ng-controller="WorksCtrl" ng-class="ios" data-persist-active>
-        <toggle data-toggle="#works"></toggle>
-        <h1 data-toggle="#works">Работы</h1>
+    <section id="works" class="help-{{help}} collapsing active" ng-controller="WorksCtrl" ng-class="ios">
         <div class="current-work" ng-class="work.devices">
-            <!-- Info -->
             <div class="h1group">
                 <h1 class="smaller"><span class="work-title">{{work.title}}</span></h1>
 
@@ -89,7 +49,7 @@
                 <p>
                     <small>
                         <a ng-href="{{getPath(work)}}" target="_blank">вёрстка в новом окне</a>
-                        &nbsp; <span class="icon-link"></span> &nbsp;
+                        &nbsp; <i class="fa fa-external-link" aria-hidden="true"></i> &nbsp;
                         <a ng-if="work.alive" ng-href="{{work.alive}}" target="_blank">{{getAlive(work)}}</a></span>
                     </small>
                 </p>
@@ -113,64 +73,215 @@
             </nav>
         </div>
 
-        <div class="all-works" ng-init="showall = false">
-            <p>
-                <a ng-click="showall = !showall"><span ng-show="!showall">показать все работы</span><span ng-show="showall">свернуть все работы</span></a> &nbsp;
-                <span ng-if="!showall">&darr;</span>
-                <span ng-if="showall">&uarr;</span>
-            </p>
-            <ul ng-show="showall">
+        <div>
+            <ul id="list-of-works" class="items works" data-persist-active>
                 <li ng-repeat="somework in works">
                     <a ng-click="selectWork(works.indexOf(somework))" href="#works" title="Посмотреть">
-                        <h3>{{somework.title}}</h3>
-                        <p ng-bind-html="somework.description"></p>
+                        <div class="title">{{somework.title}}</div>
+                        <div><small ng-bind-html="somework.description"></small></div>
                     </a>
                 </li>
             </ul>
+            <toggle class="" data-toggle="#list-of-works" data-persist-active id="toggle-list-of-works">
+                <span>Развернуть простыню работ <i class="fa fa-chevron-down"></i></span>
+                <span class="active">Свернуть простыню работ <i class="fa fa-chevron-up"></i></span>
+            </toggle>
         </div>
-        <script src="js/works.js"></script>
     </section>
 
     <!-- Проекты -->
     <section id="projects">
+        <article id="about-me-article" class='story'>
+            <h2 style="font-size: 10rem; line-height: 1; margin-top: -2rem; margin-bottom: 2rem;">Я</h2>
+
+            <p class="quotable">Это было после школы и фронтенд тоже не имел термина в трудовой. <q>Верстальщик</q> в конце 90-х это полиграфия, <q>программист</q> слишком специфично, а <q>оператор ЭВМ</q> уже совсем Юрий&nbsp;Гагарин.</p>
+
+            <p class="quotable">Мы с php-шером <del>ебашили</del> работали в Allaire Homesite, который ещё не купила Macromedia, которую ещё не купила Adobe, которая ещё боялась Corel. Это было так давно, что аж <code>&lt;font face="Arial" color="black"&gt;</code>.</p>
+
+            <p class="quotable">Там я научился "нарезать" design-макеты на html-таблицы и вставлять в web-страницы. Потом вёрстка таблицами сменилась вёрсткой девицами, а теперь и крекс-пекс-flex-боксами. Макеты так и продолжают "резать" &mdash; но стали забывать почему.</p>
+
+            <p class="quotable">А потом у компании начались проблемы и мы разлетелись в разные стороны, как встревоженные воробьи. Наш бывший начальник потом звал к себе в новую студию, но я не пошёл. Мир кряхтя переваливался в двадцать первый век.</p>
+
+            <h2>Образование</h2>
+
+            <p><img src="images/mgu.png" class="float-logo"></p>
+
+            <p class="quotable">У меня четыре высших образования &mdash; два незаконченых и два не начатых. МГУ им. Ломоносова, ГАУ им. Орджоникидзе, МГТУ им. Баумана и без клёвого логотипа и видного деятеля Московский Социальный Университет.</p>
+
+            <p class="quotable">Да, это немного странно. Нет, не так. Каждый человек c юности должен активно искать смысл своей жизни. Или хотя бы работы.</p>
+
+            <p class="quotable">Главное не стоит пробовать две вещи &mdash; наркотики и веб-дизайн. Мне не повезло...</p>
+
+            <h2>Дизайнер</h2>
+
+            <p class="quotable">Я попробовал веб-дизайн и мне сразу не понравилось, но друзья говорили что это круто и подбадривали. Потом я как-то втянулся, но радости это не приносило. Одно время я пытался бросить &mdash; пришел работать в одну из газет и сказал что буду заниматься чем угодно, только не дизайном. Меня сразу же взяли главным дизайнером.</p>
+
+            <p class="quotable">С тех пор я поумнел и делаю веб-дизайн только для себя, а не на продажу.</p>
+
+            <h2>Опыт работы</h2>
+
+            <p><img src="images/html3-5.png" class="float-logo" style="height: 18rem;"></p>
+
+            <p class="quotable">Я измеряю время не годами, а версиями HTML :). Когда начинал, через полгода ввели HTML 4. В этот момент мы узнали что у HTML оказывается есть какая-то цифра и она всё это время была 3.</p>
+
+            <p class="quotable">А потом случился XHTML и я тоже уехал на Восток подумать о своём поведении. И в положенный час мы с HTML вернулись к корням своим. За что Аллах щедро вознаградил нас - меня прямым путём заслуженного верстальщика и начинающего фронтендера, а HTML 5 райскими девушками-менеджерами, игриво славящими цифру его. И была дадена молитва такая: "Избави нас от доктайпа, но автоматический маймтайп скриптов и стилей дай нам. И прости нам незакрытие тегов наших, как мы прощаем баги эксплорера и фаерфокса. Аминь." </p>
+
+
+            <p class="quotable"><q>&mdash; Так сколько же ты работаешь?<br>
+            &mdash; Лет 10. А может 15. Не помню.</q> &copy; <a href="https://vk.com/audios162552019?q=%D0%BA%D1%83%D0%BA%D1%83%D0%BD%D1%8F%20%D0%B1%D0%BE%D1%80%D0%B4%D1%83%D0%BA%D0%BE%D0%B2" target="_blank">Кукуня</a></p>
+
+            <h2>Фронтенд-разработчик</h2>
+
+            <p class="quotable">А что же сейчас? А сейчас я полноправный участник адского карнавала под названием "фронтенд-разработка". Помимо вёрстки, адаптивности и очевидного jQuery какие ещё названия с клёвыми логотипами я могу показать?</p>
+
+            <div class="media quotable">
+                <div class="media-key"><img src="images/octocat.png"></div>
+                <div class="media-value">
+                    <h3><a href="https://github.com/antivitla" target="_blank">github.com/<strong>antivitla</strong></a></h3>
+                    <p>Мой паспорт кодера.</p>
+                </div>
+            </div>
+
+            <div class="media quotable">
+                <div class="media-value">
+                    <h3><a href="https://libraries.io/bower/testwood" target="_blank">$ bower install <strong>testwood</strong></a><!-- <a href="https://bower.io/">Bower.io</a> --></h3>
+                    <p>Хочется и верстать через тестирование <a href="https://ru.wikipedia.org/wiki/%D0%A0%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B0_%D1%87%D0%B5%D1%80%D0%B5%D0%B7_%D1%82%D0%B5%D1%81%D1%82%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5">(Test&nbsp;Driven&nbsp;Development)</a>. А это моя попытка сделать инструмент для этого.</p>
+                    <h3><a href="https://libraries.io/bower/mr-utils" target="_blank">$ bower install <strong>mr-utils</strong></a></h3>
+                    <p>Оливье утилит для вёрстки. Например я написал там html-инклюд тег - по сути упрощенная система компонентов с возможность импорта. Чтоб не привлекать фреймворки или php только того чтоб избавиться от копипасты. В продакшн это не идет, но драматически упрощает структуру в сложных проектах.</p>
+                </div>
+                <div class="media-key smaller"><img src="images/bower.png"></div>
+            </div>
+
+            <div class="media quotable">
+                <div class="media-key"><img src="images/gulp.png"></div>
+                <div class="media-value">
+                    <h3><a href="http://gulpjs.com/" target="_blank">Gulp</a></h3>
+                    <p>Ну не смог я Grunt'ом пользоваться. А вот Gulp попал как мёд на израненую душу джаваскриптера. А как же webpack и иже с ними, спросите вы? Хороший тул должен выдерживаться пару лет, как крымское полусладкое, отвечу я.</p>
+                </div>
+            </div>
+
+            <div class="media quotable">
+                <div class="media-value">
+                    <h3><a href="https://angularjs.org/" target="_blank">Angular</a></h3>
+                    <p>Свои поделки я делаю на angular.js, например <a href="http://mr-woodman.ru/timer/" target="_blank">тайм-трекер 3.0</a> на нём. Один из редких сбалансированных фреймворков, сделанных с любовью к HTML и CSS.</p>
+                </div>
+                <div class="media-key smaller"><img src="images/angular-logo.png"></div>
+            </div>
+
+            <div class="media quotable">
+                <div class="media-key smaller"><img src="images/polymer.png"></div>
+                <div class="media-value">
+                    <h3><a href="https://www.polymer-project.org/1.0/" target="_blank">Polymer</a></h3>
+                    <p>Ещё один фреймворк осмысляющий роль классического HTML/DOM и CSS. Его знаю гораздо меньше, серьёзных вещей не делал, но хотелось бы. Правда неизвестно как он себя ведёт в боевых проектах.</p>
+                </div>
+            </div>
+
+            <div class="media quotable">
+                <div class="media-value">
+                    <h3><a href="http://redux.js.org/docs/introduction/ThreePrinciples.html" target="_blank">Redux</a> + <a href="https://github.com/Reactive-Extensions/RxJS" target="_blank">RxJS</a> + <a href="http://maquettejs.org/" target="_blank">Maquette</a></h3>
+                    <p>А это запчасти <del>франкенштейна</del> архитектуры для след.версии моего <a href="http://mr-woodman.ru/timer/" target="_blank">тайм-трекера</a> которые (запчасти) я тем самым изучаю. Пытаюсь переждать <a href="https://facebook.github.io/react/" target="_blank">React</a>-безумие охватившее всех нас.</p>
+                </div>
+                <div class="media-key">
+                    <img src="images/rx-redux-maquette.png">
+                </div>
+            </div>
+
+            <div class="media quotable">
+                <div class="media-key">
+                    <img src="images/bootstrap-foundation.png">
+                </div>
+                <div class="media-value">
+                    <h3><a href="http://getbootstrap.com/" target="_blank">Bootstrap</a> vs <a href="http://foundation.zurb.com/" target="_blank">Foundation</a></h3>
+                    <p>Нужно прятать от детей.</p>
+                </div>
+            </div>
+
+            <div class="media quotable">
+                <div class="media-value">
+                    <h3><a href="http://sass-lang.com/" target="_blank">SASS</a> и <a href="http://lesscss.org/" target="_blank">LESS</a></h3>
+                    <p>Саша и Лёша :)</p>
+                </div>
+                <div class="media-key">
+                    <img src="images/sassless.png">
+                </div>
+            </div>
+
+            <h2 style="font-size: 7rem; line-height: 1; margin-top: 5rem; margin-bottom: 2rem; text-align: center;">* * *</h2>
+
+            <h3><strong>Омут инструментов веб-разработки</strong></h3>
+
+            <p>Кто лучше? Как выбрать? Что выбрать для себя и для боевого проекта?</p>
+
+            <p>Инструменты веб-разработки это идеи. Всегда была цель, была проблема и решением становился инструмент. Сейчас я хочу поговорить о целях и проблемах как способе классификации. Есть собственно бизнес-задача которую решает тул. Но есть ещё кое-что, а именно что за разработчик, в какой он ситуации, подразумеваемые условия использования (автор может не подозревать об их существовании), личные предпочтения.</p>
+
+            <p>Один из критериев (проблем) - подготовка разработчика. Есть инструменты, предполагающие и создающиеся потому что (или из-за) разработчик не хочет или не имеет времени изучать скажем тонкости css. И тул прячет эти подробности от него. Другому наоборот - нужно своими руками править css. И тул выносит ему это поближе. Многие хотят вывернуть весь фронтенд через javascript как водолазку через рукав. Для таких фреймворки по сути становятся похожи на C++ :)) А давайте возьмем бэкендера которому традиционно падает задача поднять админку. На которой фронтенд тоже гектарами измеряется. Ему нужно только и всего лишь готовая админка причем на бутстрапе. И плевать на скорости и оптимизации и что угодно. Цель тут другая - не зная особо ничего про фронтенд, суметь поднять, суметь починить, суметь подкрутить. Всё. </p>
+
+            <p>Второе - легкость входа и документация. Какой бы ни был классный фреймворк, если его трудно вкурить, если его концепции сложны, то это препятствие. Потому что время - деньги. Это ресурс который тратится и который можно сравнивать - время на вкуривание.</p>
+
+            <p>Третье - распространенность и команда. Сколько человек в процентах знают jQuery? Большинство. А какой-нибудь Dart? Надо ли говорить что в боевых проектах проще, надежней использовать то, что всё знают и так - пусть это нечто постарше, подеревянней и т.д. Новое вино в старые мехи не наливают не случайно.</p>
+
+            <p>Ну и прочее в том же духе - например чисто субъективно мне не нравится определённый стиль писания javascript. И это важно.</p>
+
+            <p>Как видите - эти критерии и цели и проблемы не имеют ничего общего ни со скоростью фреймворка, ни с набором фич, ни ешё с какими-то любовно измеряемыми собственно рабочими параметрами. Этот класс критериев часто выпадает или считается второстепенным, хотя я считаю их главнее. Подумайте сами - люди одинаково умны на самом деле - то есть все фреймворки добравшиеся до второй версии и десятка контрибуторов достаточно правильны, продуманы, надежны, быстры и так далее. В чем же разница тогда? Зачем столько? А вот затем что я описал.</p>
+
+            <p>P.S. Возможно непонятно как конвертировать тот же Dart или экспериментальный пока ещё Polymer. А вот именно как эксперимент - нечто создаётся и исследуется в НИИ, стадия "массовый потребительский рынок" ещё не наступила (в ИТ нет такого деления четкого и нечто узкоспецифичное сразу попадает в среду. Что ускоряет процессы адаптации, обкатки и разработки дальше, но яростно запутывает новичков и ситуацию в целом - что есть что здесь). По сути многие вещи это "местечковые" решения. Многие - как Polymer это исследование, которому ещё далеко до боевых проектов, что бы ни говорили их промо-сайты. Просто знать о таком разделении достаточно чтобы вы уже могли класть тот или иной интсрумет в коробочку своей классификации надо вам это или нет - глядя на всё, на сайт, на примеры, на доки. И адский карнавал веб-разработки превратится в мирное цветение многообразной жизни :)</p>
+
+            <p>&nbsp;</p>
+
+            <h3><a href="http://articles.mr-woodman.ru/2016-menedzher-sozdaet-opredelennost-a-ne-prosit-ejo.html">Менеджер создаёт определённость а не просит её &rarr;</a></h3>
+        </article>
+        <script>
+            (function () {
+                var quotable = $("#about-me-article").children(".quotable"),
+                    quote;
+                if (quotable.filter(".set").length > 0) {
+                    quote = quotable.filter(".set").eq(0);
+                } else {
+                    quote = quotable.eq(Math.floor(quotable.length * Math.random()));
+                }
+                quote.clone().appendTo("#about-me-preview");
+            }());
+        </script>
+
+        <h2 style="font-size: 7rem; line-height: 1; margin-top: 5rem; margin-bottom: 2rem; text-align: center;">* * *</h2>
+
         <ul class="projects">
             <li>
                 <h2><a href="http://mr-woodman.ru/timer/" target="_blank">Таймер 3.0</a></h2>
-                <p>Спасение для фрилансера. Минималистичный но мощный <strong>таймер времени и денег</strong> (сам пользуюсь). Данные сохраняются в хранилище броузера, синхронизация в примитиве.</p>
+
+                <p>Спасение для фрилансера. Минималистичный но мощный <strong>таймер времени и денег</strong> (сам пользуюсь). Данные сохраняются в хранилище броузера, но можно создать аккаунт на сервере.</p>
                 <p><small><em>#Angularjs</em></small></p>
                 <p>&nbsp;</p>
                 <p class="download"><a href="http://mr-woodman.ru/timer/" target="_blank">Окунуться в мир почасовой оплаты</a></p>
             </li>
             <li>
-                <h2><a href="http://mr-woodman.ru/epic-thread/" target="_blank">Эпик-тред анализ</a></h2>
-                <p>Графики отражающие беспощадную правду о <strong>степени эпичности facebook-треда</strong> и диванности военов-каментаторов - кто сколько получил лайков, кто самый флудер и кто враг народа.</p>
-                <p><small><em>#SVG, #Angularjs, #D3js</em></small></p>
+                <h2><a href="https://github.com/antivitla/mr-utils" target="_blank">Утилиты для верстки</a></h2>
+                <p>Одна из готовых фич - упрощенная система компонентиков html, с возможность вложенных инклюдов. Почти как html import. В продакшн не идет, но драматически упрощает структуру вёрстки. Копипаста побеждена.</p>
                 <p>&nbsp;</p>
-                <p class="download"><a href="http://mr-woodman.ru/epic-thread/" target="_blank">Анализировать эпичность тредов</a></p>
+                <p class="download"><code><a href="https://github.com/antivitla/mr-utils" target="_blank">$ bower install mr-utils</a></code></p>
             </li>
             <li>
-                <h2><a href="lib/typogrid/typogrid.js" target="_blank">Типографическая сеточка</a></h2>
-                <p>Есть такая техника дизайна и вёрстки - все вертикальные расстояния подчинять базовой высоте строки, <a href="https://www.google.ru/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#newwindow=1&q=css%20vertical%20rhythm" target="_blank"><q>вертикальный ритм</q></a> называется. <strong>Нажмите клавишу "G" сейчас.</strong> Видите разлиновку по базовой высоте строки?</p>
+                <h2><a href="https://github.com/antivitla/testwood" target="_blank">Верстка через тестирование</a></h2>
+                <p>Черное плавающее меню справа - это одна из фич моего инструмента testwood для вёрстки через тестирование (попытка сымитировать <a href="https://ru.wikipedia.org/wiki/%D0%A0%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B0_%D1%87%D0%B5%D1%80%D0%B5%D0%B7_%D1%82%D0%B5%D1%81%D1%82%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5" target="_blank">TDD</a> в вёрстке).</p>
                 <p>&nbsp;</p>
-                <p class="download"><a href="lib/typogrid/typogrid.js" target="_blank">Скачать typogrid.js</a></p>
+                <p class="download"><code><a href="https://github.com/antivitla/testwood" target="_blank">$ bower install testwood</a></code></p>
             </li>
             <li id="fontfit">
-                <!-- <h2><a href="lib/fontfit/fontfit.js" target="_blank">Фонт-фит</a></h2> -->
                 <div style="text-align: center; margin-top: 54px;">
-                    <a href="lib/fontfit/fontfit.js" target="_blank" style=" text-decoration: none;"><div data-fontfit style="font-weight: 700; letter-spacing: -0.0375rem;">FONTFIT.JS</div></a>
+                    <a href="https://github.com/antivitla/fontfit" target="_blank" style=" text-decoration: none;"><div data-fontfit style="font-weight: 700; letter-spacing: -0.0375rem;">FONTFIT.JS</div></a>
                     <div data-fontfit>&mdash; чтоб текст</div>
                     <div data-fontfit>на всю доступную ширину</div>
                     <div data-fontfit style="font-weight: 800; letter-spacing: -0.0375rem;">ВЛАЗИЛ</div>
                 </div>
                 <p>&nbsp;</p>
-                <p style="text-align: justify;">Line-height подбирается кратно базовому (согласно концепции <a href="https://www.google.ru/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#newwindow=1&q=css%20vertical%20rhythm" target="_blank"><q>вертикального ритма</q></a>)</p>
+                <p style="text-align: justify;">Line-height подбирается кратно базовому (согласно концепции <a href="https://www.google.ru/webhp?sourceid=chrome-instant&amp;ion=1&amp;espv=2&amp;ie=UTF-8#newwindow=1&amp;q=css%20vertical%20rhythm" target="_blank"><q>вертикального ритма</q></a>)</p>
                 <p>&nbsp;</p>
                 <p style="font-size: 3rem; line-height: 3rem; text-align: center;">
                     <a onclick="lessWidth()" title="Уменьшить ширину блока" style="box-shadow: none;">-</a> &ensp;
                     <a onclick="moreWidth()" title="Увеличить ширину блока" style="box-shadow: none;">+</a>
                 </p>
                 <p>&nbsp;</p>
-                <p class="download"><a href="lib/fontfit/fontfit.js" target="_blank">Скачать fontfit.js</a></p>
+                <p class="download"><a href="https://github.com/antivitla/fontfit" target="_blank">github.com/antivitla/fontfit</a></p>
                 <script>
                     function lessWidth() {
                         $("#fontfit").width($("#fontfit").width() - 30);
@@ -184,8 +295,6 @@
             </li>
         </ul>
 
-        <!-- Прдвал -->
-
         <footer>
             <span>Мегасайт of Mr. Woodman 4.0</span>
             <br>
@@ -194,6 +303,16 @@
             <img src="images/cat-preloader.gif">
         </footer>
     </section>
+
+    <!-- Ссылки-->
+    <section id="resources" class="dark active">
+        <h1 data-toggle="#resources">P.S. Полезные ссылки</h1>
+        <ul class="items"></ul>
+    </section>
+
+    </div>
+
+    <script src="js/app.js"></script>
 
 </body>
 </html>
