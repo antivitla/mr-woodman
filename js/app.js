@@ -669,11 +669,12 @@ angular.module("MrWoodman", ["ngSanitize"])
 			$scope.ios = "not-ios";
 		}
 
-		var worksPath = "http://works.mr-woodman.ru/";
+		var worksPath = "https://works.mr-woodman.ru/";
 		// $scope.trustSrc = function(src) {
 		// 	return $sce.trustAsResourceUrl(src);
 		// }
 		$scope.getPath = function(work, isIndex) {
+      console.log(work.pages[0])
 			if(work.pages[0].search("http://") > -1) {
 				return $sce.trustAsResourceUrl($scope.page);
 			} else {

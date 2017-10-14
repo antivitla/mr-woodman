@@ -640,7 +640,7 @@ section.collapsing:not(.active).diagonal > toggle {
     height: auto;
     overflow: hidden;
     padding-top: 1.5rem;
-    padding-bottom: 4.5rem;
+    padding-bottom: 7.5rem;
   }
 
   #contacts .card figcaption,
