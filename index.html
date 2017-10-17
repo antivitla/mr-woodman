@@ -4,18 +4,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Mr. Woodman</title>
-    <link rel="stylesheet" href="css/lib.min.css">
-    <link rel="stylesheet" href="css/app.min.css">
+    <link rel="stylesheet" href="/about/css/app.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <script src="js/lib.min.js"></script>
+    <script src="/about/js/lib.min.js"></script>
 </head>
 
 <body ng-app="MrWoodman" ng-init="help = false;" style="position: relative;">
-
-    <div data-test>
-
-
 
     <!-- Контакты -->
     <section id="contacts" class="dulltree">
@@ -24,7 +19,7 @@
     			<p>Меня зовут</p>
     			<h2 class="smaller">Виталий Кулешин</h2>
             </figcaption>
-            <img src="images/vitla-14-avatar.png" alt="Виталий Кулешин">
+            <img src="/about/images/vitla-14-avatar.png" alt="Виталий Кулешин">
             <figcaption>
     			<h2 class="smaller"><a href="mailto:antivitla@gmail.com" target="_blank">antivitla@gmail.com</a></h2>
     			<p data-random-content="и я верстаю + немножечко&trade; javascriptю&#769;/и я веб-колдун/и я ветеран-frontendовик/и я сподвижник HTML, CSS и JS">верстаю</p>
@@ -104,7 +99,7 @@
 
             <h2>Образование</h2>
 
-            <p><img src="images/mgu.png" class="float-logo"></p>
+            <p><img src="/about/images/mgu.png" class="float-logo"></p>
 
             <p class="quotable">У меня четыре высших образования &mdash; два незаконченых и два не начатых. МГУ им. Ломоносова, ГАУ им. Орджоникидзе, МГТУ им. Баумана и без клёвого логотипа и видного деятеля Московский Социальный Университет.</p>
 
@@ -120,7 +115,7 @@
 
             <h2>Опыт работы</h2>
 
-            <p><img src="images/html3-5.png" class="float-logo" style="height: 18rem;"></p>
+            <p><img src="/about/images/html3-5.png" class="float-logo" style="height: 18rem;"></p>
 
             <p class="quotable">Я измеряю время не годами, а версиями HTML :). Когда начинал, через полгода ввели HTML 4. В этот момент мы узнали что у HTML оказывается есть какая-то цифра и она всё это время была 3.</p>
 
@@ -135,100 +130,11 @@
             <p class="quotable">А что же сейчас? А сейчас я полноправный участник адского карнавала под названием "фронтенд-разработка". Помимо вёрстки, адаптивности и очевидного jQuery какие ещё названия с клёвыми логотипами я могу показать?</p>
 
             <div class="media quotable">
-                <div class="media-key"><img src="images/octocat.png"></div>
+                <div class="media-key"><img src="/about/images/octocat.png"></div>
                 <div class="media-value">
                     <h3><a href="https://github.com/antivitla" target="_blank">github.com/<strong>antivitla</strong></a></h3>
-                    <!-- <p>Мой паспорт кодера.</p> -->
                 </div>
             </div>
-
-<!--             <div class="media quotable">
-                <div class="media-value">
-                    <h3><a href="https://libraries.io/bower/testwood" target="_blank">$ bower install <strong>testwood</strong></a><a href="https://bower.io/">Bower.io</a></h3>
-                    <p>Хочется и верстать через тестирование <a href="https://ru.wikipedia.org/wiki/%D0%A0%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B0_%D1%87%D0%B5%D1%80%D0%B5%D0%B7_%D1%82%D0%B5%D1%81%D1%82%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5">(Test&nbsp;Driven&nbsp;Development)</a>. А это моя попытка сделать инструмент для этого.</p>
-                    <h3><a href="https://libraries.io/bower/mr-utils" target="_blank">$ bower install <strong>mr-utils</strong></a></h3>
-                    <p>Сборная солянка утилит и повторяющихся решений для вёрстки (если не смог найти готовых). Например я написал там html-инклюд &mdash; по сути упрощенная система компонентов с возможность импорта. Чтоб не привлекать фреймворки или php только того чтоб избавиться от копипасты. В продакшн это не идет, но драматически упрощает структуру в сложных проектах.</p>
-                </div>
-                <div class="media-key smaller"><img src="images/bower.png"></div>
-            </div>
-
-            <div class="media quotable">
-                <div class="media-key"><img src="images/gulp.png"></div>
-                <div class="media-value">
-                    <h3><a href="//gulpjs.com/" target="_blank">Gulp</a></h3>
-                    <p>Ну не смог я Grunt'ом пользоваться. А вот Gulp попал как мёд на израненую душу джаваскриптера. А как же webpack и иже с ними, спросите вы? Хороший тул должен выдерживаться пару лет, как крымское полусладкое, отвечу я.</p>
-                </div>
-            </div>
-
-            <div class="media quotable">
-                <div class="media-value">
-                    <h3><a href="https://angularjs.org/" target="_blank">Angular</a></h3>
-                    <p>Свои поделки я делаю на angular.js, например <a href="//mr-woodman.ru/timer/" target="_blank">тайм-трекер 3.0</a> на нём. Один из редких сбалансированных фреймворков, сделанных с любовью к HTML и CSS.</p>
-                </div>
-                <div class="media-key smaller"><img src="images/angular-logo.png"></div>
-            </div>
-
-            <div class="media quotable">
-                <div class="media-key smaller"><img src="images/polymer.png"></div>
-                <div class="media-value">
-                    <h3><a href="https://www.polymer-project.org/1.0/" target="_blank">Polymer</a></h3>
-                    <p>Ещё один фреймворк осмысляющий роль классического HTML/DOM и CSS. Его знаю гораздо меньше, серьёзных вещей не делал, но хотелось бы. Правда неизвестно как он себя ведёт в боевых проектах.</p>
-                </div>
-            </div>
-
-            <div class="media quotable">
-                <div class="media-value">
-                    <h3><a href="//redux.js.org/docs/introduction/ThreePrinciples.html" target="_blank">Redux</a> + <a href="https://github.com/Reactive-Extensions/RxJS" target="_blank">RxJS</a> + <a href="//maquettejs.org/" target="_blank">Maquette</a></h3>
-                    <p>А это запчасти <del>франкенштейна</del> архитектуры для след.версии моего <a href="//mr-woodman.ru/timer/" target="_blank">тайм-трекера</a> которые (запчасти) я тем самым изучаю. Пытаюсь переждать <a href="https://facebook.github.io/react/" target="_blank">React</a>-безумие охватившее всех нас.</p>
-                </div>
-                <div class="media-key">
-                    <img src="images/rx-redux-maquette.png">
-                </div>
-            </div>
-
-            <div class="media quotable">
-                <div class="media-key">
-                    <img src="images/bootstrap-foundation.png">
-                </div>
-                <div class="media-value">
-                    <h3><a href="//getbootstrap.com/" target="_blank">Bootstrap</a> и <a href="//foundation.zurb.com/" target="_blank">Foundation</a></h3>
-                    <p>Нужно прятать от детей, как спички и ножницы.</p>
-                </div>
-            </div>
-
-            <div class="media quotable">
-                <div class="media-value">
-                    <h3><a href="//sass-lang.com/" target="_blank">SASS</a> и <a href="//lesscss.org/" target="_blank">LESS</a></h3>
-                    <p>Саша и Лёша :)</p>
-                </div>
-                <div class="media-key">
-                    <img src="images/sassless.png">
-                </div>
-            </div> -->
-
-            <!-- <h2 style="font-size: 7rem; line-height: 1; margin-top: 5rem; margin-bottom: 2rem; text-align: center;">* * *</h2> -->
-
-            <!-- <h3><strong>Омут инструментов веб-разработки</strong></h3>
-
-            <p>Кто лучше? Как выбрать?</p>
-
-            <p>Инструменты веб-разработки это идеи. Всегда была цель, была проблема и решением становился инструмент. Сейчас я хочу поговорить о целях и проблемах как способе классификации. Есть собственно бизнес-задача которую решает тул. Но есть ещё кое-что, а именно что за разработчик, в какой он ситуации, подразумеваемые условия использования (автор может не подозревать об их существовании), личные предпочтения.</p>
-
-            <p>Один из критериев (проблем) - подготовка разработчика. Есть инструменты, предполагающие и создающиеся потому что (или из-за) разработчик не хочет или не имеет времени изучать скажем тонкости css. И тул прячет эти подробности от него. Другому наоборот - нужно своими руками править css. И тул выносит ему это поближе. Многие хотят вывернуть весь фронтенд через javascript как водолазку через рукав. Для таких фреймворки по сути становятся похожи на C++ :)) А давайте возьмем бэкендера которому традиционно падает задача поднять админку. На которой фронтенд тоже гектарами измеряется. Ему нужно только и всего лишь готовая админка причем на бутстрапе. И плевать на скорости и оптимизации и что угодно. Цель тут другая - не зная особо ничего про фронтенд, суметь поднять, суметь починить, суметь подкрутить. Всё. </p>
-
-            <p>Второе - легкость входа и документация. Какой бы ни был классный фреймворк, если его трудно вкурить, если его концепции сложны, то это препятствие. Потому что время - деньги. Это ресурс который тратится и который можно сравнивать - время на вкуривание.</p>
-
-            <p>Третье - распространенность и команда. Сколько человек в процентах знают jQuery? Большинство. А какой-нибудь Dart? Надо ли говорить что в боевых проектах проще, надежней использовать то, что всё знают и так - пусть это нечто постарше, подеревянней и т.д. Новое вино в старые мехи не наливают не случайно.</p>
-
-            <p>Ну и прочее в том же духе - например чисто субъективно мне не нравится определённый стиль писания javascript. И это важно.</p>
-
-            <p>Как видите - эти критерии и цели и проблемы не имеют ничего общего ни со скоростью фреймворка, ни с набором фич, ни ешё с какими-то любовно измеряемыми собственно рабочими параметрами. Этот класс критериев часто выпадает или считается второстепенным, хотя я считаю их главнее. Подумайте сами - люди одинаково умны на самом деле - то есть все фреймворки добравшиеся до второй версии и десятка контрибуторов достаточно правильны, продуманы, надежны, быстры и так далее. В чем же разница тогда? Зачем столько? А вот затем что я описал.</p>
-
-            <p>P.S. Возможно непонятно как конвертировать тот же Dart или экспериментальный пока ещё Polymer. А вот именно как эксперимент - нечто создаётся и исследуется в НИИ, стадия "массовый потребительский рынок" ещё не наступила (в ИТ нет такого деления четкого и нечто узкоспецифичное сразу попадает в среду. Что ускоряет процессы адаптации, обкатки и разработки дальше, но яростно запутывает новичков и ситуацию в целом - что есть что здесь). По сути многие вещи это "местечковые" решения. Многие - как Polymer это исследование, которому ещё далеко до боевых проектов, что бы ни говорили их промо-сайты. Просто знать о таком разделении достаточно чтобы вы уже могли класть тот или иной интсрумет в коробочку своей классификации надо вам это или нет - глядя на всё, на сайт, на примеры, на доки. И адский карнавал веб-разработки превратится в мирное цветение многообразной жизни :)</p>
-
-            <p>&nbsp;</p>
-
-            <h3><a href="//articles.mr-woodman.ru/2016-menedzher-sozdaet-opredelennost-a-ne-prosit-ejo.html">Менеджер создаёт определённость а не просит её &rarr;</a></h3> -->
         </article>
         <script>
             (function () {
@@ -300,7 +206,7 @@
             <br>
             <small>сделано на левом берегу&trade;</small>
             <br><br>
-            <img src="images/cat-preloader.gif">
+            <img src="/about/images/cat-preloader.gif">
         </footer>
     </section>
 
@@ -310,9 +216,7 @@
         <ul class="items"></ul>
     </section>
 
-    </div>
-
-    <script src="js/app.js"></script>
+    <script src="/about/js/app.js"></script>
 
 </body>
 </html>

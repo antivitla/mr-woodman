@@ -24,5 +24,11 @@
     "gulp-cssnano": "^2.1.2",
     "gulp-rename": "^1.2.2",
     "gulp-uglify": "^2.0.0"
+  },
+  "dependencies": {
+    "angular": "^1.6.6",
+    "angular-sanitize": "^1.6.6",
+    "jquery": "^3.2.1",
+    "mr-fontfit": "^1.0.0"
   }
 }
