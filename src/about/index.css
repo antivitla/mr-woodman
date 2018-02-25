@@ -1,0 +1,261 @@
+@import url(https://fonts.googleapis.com/css?family=Exo+2:200,300,400,600&subset=cyrillic);
+
+@font-face {
+  font-family: 'PeterSkoropis';
+  src: url('fonts/2BA14D_0_0.eot');
+  src: url('fonts/2BA14D_0_0.eot?#iefix') format('embedded-opentype'),
+      url('fonts/2BA14D_0_0.woff') format('woff'),
+      url('fonts/2BA14D_0_0.ttf') format('truetype');
+}
+
+html, body {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+@media (min-width: 768px) {
+  html, body {
+    font-size: 18px;
+    line-height: 27px;
+  }
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+select, input, textarea, option {
+  font-family: "Exo 2", sans-serif;
+  line-height: 1.5rem;
+  font-size: 1rem;
+}
+
+body {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 300;
+  line-height: 1.5rem;
+  font-size: 1rem;
+  /*color: #222;*/
+  color: #54443a;
+  background-color: whitesmoke;
+  min-width: 320px;
+  overflow-x: hidden;
+}
+
+main {
+  overflow-x: hidden;
+}
+
+strong {
+  font-weight: 600;
+  /*vertical-align: top;*/
+}
+
+small {
+  font-weight: 400;
+  font-size: 0.724rem;
+  /*vertical-align: top;*/
+}
+
+em {
+  vertical-align: top;
+}
+
+code {
+  font-family: monospace;
+  font-size: 0.875rem;
+  vertical-align: baseline;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+q:before {
+  content: "«";
+}
+
+q:after {
+  content: "»";
+}
+
+a {
+  /*color: rgb(100, 159, 223);*/
+  color: inherit;
+  cursor: pointer;
+  box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.2);
+  text-decoration: none;
+  -webkit-transition: color 0.2s ease-out, background-color 0.2s ease-out;
+  -moz-transition: color 0.2s ease-out, background-color 0.2s ease-out;
+  transition: color 0.2s ease-out, background-color 0.2s ease-out;
+  vertical-align: top;
+}
+
+a:hover {
+  box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.5);
+  background-color: rgba(0,0,0,0.125);
+}
+
+h1, h2, h3, h4 {
+  font-weight: 200;
+  line-height: 1.5rem;
+}
+
+h1 {
+  font-size: 2rem;
+  line-height: 2.25rem;
+}
+
+h2 {
+  font-size: 1.75rem;
+  line-height: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+  line-height: 1.75rem;
+  font-weight: 300;
+}
+
+h4 {
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+
+h5 {
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.peter {
+  font-family: 'PeterSkoropis';
+}
+
+h3.peter {
+  font-size: 2rem;
+}
+
+.lead {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+ul.list-icon {
+  /*padding-left: 1.5rem;*/
+}
+
+ul.list-icon li {
+  display: flex;
+  margin-bottom: 0.375rem;
+}
+
+ul.list-icon li:last-child {
+  margin-bottom: 0;
+}
+
+ul.list-icon li > *:first-child {
+  /*margin-left: -1.5rem;*/
+  margin-right: 0.75rem;
+  width: 1rem;
+}
+
+article p {
+  margin: 1rem auto;
+}
+
+article p:first-child {
+  margin-top: 0;
+}
+
+article p:last-child {
+  margin-bottom: 0;
+}
+
+@media screen and (min-width: 768px) {
+  h1 {
+    font-size: 2.5rem;
+    line-height: 2.75rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+    line-height: 2.25rem;
+  }
+
+  h3 {
+    font-size: 1.75rem;
+    line-height: 2rem;
+    font-weight: 200;
+  }
+
+  h4 {
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+    font-weight: 300;
+  }
+
+  h5 {
+    font-size: 1.25rem;
+    font-weight: 600;
+  }
+
+  .lead {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  h1 {
+    font-size: 3rem;
+    line-height: 3.25rem;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+    line-height: 2.75rem;
+  }
+
+  h3 {
+    font-size: 2rem;
+    line-height: 2.25rem;
+  }
+
+  h4 {
+    font-size: 1.75rem;
+    line-height: 2rem;
+  }
+
+  h5 {
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+}
+
+@media (min-width: 768px) {
+  .md-order-first {
+    order: -1;
+  }
+
+  .md-left-2 {
+    position: relative;
+    left: -2rem;
+  }
+}
+
+
+/* Badge */
+
+.badge {
+  border-radius: 5px;
+  padding: 1px 5px;
+  border: solid #54443a 1px;
+  /*background-color: #54443a;*/
+  /*color: whitesmoke;*/
+  font-size: 75%;
+  font-weight: 600;
+}

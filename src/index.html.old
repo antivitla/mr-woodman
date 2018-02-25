@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mr. Woodman</title>
+  <link rel="stylesheet" href="/about/css/app.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <script src="/about/js/lib.min.js"></script>
+</head>
+
+<body ng-app="MrWoodman" ng-init="help = false;" style="position: relative;">
+
+  <!-- Контакты -->
+  <section id="contacts" class="dulltree">
+    <figure class="card">
+      <figcaption>
+        <p>Меня зовут</p>
+        <h2 class="smaller">Виталий Кулешин</h2>
+      </figcaption>
+      <img src="/about/images/vitla-14-avatar.png" alt="Виталий Кулешин">
+      <figcaption>
+        <h2 class="smaller"><a href="mailto:antivitla@gmail.com" target="_blank">antivitla@gmail.com</a></h2>
+        <p data-random-content="и я верстаю + немножечко&trade; javascriptю&#769;/и я веб-колдун/и я ветеран-frontendовик/и я сподвижник HTML, CSS и JS">верстаю</p>
+      </figcaption>
+    </figure>
+    <article id="about-me-preview" class="story" data-persist-active></article>
+    <div style="margin-top: -1rem;">
+      <a data-scroll-to="#about-me-article" style="position: relative;">
+        <small>Читать полностью <i class="material-icons" style="position: absolute; left: 50%; bottom: -1.75rem; margin-left: -12px; font-size: 1.25rem;">&#xE5DB;</i></small>
+      </a>
+    </div>
+  </section>
+
+  <!-- Работы -->
+  <section id="works" class="help-{{help}} collapsing active" ng-controller="WorksCtrl" ng-class="ios">
+    <div class="current-work" ng-class="work.devices">
+      <div class="h1group">
+        <h1 class="smaller"><span class="work-title">{{work.title}}</span></h1>
+
+        <p class="hero" ng-bind-html="work.description"></p>
+        <p>&nbsp;</p>
+        <p>
+          <small>
+            <a ng-href="{{getPath(work)}}" target="_blank">вёрстка в новом окне</a>
+            &nbsp; <i class="fa fa-external-link" aria-hidden="true"></i> &nbsp;
+            <a ng-if="work.alive" ng-href="{{work.alive}}" target="_blank">{{getAlive(work)}}</a></span>
+          </small>
+        </p>
+      </div>
+
+      <a class="work-prev" ng-click="prevWork()" title="Предыдущая работа"></a>
+      <a class="work-next" ng-click="nextWork()" title="Следующая работа"></a>
+
+      <!-- Screen -->
+      <div ng-if="hasDesktop(work)" class="device desktop">
+        <div class="iframe-holder"><iframe ng-src="{{getPath(work)}}" height="100%"></iframe></div>
+      </div>
+      <div ng-if="hasTablet(work)"  class="device tablet">
+        <div class="iframe-holder"><iframe ng-src="{{getPath(work)}}" height="100%"></iframe></div>
+      </div>
+      <div ng-if="hasMobile(work)"  class="device mobile">
+        <div class="iframe-holder"><iframe ng-src="{{getPath(work)}}" height="100%"></iframe></div>
+      </div>
+      <nav class="pages" ng-if="work.pages.length > 1">
+        <a ng-repeat="dot in work.pages" ng-click="setPage($index)" ng-class="{ active: work.pages.indexOf(page) == $index }" class="dot"></a>
+      </nav>
+    </div>
+
+    <div>
+      <ul id="list-of-works" class="items works" data-persist-active>
+        <li ng-repeat="somework in works">
+          <a ng-click="selectWork(works.indexOf(somework))" href="#works" title="Посмотреть">
+            <div class="title">{{somework.title}}</div>
+            <div><small ng-bind-html="somework.description"></small></div>
+          </a>
+        </li>
+      </ul>
+      <toggle class="" data-toggle="#list-of-works" data-persist-active id="toggle-list-of-works">
+        <span>Развернуть простыню работ <i class="fa fa-chevron-down"></i></span>
+        <span class="active">Свернуть простыню работ <i class="fa fa-chevron-up"></i></span>
+      </toggle>
+    </div>
+  </section>
+
+  <!-- Проекты -->
+  <section id="projects">
+    <article id="about-me-article" class='story'>
+      <h2 style="font-size: 10rem; line-height: 1; margin-top: -2rem; margin-bottom: 2rem;">Я</h2>
+
+      <p class="quotable">Это было после школы и фронтенд тоже не имел термина в трудовой. <q>Верстальщик</q> в конце 90-х это полиграфия, <q>программист</q> слишком специфично, а <q>оператор ЭВМ</q> уже совсем Юрий&nbsp;Гагарин.</p>
+
+      <p class="quotable">Мы с php-шером <del>ебашили</del> работали в Allaire Homesite, который ещё не купила Macromedia, которую ещё не купила Adobe, которая ещё боялась Corel. Это было так давно, что аж <code>&lt;font face="Arial" color="black"&gt;</code>.</p>
+
+      <p class="quotable">Там я научился "нарезать" design-макеты на html-таблицы и вставлять в web-страницы. Потом вёрстка таблицами сменилась вёрсткой девицами, а теперь и крекс-пекс-flex-боксами. Макеты так и продолжают "резать" &mdash; но стали забывать почему.</p>
+
+      <p class="quotable">А потом у компании начались проблемы и мы разлетелись в разные стороны, как встревоженные воробьи. Наш бывший начальник потом звал к себе в новую студию, но я не пошёл. Мир кряхтя переваливался в двадцать первый век.</p>
+
+      <h2>Образование</h2>
+
+      <p><img src="/about/images/mgu.png" class="float-logo"></p>
+
+      <p class="quotable">У меня четыре высших образования &mdash; два незаконченых и два не начатых. МГУ им. Ломоносова, ГАУ им. Орджоникидзе, МГТУ им. Баумана и без клёвого логотипа и видного деятеля Московский Социальный Университет.</p>
+
+      <p class="quotable">Да, это немного странно. Нет, не так. Каждый человек c юности должен активно искать смысл своей жизни. Или хотя бы работы.</p>
+
+      <p class="quotable">Главное не стоит пробовать две вещи &mdash; наркотики и веб-дизайн. Мне не повезло...</p>
+
+      <h2>Дизайнер</h2>
+
+      <p class="quotable">Я попробовал веб-дизайн и мне сразу не понравилось, но друзья говорили что это круто и подбадривали. Потом я как-то втянулся, но радости это не приносило. Одно время я пытался бросить &mdash; пришел работать в одну из газет и сказал что буду заниматься чем угодно, только не дизайном. Меня сразу же взяли главным дизайнером.</p>
+
+      <p class="quotable">С тех пор я поумнел и делаю веб-дизайн только для себя, а не на продажу.</p>
+
+      <h2>Опыт работы</h2>
+
+      <p><img src="/about/images/html3-5.png" class="float-logo" style="height: 18rem;"></p>
+
+      <p class="quotable">Я измеряю время не годами, а версиями HTML :). Когда начинал, через полгода ввели HTML 4. В этот момент мы узнали что у HTML оказывается есть какая-то цифра и она всё это время была 3.</p>
+
+      <p class="quotable">А потом случился XHTML и я тоже уехал на Восток подумать о своём поведении. И в положенный час мы с HTML вернулись к корням своим. За что Аллах щедро вознаградил нас - меня прямым путём заслуженного верстальщика и начинающего фронтендера, а HTML 5 райскими девушками-менеджерами, игриво славящими цифру его. И была дадена молитва такая: "Избави нас от доктайпа, но автоматический маймтайп скриптов и стилей дай нам. И прости нам незакрытие тегов наших, как мы прощаем баги эксплорера и фаерфокса. Аминь." </p>
+
+
+      <p class="quotable"><q>&mdash; Так сколько же ты работаешь?<br>
+      &mdash; Лет 10. А может 15. Не помню.</q> &copy; <a href="https://vk.com/audios162552019?q=%D0%BA%D1%83%D0%BA%D1%83%D0%BD%D1%8F%20%D0%B1%D0%BE%D1%80%D0%B4%D1%83%D0%BA%D0%BE%D0%B2" target="_blank">Кукуня</a></p>
+
+      <h2>Фронтенд-разработчик</h2>
+
+      <p class="quotable">А что же сейчас? А сейчас я полноправный участник адского карнавала под названием "фронтенд-разработка". Помимо вёрстки, адаптивности и очевидного jQuery какие ещё названия с клёвыми логотипами я могу показать?</p>
+
+      <div class="media quotable">
+        <div class="media-key"><img src="/about/images/octocat.png"></div>
+        <div class="media-value">
+          <h3><a href="https://github.com/antivitla" target="_blank">github.com/<strong>antivitla</strong></a></h3>
+        </div>
+      </div>
+    </article>
+    <script>
+      (function () {
+        var quotable = $("#about-me-article").children(".quotable"),
+          quote;
+        if (quotable.filter(".set").length > 0) {
+          quote = quotable.filter(".set").eq(0);
+        } else {
+          quote = quotable.eq(Math.floor(quotable.length * Math.random()));
+        }
+        quote.clone().appendTo("#about-me-preview");
+      }());
+    </script>
+
+    <h2 style="font-size: 7rem; line-height: 1; margin-top: 5rem; margin-bottom: 2rem; text-align: center;">* * *</h2>
+
+    <ul class="projects">
+      <li>
+        <h2><a href="//mr-woodman.ru/timer/" target="_blank">Таймер 3.0</a></h2>
+
+        <p>Спасение для фрилансера. Минималистичный но мощный <strong>таймер времени и денег</strong> (сам пользуюсь). Данные сохраняются в хранилище броузера, но можно создать аккаунт на сервере. Легкое манипулирование деревом тасков любой вложенности через "командную строку" таймера.</p>
+        <p><small><em>#Angularjs</em></small></p>
+        <p>&nbsp;</p>
+        <p class="download"><a href="//mr-woodman.ru/timer/" target="_blank">Окунуться в мир почасовой оплаты</a></p>
+      </li>
+      <li>
+        <h2><a href="https://github.com/antivitla/mr-utils" target="_blank">Утилиты для верстки</a></h2>
+        <p>Одна из готовых фич - упрощенная система компонентиков html, с возможность вложенных инклюдов. Почти как html import. В продакшн не идет, но драматически упрощает структуру вёрстки. Копипаста побеждена.</p>
+        <p>&nbsp;</p>
+        <p class="download"><code><a href="https://github.com/antivitla/mr-utils" target="_blank">$ npm install mr-utils</a></code></p>
+      </li>
+      <li>
+        <h2><a href="https://github.com/antivitla/mr-testwood" target="_blank">Верстка через тестирование</a></h2>
+        <p>Черное плавающее меню справа - это одна из фич моего инструмента testwood для вёрстки через тестирование (попытка сымитировать <a href="https://ru.wikipedia.org/wiki/%D0%A0%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B0_%D1%87%D0%B5%D1%80%D0%B5%D0%B7_%D1%82%D0%B5%D1%81%D1%82%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5" target="_blank">TDD</a> в вёрстке).</p>
+        <p>&nbsp;</p>
+        <p class="download"><code><a href="https://github.com/antivitla/mr-testwood" target="_blank">$ npm install mr-testwood</a></code></p>
+      </li>
+      <li id="fontfit">
+        <div style="text-align: center; margin-top: 54px;">
+          <a href="https://github.com/antivitla/mr-fontfit" target="_blank" style=" text-decoration: none;"><div data-fontfit style="font-weight: 700; letter-spacing: -0.0375rem;">FONTFIT.JS</div></a>
+          <div data-fontfit>&mdash; чтоб текст</div>
+          <div data-fontfit>на всю доступную ширину</div>
+          <div data-fontfit style="font-weight: 800; letter-spacing: -0.0375rem;">ВЛАЗИЛ</div>
+        </div>
+        <p>&nbsp;</p>
+        <p style="text-align: justify;">Line-height подбирается кратно базовому (согласно концепции <a href="https://www.google.ru/webhp?sourceid=chrome-instant&amp;ion=1&amp;espv=2&amp;ie=UTF-8#newwindow=1&amp;q=css%20vertical%20rhythm" target="_blank"><q>вертикального ритма</q></a>)</p>
+        <p>&nbsp;</p>
+        <p style="font-size: 3rem; line-height: 3rem; text-align: center;">
+          <a onclick="lessWidth()" title="Уменьшить ширину блока" style="box-shadow: none;">-</a> &ensp;
+          <a onclick="moreWidth()" title="Увеличить ширину блока" style="box-shadow: none;">+</a>
+        </p>
+        <p>&nbsp;</p>
+        <p class="download"><code><a href="https://github.com/antivitla/mr-fontfit" target="_blank">$ npm install mr-fontfit</a></code></p>
+        <script>
+          function lessWidth() {
+            $("#fontfit").width($("#fontfit").width() - 30);
+            fontfit($("#fontfit").find("[data-fontfit]"));
+          }
+          function moreWidth() {
+            $("#fontfit").width($("#fontfit").width() + 30);
+            fontfit($("#fontfit").find("[data-fontfit]"));
+          }
+        </script>
+      </li>
+    </ul>
+
+    <footer>
+      <span>Мегасайт of Mr. Woodman 4.0</span>
+      <br>
+      <small>сделано на левом берегу&trade;</small>
+      <br><br>
+      <img src="/about/images/cat-preloader.gif">
+    </footer>
+  </section>
+
+  <!-- Ссылки-->
+  <section id="resources" class="dark active">
+    <h1 data-toggle="#resources">P.S. Полезные ссылки</h1>
+    <ul class="items"></ul>
+  </section>
+
+  <script src="/about/js/app.js"></script>
+
+</body>
+</html>

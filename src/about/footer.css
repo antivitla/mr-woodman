@@ -1,0 +1,14 @@
+footer {
+  margin-top: 7.5rem;
+}
+
+footer .cat {
+  display: block;
+  margin: 1.5rem auto 1.5rem auto;
+}
+
+footer .smaller {
+  font-size: 0.75rem;
+  line-height: 1rem;
+  font-weight: 400;
+}

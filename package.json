@@ -1,10 +1,13 @@
 {
   "name": "mr-woodman",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Персональный сайт",
   "main": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "dev": "webpack-dev-server --open",
+    "watch": "webpack --watch"
   },
   "repository": {
     "type": "git",
@@ -17,18 +20,20 @@
   },
   "homepage": "https://github.com/antivitla/mr-woodman#readme",
   "devDependencies": {
-    "gulp": "^3.9.1",
-    "gulp-autoprefixer": "^3.1.1",
-    "gulp-concat": "^2.6.0",
-    "gulp-concat-css": "^2.3.0",
-    "gulp-cssnano": "^2.1.2",
-    "gulp-rename": "^1.2.2",
-    "gulp-uglify": "^2.0.0"
+    "clean-webpack-plugin": "^0.1.18",
+    "css-loader": "^0.28.9",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "file-loader": "^1.1.8",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^2.30.1",
+    "style-loader": "^0.20.2",
+    "url-loader": "^0.6.2",
+    "webpack": "^3.11.0"
   },
   "dependencies": {
-    "angular": "^1.6.6",
-    "angular-sanitize": "^1.6.6",
-    "jquery": "^3.2.1",
-    "mr-fontfit": "^1.0.0"
+    "angular": "^1.6.9",
+    "bootstrap": "^4.0.0",
+    "mr-fontfit": "^1.0.1",
+    "vue": "^2.5.13"
   }
 }

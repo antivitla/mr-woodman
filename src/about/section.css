@@ -1,4 +1,55 @@
 
+main > section {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  box-sizing: border-box;
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+main > section.diagonal-top {
+  padding-top: 1.5rem;
+}
+
+main > section.diagonal-bottom {
+  padding-bottom: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  main > section.diagonal-top {
+    padding-top: 2.5rem;
+  }
+
+  main > section.diagonal-bottom {
+    padding-bottom: 2.5rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  main > section.diagonal-top {
+    padding-top: 3.5rem;
+  }
+
+  main > section.diagonal-bottom {
+    padding-bottom: 3.5rem;
+  }
+}
+
+@media (min-width: 1600px) {
+  main > section.diagonal-top {
+    padding-top: 4rem;
+  }
+
+  main > section.diagonal-bottom {
+    padding-bottom: 4rem;
+  }
+}
+
+/*
 section {
   padding-top: 2rem;
   padding-bottom: 4rem;
@@ -10,7 +61,6 @@ section > h1 {
   margin-bottom: 3rem;
 }
 
-/* темный блок */
 section.dark {
   color: #ccc;
   background-color: #333;
@@ -43,7 +93,6 @@ section.dark .links a:hover {
   transition: all 0.2s ease-out;
 }
 
-/* красный блок */
 section.red {
   color: rgba(255, 255, 255, 0.86);
   background-color: rgb(140, 72, 58);
@@ -55,7 +104,6 @@ section.red {
 }
 
 
-/*  Свёрнутый блок */
 
 .collapsing > *:not(h1):not(toggle) {
   transform-origin: 50% 0%;
@@ -127,7 +175,6 @@ toggle.active > *:not(.active) {
 }
 
 
-/* Диагональ */
 
 section.diagonal:before {
   content: " ";
@@ -202,3 +249,4 @@ section.collapsing:not(.active).diagonal {
 section.collapsing:not(.active).diagonal > toggle {
   top: 0.25rem;
 }
+*/
