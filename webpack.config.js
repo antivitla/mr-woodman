@@ -11,6 +11,10 @@ module.exports = {
     filename: 'about/index.js'
   },
   devtool: 'inline-source-map',
+  devServer: {
+    contentBase: path.resolve(__dirname, 'dist'),
+    port: 1234
+  },
   plugins: [
     new CleanWebpackPlugin(['dist']),
     new ExtractTextPlugin('about/index.css'),

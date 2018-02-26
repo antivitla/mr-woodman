@@ -928,6 +928,12 @@ section.collapsing:not(.active).diagonal > toggle {
   margin: 0rem 1.5rem 1.5rem 1.5rem;
 }
 
+.work-header-group p.lead {
+  max-width: 30em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /* Arrows */
 
 .current-work a.work-prev {
@@ -1069,9 +1075,7 @@ section.collapsing:not(.active).diagonal > toggle {
   transform: scale(0.5616,0.5616);
   transform-origin: 0% 0%;
   background-color: #fff;
-  overflow: auto;
-    overflow-x: hidden;
-    -webkit-overflow-scrolling:touch;
+  overflow: hidden;
 }
 
 @media screen and (max-width: 1550px) {
@@ -1110,7 +1114,7 @@ section.collapsing:not(.active).diagonal > toggle {
     left: 106px;
     top: 30px;
     border: 0px;
-    overflow-x: hidden;
+    overflow: hidden;
     -ms-transform: scale(0.5616,0.5616);
     -ms-transform-origin: 0% 0%;
     -moz-transform: scale(0.5616,0.5616);
@@ -1158,7 +1162,7 @@ section.collapsing:not(.active).diagonal > toggle {
     left: 46px;
     top: 53px;
     border: 0px;
-    overflow-x: hidden;
+    overflow: hidden;
     -ms-transform: scale(0.2887,0.2887);
     -ms-transform-origin: 0% 0%;
     -moz-transform: scale(0.2887,0.2887);
@@ -1201,7 +1205,7 @@ section.collapsing:not(.active).diagonal > toggle {
   left: 46px;
   top: 53px;
   border: 0px;
-  overflow-x: hidden;
+  overflow: hidden;
   -ms-transform: scale(0.45,0.45);
   -ms-transform-origin: 0% 0%;
   -moz-transform: scale(0.45,0.45);
@@ -1248,7 +1252,7 @@ section.collapsing:not(.active).diagonal > toggle {
   left: 14px;
   top: 59px;
   border: 0px;
-  overflow-x: hidden;
+  overflow: hidden;
   -ms-transform: scale(0.3942,0.3942);
   -ms-transform-origin: 0% 0%;
   -moz-transform: scale(0.3942,0.3942);

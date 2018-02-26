@@ -60,7 +60,7 @@ works.app = new Vue({
       return this.work.devices.search(device) > -1;
     },
     getPath: function (work) {
-      if(this.page.search("http://") > -1) {
+      if(this.page.search("http://") > -1 || this.page.search("https://") > -1) {
         return this.page;
       } else {
         return this.domain + this.work.path + this.page;
@@ -70,7 +70,7 @@ works.app = new Vue({
       if(!this.work.alive) {
         return "";
       } else {
-        return this.work.alive.split("#")[0].split("?")[0].split("http://")[1];
+        return this.work.alive.split("#")[0].split("?")[0].split("://")[1];
       }
     },
     isActivePage: function (page) {
