@@ -20,6 +20,9 @@
   },
   "homepage": "https://github.com/antivitla/mr-woodman#readme",
   "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.3",
+    "babel-preset-env": "^1.6.1",
     "clean-webpack-plugin": "^0.1.18",
     "css-loader": "^0.28.9",
     "extract-text-webpack-plugin": "^3.0.2",
@@ -35,7 +38,9 @@
   "dependencies": {
     "angular": "^1.6.9",
     "bootstrap": "^4.0.0",
+    "jquery": "^3.3.1",
     "mr-fontfit": "^1.0.1",
+    "popper.js": "^1.12.9",
     "vue": "^2.5.13"
   }
 }

@@ -557,6 +557,14 @@ const data = [
   //   devices: "desktop"
   // },
   {
+    title: "Scoblimora",
+    path: "2017-12--vitaly-kuleshin--titamota/www/",
+    pages: ["http://mr-woodman.ru/scoblimora"],
+    description: "Алхимический помощник для Skyrim, всем фус-ро-да в этом чате. #Vuejs",
+    devices: "desktop tablet mobile",
+    alive: "http://mr-woodman.ru/scoblimora"
+  },
+  {
     title: "Titamota",
     path: "2017-12--vitaly-kuleshin--titamota/www/",
     pages: ["http://titamota.ru", "http://mr-woodman.ru/titamota"],

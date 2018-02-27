@@ -134,8 +134,27 @@ h5 {
   font-family: 'PeterSkoropis';
 }
 
+.lovers {
+  font-family: 'Lovers Quarrel';
+}
+
+.meddon {
+  font-family: 'Meddon';
+}
+
 h3.peter {
   font-size: 2rem;
+}
+
+h3.lovers {
+  font-size: 4rem;
+  line-height: 4rem;
+}
+
+h3.meddon {
+  font-size: 2rem;
+  line-height: 2rem;
+  margin-top: 1.5rem;
 }
 
 .lead {
@@ -262,8 +281,114 @@ article p:last-child {
   font-size: 75%;
   font-weight: 600;
 }
+
+/* anchor */
+
+.anchor {
+  position: relative;
+  top: -3rem;
+  height: 0px;
+  line-height: 0px;
+  font-size: 0px;
+}
 #navbar {
+  position: fixed;
+  right: 0;
+  top: 0;
+  text-align: center;
+  /*width: 100%;*/
+  /*width: 45px;*/
+  /*box-sizing: border-box;*/
+  /*padding: 10px 15px;*/
+  /*line-height: 24px;*/
+  z-index: 100;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+#navbar a {
+  box-shadow: none;
+}
+
+#navbar .toggle {
+  position: relative;
+  z-index: 2;
+  box-sizing: border-box;
+  padding: 12px 15px;
+  line-height: 24px;
+  width: 48px;
+  height: 48px;
+  display: block;
+  margin-left: auto;
+  margin-right: 0;
+  background-color: #54443a;
+  box-shadow: none !important;
+}
+
+#navbar ul li a {
+  display: inline-block;
+  padding: 12px 15px;
+  line-height: 24px;
+  width: 48px;
+  height: 48px;
+  color: rgba(255, 255, 255, 0.75);
+  background-color: #54443a;
+  font-weight: 400;
+  text-align: center;
+}
+
+#navbar a:hover {
+  color: white;
+}
+
+#navbar a.active {
+  color: #54443a;
+  background-color: white;
+}
+
+#navbar ul li a.free {
+  width: auto;
+}
+
+#navbar ul li a.no-h-padding {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+#navbar ul li a span {
   display: none;
+}
+
+#navbar ul.top {
+  position: relative;
+  z-index: 1;
+  transform: translateY(-100%);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s;
+}
+
+#navbar ul.bottom {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+  transform: translateY(100%);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s;
+}
+
+#navbar ul.bottom a {
+  /*background-color: #71928c;*/
+}
+
+.navbar-active #navbar ul.top,
+.navbar-active #navbar ul.bottom {
+  display: block;
+  transform: translateY(0%);
+  pointer-events: all;
+  opacity: 1;
+  transition: all 0.3s;
 }
 
 main > section {
@@ -518,18 +643,58 @@ section.collapsing:not(.active).diagonal > toggle {
 }
 */
 #welcome {
-  background-color: #dfd7b2;
+  /*background-color: #dfd7b2;*/
+  /*background-image: url(images/crimea-koktebel-1939.jpg);*/
+  /*background-position: center center;*/
+  /*background-attachment: fixed;*/
+  /*background-size: cover;*/
+  text-align: center;
+  color: white;
+  font-weight: 400;
+  text-shadow: 0px 0px 5px rgba(84,68,58,0.5),
+    0px 0px 10px rgba(84,68,58,0.5);
+  line-height: 1.25rem;
+  min-height: 110vh;
+  padding-bottom: 20vh;
+  position: relative;
+}
+
+#welcome:before {
+  content: " ";
+  z-index: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  background-color: #fff7d3;
   background-image: url(../about/images/crimea-koktebel-1939.jpg);
   background-position: center center;
   background-attachment: fixed;
   background-size: cover;
-  text-align: center;
-  color: white;
-  font-weight: 400;
-  text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.75);
-  line-height: 1.25rem;
-  min-height: 110vh;
-  padding-bottom: 20vh;
+  background-blend-mode: multiply;
+  /*filter: brightness(0.875);*/
+  /*opacity: 0.95;*/
+}
+
+#welcome:after {
+  z-index: 0;
+  content: " ";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0+1,0+50,0.25+100 */
+  background: -moz-radial-gradient(center, ellipse cover, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 1%, rgba(0,0,0,0) 50%, rgba(0,0,0,0.25) 100%); /* FF3.6-15 */
+  background: -webkit-radial-gradient(center, ellipse cover, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 1%,rgba(0,0,0,0) 50%,rgba(0,0,0,0.25) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: radial-gradient(ellipse at center, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 1%,rgba(0,0,0,0) 50%,rgba(0,0,0,0.25) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#40000000',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+#welcome #my-card {
+  position: relative;
+  z-index: 1;
 }
 
 #welcome .avatar {
@@ -554,14 +719,56 @@ section.collapsing:not(.active).diagonal > toggle {
 
 #welcome a {
   box-shadow: none;
+  background-color: transparent !important;
+}
+
+#welcome a:hover {
+  border-bottom: solid rgba(255,255,255,0.875) 2px;
 }
 
 #welcome .my-card-name h3 {
-  margin-top: 0.25rem;
+  margin-top: -2px;
+}
+
+
+
+#welcome .my-card-name h3 span,
+#welcome .my-card-title h3 span {
+  padding: 3px 15px 8px 15px;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+#welcome .my-card-name p span,
+#welcome .my-card-title p span {
+  padding: 2px 15px 5px 15px;
+  border-radius: 5px;
+  display: inline-block;
+  margin-top: -5px;
+  vertical-align: top;
+}
+
+#welcome .my-card-name p span {
+  padding: 5px 15px 3px 15px;
+}
+
+#welcome .my-card-name h3 span,
+#welcome .my-card-name p span {
+  background-color: #54443a;
+  padding-right: 10px;
+}
+#welcome .my-card-title h3 span,
+#welcome .my-card-title p span {
+  background-color: #71928c;
+  padding-left: 10px;
+}
+
+#welcome .my-card-title p {
+  line-height: 1.3;
 }
 
 #welcome .my-card-title h3 {
-  margin-bottom: 0.25rem;
+  /*margin-bottom: -2px;*/
 }
 
 @media (min-width: 1200px) {
@@ -580,19 +787,17 @@ section.collapsing:not(.active).diagonal > toggle {
     justify-content: center;
     transform: translateY(0.875rem) translateX(0.75rem);
   }
-
-
 }
 .profile-part {
-  margin: 4rem auto;
+  padding: 2rem 0px;
 }
 
 .profile-part:first-child {
-  margin-top: 0rem;
+  padding-top: 0rem;
 }
 
 .profile-part:last-child {
-  margin-bottom: 0rem;
+  padding-bottom: 0rem;
 }
 
 .profile-part-header {
@@ -611,7 +816,7 @@ section.collapsing:not(.active).diagonal > toggle {
 
 @media (min-width: 576px) {
   .profile-part {
-    margin: 6rem auto;
+    padding: 3rem 0px;
   }
 }
 
@@ -656,6 +861,14 @@ section.collapsing:not(.active).diagonal > toggle {
   overflow: hidden;
 }
 
+/*.product .container {
+  background-color: rgba(255, 255, 255, 0.75);
+  border-radius: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: #333;
+}*/
+
 .product:last-child {
   border-bottom: none;
 }
@@ -672,9 +885,18 @@ section.collapsing:not(.active).diagonal > toggle {
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
-  background-color: #dfd7b2;
+  background-color: #e4d8a0;
   background-blend-mode: multiply;
-  filter: blur(5px) brightness(0.75);
+  /*filter: blur(0px);*/
+  /*opacity: 0.875;*/
+  /*filter: blur(2px) brightness(0.75);*/
+  /*transform: scale(1.0, 1.0);*/
+  /*transition: all 1s;*/
+}
+
+.product-z:hover:before {
+  filter: blur(0px) brightness(0.875);
+  transform: scale(1.1, 1.1);
 }
 
 .product > * {
@@ -684,7 +906,8 @@ section.collapsing:not(.active).diagonal > toggle {
 
 .product h3 {
   font-weight: 600;
-  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.99);
+/*  text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.625),
+    0px 0px 10px rgba(0, 0, 0, 0.5);*/
   margin-bottom: 1.5rem;
 }
 
@@ -693,23 +916,37 @@ section.collapsing:not(.active).diagonal > toggle {
   font-weight: 400;
 }
 
+.product h3 span,
+.product h3 small {
+  padding: 5px 15px 10px 15px;
+  border-radius: 5px;
+  background-color: #2d261f;
+  display: inline-block;
+}
+
 .product p {
   font-weight: 400;
-  line-height: 1.3;
-  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.99);
+  line-height: 1.4;
+  text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.75),
+    0px 0px 10px rgba(0, 0, 0, 0.75),
+    0px 0px 30px rgba(0, 0, 0, 0.75),
+    0px 0px 30px rgba(0, 0, 0, 0.75);
   margin-bottom: 0.5rem;
   max-width: 35rem;
   margin-left: auto;
   margin-right: auto;
+  display: none;
 }
 
 .product.consulting:before {
-  background-position: center top;
+  background-position: center bottom;
+  /*background-attachment: scroll;*/
   background-image: url(../about/images/fjarrhandske_1920_badge.jpg);
 }
 
 .product.legacy:before {
-  background-position: right center;
+  background-position: right bottom;
+  /*background-attachment: scroll;*/
   background-image: url(../about/images/cropdusters_1920_badge.jpg);
 }
 
@@ -719,13 +956,15 @@ section.collapsing:not(.active).diagonal > toggle {
 }
 
 .product.psd2html:before {
-  background-position: center center;
+  background-position: right center;
+  /*background-attachment: scroll;*/
   background-image: url(../about/images/by_warmachines1_2560.jpg);
 }
 
 @media (min-width: 768px) {
   .product h3 {
     font-weight: 300;
+    /*font-size: 2.5rem;*/
   }
 
   .product h3 small {
@@ -733,7 +972,7 @@ section.collapsing:not(.active).diagonal > toggle {
   }
 
   .product p {
-    font-weight: 300;
+    /*font-weight: 300;*/
   }
 }
 

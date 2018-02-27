@@ -131,8 +131,27 @@ h5 {
   font-family: 'PeterSkoropis';
 }
 
+.lovers {
+  font-family: 'Lovers Quarrel';
+}
+
+.meddon {
+  font-family: 'Meddon';
+}
+
 h3.peter {
   font-size: 2rem;
+}
+
+h3.lovers {
+  font-size: 4rem;
+  line-height: 4rem;
+}
+
+h3.meddon {
+  font-size: 2rem;
+  line-height: 2rem;
+  margin-top: 1.5rem;
 }
 
 .lead {
@@ -258,4 +277,14 @@ article p:last-child {
   /*color: whitesmoke;*/
   font-size: 75%;
   font-weight: 600;
+}
+
+/* anchor */
+
+.anchor {
+  position: relative;
+  top: -3rem;
+  height: 0px;
+  line-height: 0px;
+  font-size: 0px;
 }

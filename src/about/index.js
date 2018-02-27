@@ -16,3 +16,4 @@ import './footer.css';
 // Javascript
 import 'mr-fontfit';
 import './works.js';
+import './navbar.js';

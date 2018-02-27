@@ -20,6 +20,10 @@ module.exports = {
     new ExtractTextPlugin('about/index.css'),
     new HtmlWebpackPlugin({
       template: './index.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './index-en.html',
+      filename: './index-en.html'
     })
   ],
   module: {
@@ -44,6 +48,11 @@ module.exports = {
       {
         test: /\.html$/,
         use: ['html-loader']
+      },
+      {
+        test: /\.js$/,
+        // exclude: /node_modules/,
+        use: ['babel-loader']
       }
     ]
   }
