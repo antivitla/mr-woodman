@@ -1,0 +1,108 @@
+.product {
+  min-height: 400px;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-bottom: solid #dfd7b2 2px;
+  background-color: #dfd7b2;
+  position: relative;
+  overflow: hidden;
+}
+
+.product:last-child {
+  border-bottom: none;
+}
+
+.product:before {
+  content: " ";
+  position: absolute;
+  z-index: 0;
+  left: -1rem;
+  top: -1rem;
+  right: -1rem;
+  bottom: -1rem;
+  background-position: left top;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #e4d8a0;
+  background-blend-mode: multiply;
+}
+
+.product-z:hover:before {
+  filter: blur(0px) brightness(0.875);
+  transform: scale(1.1, 1.1);
+}
+
+.product > * {
+  position: relative;
+  z-index: 1;
+}
+
+.product h3 {
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.product h3 small {
+  font-size: 75%;
+  font-weight: 400;
+}
+
+.product h3 span,
+.product h3 small {
+  padding: 5px 15px 10px 15px;
+  border-radius: 2px;
+  background-color: #2d261f;
+  display: inline-block;
+}
+
+.product p {
+  font-weight: 400;
+  line-height: 1.4;
+  text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.75),
+    0px 0px 10px rgba(0, 0, 0, 0.75),
+    0px 0px 30px rgba(0, 0, 0, 0.75),
+    0px 0px 30px rgba(0, 0, 0, 0.75);
+  margin-bottom: 0.5rem;
+  max-width: 35rem;
+  margin-left: auto;
+  margin-right: auto;
+  display: none;
+}
+
+.product.consulting:before {
+  background-image: url(images/fjarrhandske_1920_badge.jpg);
+}
+
+.product.legacy:before {
+  background-image: url(images/cropdusters_1920_badge.jpg);
+}
+
+.product.projects:before {
+  background-image: url(images/by_crossing_2560.jpg);
+}
+
+.product.psd2html:before {
+  background-image: url(images/by_warmachines1_2560.jpg);
+}
+
+@media (min-width: 768px) {
+  .product h3 {
+    font-weight: 300;
+  }
+
+  .product h3 small {
+    font-weight: 200;
+  }
+}
+
+@media (min-width: 992px) {
+  .product:first-child,
+  .product:nth-child(3) {
+    border-right: solid #dfd7b2 2px;
+  }
+}

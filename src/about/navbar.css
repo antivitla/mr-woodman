@@ -1,0 +1,121 @@
+#navbar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  text-align: center;
+  z-index: 100;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+#navbar a {
+  box-shadow: none;
+}
+
+#navbar .toggle {
+  position: relative;
+  z-index: 2;
+  box-sizing: border-box;
+  padding: 12px 15px;
+  line-height: 24px;
+  width: 48px;
+  height: 48px;
+  display: block;
+  margin-left: 0;
+  margin-right: auto;
+  box-shadow: none !important;
+  color: white;
+}
+
+.not-first-screen #navbar .toggle {
+  /*background-color: #54443a;*/
+  color: #54443a;
+  background-color: whitesmoke;
+}
+
+.products-section-visible #navbar .toggle {
+  color: white;
+  background-color: #54443a;
+}
+
+.projects-section-visible #navbar .toggle {
+  color: #54443a;
+  background-color: #efdcb2;
+}
+
+.navbar-active #navbar .toggle {
+  color: white;
+  background-color: #71928c;
+}
+
+#navbar ul li a {
+  display: block;
+  padding: 12px 15px;
+  line-height: 24px;
+  width: 48px;
+  height: 48px;
+  color: rgba(255, 255, 255, 0.75);
+  background-color: #54443a;
+  font-weight: 400;
+  text-align: center;
+}
+
+#navbar a:hover {
+  color: white;
+}
+
+#navbar a.active {
+  color: #54443a;
+  background-color: white;
+}
+
+#navbar ul li a.free {
+  width: auto;
+}
+
+#navbar ul li a.no-h-padding {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+#navbar ul li a span {
+  display: none;
+}
+
+#navbar ul.menu {
+  position: relative;
+  z-index: 1;
+  transform: translateY(-100%);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s;
+}
+
+#navbar ul.language {
+  position: fixed;
+  z-index: 1;
+  transform: translateX(-100%);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s;
+  top: 0px;
+  left: 47px;
+}
+
+#navbar ul.language a {
+  background-color: #71928c;
+  color: white;
+}
+
+.navbar-active #navbar ul.menu {
+  transform: translateY(0%);
+  pointer-events: all;
+  opacity: 1;
+  transition: all 0.3s;
+}
+
+.navbar-active #navbar ul.language {
+  transform: translateX(0%);
+  pointer-events: all;
+  opacity: 1;
+  transition: all 0.3s;
+}

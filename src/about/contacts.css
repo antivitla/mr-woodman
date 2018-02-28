@@ -1,0 +1,158 @@
+@charset "utf-8";
+
+#contacts {
+  background: #d1c9b0 url("images/crimea-koktebel-1939.jpg") center -8rem;
+  /*background-image: url("images/wivi.jpg");*/
+  background-size: cover;
+  background-position: left bottom;
+  background-attachment: fixed;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  min-height: 100vh;
+  box-sizing: border-box;
+  font-weight: 400;
+  color: white;
+  text-shadow: -1px -1px 2px rgba(255,255,255,0.25),
+        1px -1px 2px rgba(255,255,255,0.25),
+        -1px 1px 2px rgba(255,255,255,0.25),
+        1px 1px 2px rgba(255,255,255,0.25);
+  /*z-index: 10;*/
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+
+#contacts:before {
+  /*content: " ";*/
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f0dcb7+0,f0dcb7+100&0.2+1,0.6+31,0.6+71,0.2+100 */
+  background: -moz-linear-gradient(left, rgba(240,220,183,0.2) 0%, rgba(240,220,183,0.2) 1%, rgba(240,220,183,0.6) 31%, rgba(240,220,183,0.6) 71%, rgba(240,220,183,0.2) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, rgba(240,220,183,0.2) 0%,rgba(240,220,183,0.2) 1%,rgba(240,220,183,0.6) 31%,rgba(240,220,183,0.6) 71%,rgba(240,220,183,0.2) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, rgba(240,220,183,0.2) 0%,rgba(240,220,183,0.2) 1%,rgba(240,220,183,0.6) 31%,rgba(240,220,183,0.6) 71%,rgba(240,220,183,0.2) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#33f0dcb7', endColorstr='#33f0dcb7',GradientType=1 ); /* IE6-9 */
+}
+
+/*#contacts > * {
+  z-index: 1;
+  position: relative;
+}*/
+
+#contacts .avatar {
+  width: 9.5rem;
+  height: 9.5rem;
+  border-radius: 30%;
+  border: solid #ffffff 0.25rem;
+  position: relative;
+  box-shadow: 0px 0px 0px 1px rgba(0,0,0,0.1), 0px 2px 7px 0px rgba(0,0,0,0.1);
+  margin-right: 1.75rem;
+  margin-left: 1.75rem;
+}
+
+#contacts .card {
+  display: inline-block;
+  min-height: 10.5rem;
+}
+
+#contacts a,
+#contacts toggle {
+  box-shadow: 0px 1px 0px 0px rgba(0,0,0,0.2);
+}
+
+#contacts a:hover,
+#contacts toggle:hover {
+  box-shadow: 0px 1px 0px 0px rgba(0,0,0,0.5);
+}
+
+#contacts .card > img {
+  display: inline-block;
+  vertical-align: top;
+}
+
+#contacts .card > figcaption {
+  width: 22rem;
+  display: inline-block;
+  vertical-align: top;
+  text-align: left;
+}
+
+#contacts .card figcaption:nth-child(1) {
+  text-align: right;
+  padding-top: 1.75rem;
+}
+
+#contacts .card figcaption:nth-child(3) {
+  text-align: left;
+  padding-top: 3.25rem;
+}
+
+#contacts h2 {
+  font-weight: 400;
+}
+
+@media screen and (max-width: 1200px) {
+  #contacts {
+    padding-top: 3rem;
+    /*height: 18rem;*/
+  }
+
+  #contacts h2 {
+    font-size: 1.618rem;
+    line-height: 3rem;
+  }
+
+  #contacts .card figcaption {
+    width: 15rem;
+  }
+
+  #contacts img[alt="Виталий Кулешин"] {
+    margin-left: 1.15rem;
+    margin-right: 1.15rem;
+    width: 9.5rem;
+    height: 9.5rem;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  #contacts {
+    height: auto;
+    overflow: hidden;
+    padding-top: 1.5rem;
+    padding-bottom: 7.5rem;
+  }
+
+  #contacts .card figcaption,
+  #contacts .card figcaption:nth-child(1),
+  #contacts .card figcaption:nth-child(3) {
+    display: block;
+    width: auto;
+    text-align: center;
+  }
+
+  #contacts .card figcaption:nth-child(1) {
+    margin-bottom: 12rem;
+    padding-top: 0;
+  }
+
+  #contacts .card figcaption:nth-child(3) {
+    padding-top: 1.5rem;
+  }
+
+  #contacts h2 {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    font-weight: 500;
+  }
+
+  #contacts img[alt="Виталий Кулешин"] {
+    position: absolute;
+    left: 50%;
+    margin-left: -5.25rem;
+    top: 7.25rem;
+  }
+}

@@ -1,0 +1,59 @@
+.profile-part {
+  padding: 2rem 0px;
+}
+
+.profile-part:first-child {
+  padding-top: 0rem;
+}
+
+.profile-part:last-child {
+  padding-bottom: 0rem;
+}
+
+.profile-part-header {
+  margin-bottom: 3rem;
+}
+
+.profile-part-header img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.profile-part-header [class*="fa-"] + h3 {
+  margin-top: 0.5rem;
+}
+
+@media (min-width: 576px) {
+  .profile-part {
+    padding: 3rem 0px;
+  }
+}
+
+@media (min-width: 768px) {
+  .profile-part-header:not(.no-image) {
+    margin-bottom: 0rem;
+  }
+
+  .profile-part-body:not(.no-image) {
+    padding-top: 6rem;
+  }
+
+  .profile-part-body[class*="col-"] {
+    padding-top: 10rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .profile-part img.man {
+    height: 520px;
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 1600px) {
+  .profile-part img.man {
+    height: 600px;
+  }
+}
