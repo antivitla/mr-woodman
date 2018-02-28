@@ -293,14 +293,9 @@ article p:last-child {
 }
 #navbar {
   position: fixed;
-  right: 0;
+  left: 0;
   top: 0;
   text-align: center;
-  /*width: 100%;*/
-  /*width: 45px;*/
-  /*box-sizing: border-box;*/
-  /*padding: 10px 15px;*/
-  /*line-height: 24px;*/
   z-index: 100;
   color: rgba(255, 255, 255, 0.75);
 }
@@ -318,14 +313,35 @@ article p:last-child {
   width: 48px;
   height: 48px;
   display: block;
-  margin-left: auto;
-  margin-right: 0;
-  background-color: #54443a;
+  margin-left: 0;
+  margin-right: auto;
   box-shadow: none !important;
+  color: white;
+}
+
+.not-first-screen #navbar .toggle {
+  /*background-color: #54443a;*/
+  color: #54443a;
+  background-color: whitesmoke;
+}
+
+.products-section-visible #navbar .toggle {
+  color: white;
+  background-color: #54443a;
+}
+
+.projects-section-visible #navbar .toggle {
+  color: #54443a;
+  background-color: #efdcb2;
+}
+
+.navbar-active #navbar .toggle {
+  color: white;
+  background-color: #71928c;
 }
 
 #navbar ul li a {
-  display: inline-block;
+  display: block;
   padding: 12px 15px;
   line-height: 24px;
   width: 48px;
@@ -358,7 +374,7 @@ article p:last-child {
   display: none;
 }
 
-#navbar ul.top {
+#navbar ul.menu {
   position: relative;
   z-index: 1;
   transform: translateY(-100%);
@@ -367,25 +383,31 @@ article p:last-child {
   transition: all 0.3s;
 }
 
-#navbar ul.bottom {
+#navbar ul.language {
   position: fixed;
-  bottom: 0;
-  right: 0;
   z-index: 1;
-  transform: translateY(100%);
+  transform: translateX(-100%);
   opacity: 0;
   pointer-events: none;
   transition: all 0.3s;
+  top: 0px;
+  left: 47px;
 }
 
-#navbar ul.bottom a {
-  /*background-color: #71928c;*/
+#navbar ul.language a {
+  background-color: #71928c;
+  color: white;
 }
 
-.navbar-active #navbar ul.top,
-.navbar-active #navbar ul.bottom {
-  display: block;
+.navbar-active #navbar ul.menu {
   transform: translateY(0%);
+  pointer-events: all;
+  opacity: 1;
+  transition: all 0.3s;
+}
+
+.navbar-active #navbar ul.language {
+  transform: translateX(0%);
   pointer-events: all;
   opacity: 1;
   transition: all 0.3s;
@@ -643,11 +665,6 @@ section.collapsing:not(.active).diagonal > toggle {
 }
 */
 #welcome {
-  /*background-color: #dfd7b2;*/
-  /*background-image: url(images/crimea-koktebel-1939.jpg);*/
-  /*background-position: center center;*/
-  /*background-attachment: fixed;*/
-  /*background-size: cover;*/
   text-align: center;
   color: white;
   font-weight: 400;
@@ -673,8 +690,6 @@ section.collapsing:not(.active).diagonal > toggle {
   background-attachment: fixed;
   background-size: cover;
   background-blend-mode: multiply;
-  /*filter: brightness(0.875);*/
-  /*opacity: 0.95;*/
 }
 
 #welcome:after {
@@ -730,8 +745,6 @@ section.collapsing:not(.active).diagonal > toggle {
   margin-top: -2px;
 }
 
-
-
 #welcome .my-card-name h3 span,
 #welcome .my-card-title h3 span {
   padding: 3px 15px 8px 15px;
@@ -765,10 +778,6 @@ section.collapsing:not(.active).diagonal > toggle {
 
 #welcome .my-card-title p {
   line-height: 1.3;
-}
-
-#welcome .my-card-title h3 {
-  /*margin-bottom: -2px;*/
 }
 
 @media (min-width: 1200px) {
@@ -861,14 +870,6 @@ section.collapsing:not(.active).diagonal > toggle {
   overflow: hidden;
 }
 
-/*.product .container {
-  background-color: rgba(255, 255, 255, 0.75);
-  border-radius: 10px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  color: #333;
-}*/
-
 .product:last-child {
   border-bottom: none;
 }
@@ -887,11 +888,6 @@ section.collapsing:not(.active).diagonal > toggle {
   background-repeat: no-repeat;
   background-color: #e4d8a0;
   background-blend-mode: multiply;
-  /*filter: blur(0px);*/
-  /*opacity: 0.875;*/
-  /*filter: blur(2px) brightness(0.75);*/
-  /*transform: scale(1.0, 1.0);*/
-  /*transition: all 1s;*/
 }
 
 .product-z:hover:before {
@@ -906,8 +902,6 @@ section.collapsing:not(.active).diagonal > toggle {
 
 .product h3 {
   font-weight: 600;
-/*  text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.625),
-    0px 0px 10px rgba(0, 0, 0, 0.5);*/
   margin-bottom: 1.5rem;
 }
 
@@ -919,7 +913,7 @@ section.collapsing:not(.active).diagonal > toggle {
 .product h3 span,
 .product h3 small {
   padding: 5px 15px 10px 15px;
-  border-radius: 5px;
+  border-radius: 2px;
   background-color: #2d261f;
   display: inline-block;
 }
@@ -939,40 +933,28 @@ section.collapsing:not(.active).diagonal > toggle {
 }
 
 .product.consulting:before {
-  background-position: center bottom;
-  /*background-attachment: scroll;*/
   background-image: url(../about/images/fjarrhandske_1920_badge.jpg);
 }
 
 .product.legacy:before {
-  background-position: right bottom;
-  /*background-attachment: scroll;*/
   background-image: url(../about/images/cropdusters_1920_badge.jpg);
 }
 
 .product.projects:before {
-  /*background-attachment: scroll;*/
   background-image: url(../about/images/by_crossing_2560.jpg);
 }
 
 .product.psd2html:before {
-  background-position: right center;
-  /*background-attachment: scroll;*/
   background-image: url(../about/images/by_warmachines1_2560.jpg);
 }
 
 @media (min-width: 768px) {
   .product h3 {
     font-weight: 300;
-    /*font-size: 2.5rem;*/
   }
 
   .product h3 small {
     font-weight: 200;
-  }
-
-  .product p {
-    /*font-weight: 300;*/
   }
 }
 
@@ -1168,7 +1150,7 @@ section.collapsing:not(.active).diagonal > toggle {
 }
 
 .work-header-group p.lead {
-  max-width: 30em;
+  max-width: 35em;
   margin-left: auto;
   margin-right: auto;
 }

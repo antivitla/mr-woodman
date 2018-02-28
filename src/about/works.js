@@ -12,7 +12,8 @@ works.app = new Vue({
       workId: 0,
       pageId: 0,
       domain: 'http://works.mr-woodman.ru/',
-      devices: ['desktop', 'tablet', 'mobile']
+      devices: ['desktop', 'tablet', 'mobile'],
+      lang: 'ru',
     };
   },
   created () {
@@ -25,11 +26,18 @@ works.app = new Vue({
         this.workId = works.data.length - 1;
       }
     }
+    this.lang = document.documentElement.getAttribute('lang') || 'en';
   },
   computed: {
     work: function () {
       var work = works.data[works.data.length - this.workId - 1];
       return work || works.data[works.data.length - 1];
+    },
+    workTitle: function () {
+      return typeof this.work.title === 'string' ? this.work.title : this.work.title[this.lang];
+    },
+    workDescription: function () {
+      return typeof this.work.description === 'string' ? this.work.description : this.work.description[this.lang];
     },
     page: function () {
       return this.work.pages[this.pageId];

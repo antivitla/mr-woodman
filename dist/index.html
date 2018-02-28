@@ -9,7 +9,7 @@
 <body>
   <nav id="navbar" class="navbar">
     <a class="toggle"><i class="fas fa-bars"></i></a>
-    <ul class="top">
+    <ul class="menu">
       <li><a href="#welcome"><i class="fas fa-home"></i><span>Welcome</span></a></li>
       <li><a href="#skills"><i class="fas fa-chess-queen"></i><span>Skills</span></a></li>
       <li><a href="#instruments"><i class="fas fa-chess-knight"></i><span>Instruments</span></a></li>
@@ -18,8 +18,8 @@
       <li><a href="#products"><i class="fas fa-medkit"></i><span>Products</span></a></li>
       <li><a href="#projects"><i class="fab fa-github"></i><span>Crafts</span></a></li>
     </ul>
-    <ul class="bottom">
-      <li><a href="index-en.html" class="no-h-padding">EN</a></li>
+    <ul class="language">
+      <li><a href="index-en.html" class="free">switch to <strong>english</strong></a></li>
     </ul>
   </nav>
   <main>
@@ -66,7 +66,7 @@
               </li>
               <li>
                 <div><i class="far fa-flag"></i></div>
-                <div>Оценка сроков и затрат, в т. ч. для сложных и неизвестных для команды задач.</div>
+                <div>Оценка сроков и затрат, в т. ч. для сложных и неизвестных для команды задач</div>
               </li>
               <li>
                 <div><i class="far fa-flag"></i></div>
@@ -78,11 +78,11 @@
               </li>
               <li>
                 <div><i class="far fa-flag"></i></div>
-                <div>Планирование, разбиение на этапы, расстановка приоритетов и формулирование задач.</div>
+                <div>Планирование, разбиение на этапы, расстановка приоритетов и формулирование задач</div>
               </li>
               <li>
                 <div><i class="far fa-flag"></i></div>
-                <div>Каждой ситуации &mdash; свой баланс перфекционизма <strong>vs</strong> скорости.</div>
+                <div>Каждой ситуации &mdash; свой баланс перфекционизма <strong>vs</strong> скорости</div>
               </li>
               <li>
                 <div><i class="fas fa-flag"></i></div>
@@ -116,27 +116,6 @@
                 <div><i class="fab fa-js-square"></i></div>
                 <div>JavaScript: Vanilla, jQuery, Angular 1.x/<small>2 (in progress)</small>, Vue.js/Vuex, <small>React/Redux/RxJS (in-progress)</small></div>
               </li>
-<!--               <li>
-                <div><i class="fab fa-vuejs"></i></div>
-                <div>Vue.js/Vuex</div>
-              </li>
-              <li>
-                <div><i class="fab fa-angular"></i></div>
-                <div>Angular 1.x, <small>Angular 2.x <span class="badge">в процессе</span></small></div>
-              </li>
-               <li>
-                <div><i class="fab fa-react"></i></div>
-                <div><small>React+Redux+RxJS <span class="badge">в процессе</span></small></div>
-              </li> -->
-
-<!--               <li>
-                <div><i class="fab fa-npm"></i></div>
-                <div>Gulp, Webpack, Yeoman</div>
-              </li> -->
-<!--               <li>
-                <div><i class="fas fa-code-branch"></i></div>
-                <div>Git</div>
-              </li> -->
               <li>
                 <div><i class="fas fa-link"></i></div>
                 <div>Интеграция соцсетей и сторонних сервисов (Facebook, VK, Google, Yandex, Github, etc.)</div>
@@ -149,30 +128,6 @@
                 <div><i class="fas fa-server"></i></div>
                 <div><small>Python/Django/DRF, Node.js, Ruby/Rails, PostgeSQL, Firebase</small></div>
               </li>
-<!--               <li>
-                <div>&nbsp;</div>
-                <div>
-                  <p>&nbsp;</p>
-                  <div>
-                    <i class="fab fa-docker fa-lg"></i> &nbsp;
-                    <i class="fab fa-git fa-lg"></i> &nbsp;
-                    <i class="fab fa-npm fa-lg"></i> &nbsp;
-                    <i class="fab fa-gulp fa-lg"></i> &nbsp; ...
-                  </div>
-                </div>
-              </li> -->
-<!--               <li>
-                <div><i class="fas fa-check"></i></div>
-                <div>учу: Angular 2.x, React, RxJS, больше интеграций</div>
-              </li>
-              <li>
-                <div><i class="fas fa-check"></i></div>
-                <div>гуру: CSS/HTML/PSD2HTML</div>
-              </li>
-              <li>
-                <div><i class="fas fa-minus"></i></div>
-                <div>Освоить <a href="http://reactivex.io/rxjs/" target="_blank">RxJS</a>, React/Redux, Python/Django, Ruby/Rails, PostgreSQL</>
-              </li> -->
             </ul>
           </div>
         </div>
@@ -184,8 +139,8 @@
       <div v-bind:class="['current-work', { desktop: hasDevice(work, 'desktop') }, { tablet: hasDevice(work, 'tablet') }, { mobile: hasDevice(work, 'mobile') }]">
         <!-- Title -->
         <div class="work-header-group text-center container">
-          <h1 class="work-title">{{work.title}}</h1>
-          <p class="lead" v-html="work.description"></p>
+          <h1 class="work-title">{{workTitle}}</h1>
+          <p class="lead" v-html="workDescription"></p>
           <p>&nbsp;</p>
           <p>
             <small>

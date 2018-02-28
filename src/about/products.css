@@ -55,7 +55,7 @@
 .product h3 span,
 .product h3 small {
   padding: 5px 15px 10px 15px;
-  border-radius: 5px;
+  border-radius: 2px;
   background-color: #2d261f;
   display: inline-block;
 }

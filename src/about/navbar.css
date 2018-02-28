@@ -1,6 +1,6 @@
 #navbar {
   position: fixed;
-  right: 0;
+  left: 0;
   top: 0;
   text-align: center;
   z-index: 100;
@@ -20,14 +20,35 @@
   width: 48px;
   height: 48px;
   display: block;
-  margin-left: auto;
-  margin-right: 0;
-  background-color: #54443a;
+  margin-left: 0;
+  margin-right: auto;
   box-shadow: none !important;
+  color: white;
+}
+
+.not-first-screen #navbar .toggle {
+  /*background-color: #54443a;*/
+  color: #54443a;
+  background-color: whitesmoke;
+}
+
+.products-section-visible #navbar .toggle {
+  color: white;
+  background-color: #54443a;
+}
+
+.projects-section-visible #navbar .toggle {
+  color: #54443a;
+  background-color: #efdcb2;
+}
+
+.navbar-active #navbar .toggle {
+  color: white;
+  background-color: #71928c;
 }
 
 #navbar ul li a {
-  display: inline-block;
+  display: block;
   padding: 12px 15px;
   line-height: 24px;
   width: 48px;
@@ -60,7 +81,7 @@
   display: none;
 }
 
-#navbar ul.top {
+#navbar ul.menu {
   position: relative;
   z-index: 1;
   transform: translateY(-100%);
@@ -69,25 +90,31 @@
   transition: all 0.3s;
 }
 
-#navbar ul.bottom {
+#navbar ul.language {
   position: fixed;
-  bottom: 0;
-  right: 0;
   z-index: 1;
-  transform: translateY(100%);
+  transform: translateX(-100%);
   opacity: 0;
   pointer-events: none;
   transition: all 0.3s;
+  top: 0px;
+  left: 47px;
 }
 
-#navbar ul.bottom a {
-  /*background-color: #71928c;*/
+#navbar ul.language a {
+  background-color: #71928c;
+  color: white;
 }
 
-.navbar-active #navbar ul.top,
-.navbar-active #navbar ul.bottom {
-  display: block;
+.navbar-active #navbar ul.menu {
   transform: translateY(0%);
+  pointer-events: all;
+  opacity: 1;
+  transition: all 0.3s;
+}
+
+.navbar-active #navbar ul.language {
+  transform: translateX(0%);
   pointer-events: all;
   opacity: 1;
   transition: all 0.3s;

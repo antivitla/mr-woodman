@@ -54,13 +54,13 @@ const data = [
     devices: "desktop",
     alive: "http://mashushka.com"
   },
-  {
-    title: "Western Union",
-    path: "2010-05--aries--western-union/www/",
-    pages: ["wu-search-mainpage.html","wu-search-citiespage.html","wu-search-officepage.html"],
-    description: "Поиск офисов",
-    devices: "desktop"
-  },
+  // {
+  //   title: "Western Union",
+  //   path: "2010-05--aries--western-union/www/",
+  //   pages: ["wu-search-mainpage.html","wu-search-citiespage.html","wu-search-officepage.html"],
+  //   description: "Поиск офисов",
+  //   devices: "desktop"
+  // },
   {
     title: "Друидский калькулятор",
     path: "2010-06--krvss--resto-druid-healer-calculator/www/",
@@ -76,27 +76,27 @@ const data = [
     description: "Интернет-магазин прикольных безделушек",
     devices: "desktop"
   },
-  // {
-  //   title: "Nia Style",
-  //   path: "2010-09--eugene-mesherjakov--nia-style/www/",
-  //   pages: ["nia-style-default.html","nia-style-art.html","nia-style-cat1.html","nia-style-cat2.html","nia-style-text.html"],
-  //   description: "Что-то несусветное (<q>ня-стайл</q>??), но такое я тоже верстаю",
-  //   devices: "desktop",
-  // },
-  // {
-  //   title: "SmartTrans",
-  //   path: "2010-10--al-niko--smarttrans/www/",
-  //   pages: ["smarttrans-about.html"],
-  //   description: "Это не транспорт, это языковые переводы",
-  //   devices: "desktop",
-  // },
-  // {
-  //   title: "UniCredit",
-  //   path: "2010-11--dasha-karandasheva--unicredit-widget/www/",
-  //   pages: ["index.html"],
-  //   description: "Виджет для Mac",
-  //   devices: "desktop",
-  // },
+  {
+    title: "Nia Style",
+    path: "2010-09--eugene-mesherjakov--nia-style/www/",
+    pages: ["nia-style-default.html","nia-style-art.html","nia-style-cat1.html","nia-style-cat2.html","nia-style-text.html"],
+    description: "Что-то несусветное (<q>ня-стайл</q>??), но такое я тоже верстаю",
+    devices: "desktop",
+  },
+  {
+    title: "SmartTrans",
+    path: "2010-10--al-niko--smarttrans/www/",
+    pages: ["smarttrans-about.html"],
+    description: "Это не транспорт, это языковые переводы",
+    devices: "desktop",
+  },
+  {
+    title: "UniCredit",
+    path: "2010-11--dasha-karandasheva--unicredit-widget/www/",
+    pages: ["index.html"],
+    description: "Виджет для Mac",
+    devices: "desktop",
+  },
   {
     title: "Mr. Woodman v1.0",
     path: "2010-xx--mr-woodman-v1/www/",
@@ -111,13 +111,13 @@ const data = [
     description: "Скромно но мило",
     devices: "desktop",
   },
-  // {
-  //   title: "YogaDa",
-  //   path: "2011-05--seanat--yogada/www/",
-  //   pages: ["yogada-main.html","yogada-404.html","yogada-all-users.html","yogada-blog.html","yogada-blog-post.html","yogada-blogs.html","yogada-blogs-all-entries.html","yogada-blogs-newpost.html","yogada-comments.html","yogada-eastpractices.html","yogada-freedive.html","yogada-main-login.html","yogada-meroprijatija.html","yogada-news.html","yogada-photo.html","yogada-photos.html","yogada-photos-album.html","yogada-places.html","yogada-profile.html","yogada-search-results.html","yogada-text.html","yogada-text-print.html","yogada-texts.html","yogada-theme.html","yogada-themes.html","yogada-travel.html","yogada-videos.html","yogada-zaglushka.html"],
-  //   description: "Переусложненный сайт, ошеломляющее ведение проекта. #МильярдШаблонов, #МильярдПравок",
-  //   devices: "desktop",
-  // },
+  {
+    title: "YogaDa",
+    path: "2011-05--seanat--yogada/www/",
+    pages: ["yogada-main.html","yogada-404.html","yogada-all-users.html","yogada-blog.html","yogada-blog-post.html","yogada-blogs.html","yogada-blogs-all-entries.html","yogada-blogs-newpost.html","yogada-comments.html","yogada-eastpractices.html","yogada-freedive.html","yogada-main-login.html","yogada-meroprijatija.html","yogada-news.html","yogada-photo.html","yogada-photos.html","yogada-photos-album.html","yogada-places.html","yogada-profile.html","yogada-search-results.html","yogada-text.html","yogada-text-print.html","yogada-texts.html","yogada-theme.html","yogada-themes.html","yogada-travel.html","yogada-videos.html","yogada-zaglushka.html"],
+    description: "Переусложненный сайт, ошеломляющее ведение проекта. #МильярдШаблонов, #МильярдПравок",
+    devices: "desktop",
+  },
   {
     title: "Лекция Ahmad Tea",
     path: "2011-07--samartsev--ahmad-tea-lecture/www/",
@@ -235,7 +235,6 @@ const data = [
     description: "Помороченный информационный сайт по турнирам",
     devices: "desktop",
   },
-
   {
     title: "Територрия удовольствия",
     path: "2012-xx--dima-komissarov--terra-pleasure/www/",
@@ -297,20 +296,20 @@ const data = [
     devices: "desktop",
     alive: "http://choister.ru/modules/infographics/"
   },
-  // {
-  //   title: "Панорама",
-  //   path: "2013-10--masha-niggol--panorama/www/",
-  //   pages: ["index.html"],
-  //   description: "Недоделка основе моего движка панорам. #jQuery-плагин, #Поморочка",
-  //   devices: "desktop"
-  // },
-  // {
-  //   title: "Сайт таблеток от красоты",
-  //   path: "2013-xx--melis--medical/www/",
-  //   pages: ["index.html", "triumph.html","mesotherapy.html","contact.html","beautelle.html"],
-  //   description: "Чтоб богатые старухи казались красивей чем они есть на самом деле.",
-  //   devices: "desktop"
-  // },
+  {
+    title: "Панорама",
+    path: "2013-10--masha-niggol--panorama/www/",
+    pages: ["index.html"],
+    description: "Недоделка основе моего движка панорам. #jQuery-плагин, #Поморочка",
+    devices: "desktop"
+  },
+  {
+    title: "Сайт таблеток от красоты",
+    path: "2013-xx--melis--medical/www/",
+    pages: ["index.html", "triumph.html","mesotherapy.html","contact.html","beautelle.html"],
+    description: "Чтоб богатые старухи казались красивей чем они есть на самом деле.",
+    devices: "desktop"
+  },
   {
     title: "Кото-интерактив Ahmad Tea",
     path: "2013-xx--masha-niggol--ahmad-catanimation/www/",
@@ -449,13 +448,13 @@ const data = [
     description: "Мета-модное молоко и козы, лендинг.",
     devices: "desktop tablet mobile"
   },
-  // {
-  //   title: "Shedule Edit",
-  //   path: "2014-xx--apollo--schedit/www/",
-  //   pages: ["index.html"],
-  //   description: "Редактирование таблицы — запчасть для админки. #Angularjs",
-  //   devices: "desktop"
-  // },
+  {
+    title: "Shedule Edit",
+    path: "2014-xx--apollo--schedit/www/",
+    pages: ["index.html"],
+    description: "Редактирование таблицы — запчасть для админки. #Angularjs",
+    devices: "desktop"
+  },
   {
     title: "ООО «Проминжиниринг»",
     path: "2015-01--slava-komarov--promengineering/www/",
@@ -542,10 +541,13 @@ const data = [
     devices: "desktop tablet mobile"
   },
   {
-    title: "Устройства 4Good",
+    title: {
+      ru: "Устройства 4Good",
+      en: "4Good devices"
+    },
     path: "2016-05--andreikis--4good/www/",
     pages: ["pages/4good-home.html", "pages/4good-blog.html", "pages/4good-catalog.html", "pages/4good-components.html", "pages/4good-contacts.html", "pages/4good-faq-search-results.html", "pages/4good-faq.html", "pages/4good-feedback.html", "pages/4good-notification.html", "pages/4good-post.html", "pages/4good-product.html", "pages/4good-service.html", "pages/4good-software-and-docs.html", "pages/4good-where-to-buy.html"],
-    description: "ss",
+    description: "",
     devices: "desktop tablet mobile",
     alive: "https://4good.ru"
   },
@@ -557,10 +559,16 @@ const data = [
   //   devices: "desktop"
   // },
   {
-    title: "Scoblimora",
+    title: {
+      en: "Scoblimora (Skyrim Alchemy)",
+      ru: "Scoblimora"
+    },
     path: "2017-12--vitaly-kuleshin--titamota/www/",
     pages: ["http://mr-woodman.ru/scoblimora"],
-    description: "Алхимический помощник для Skyrim, всем фус-ро-да в этом чате. #Vuejs",
+    description: {
+      ru: "Алхимический помощник для Skyrim. И тебе fus-ro-dah, Довакин. #Vuejs",
+      en: "Meet Skyrim Alchemy Helper. Something very complicated, even I did not fully understand it. #Vuejs"
+    },
     devices: "desktop tablet mobile",
     alive: "http://mr-woodman.ru/scoblimora"
   },
@@ -568,7 +576,10 @@ const data = [
     title: "Titamota",
     path: "2017-12--vitaly-kuleshin--titamota/www/",
     pages: ["http://titamota.ru", "http://mr-woodman.ru/titamota"],
-    description: "",
+    description: {
+      ru: "Таймтрекер. Кто знает, тот фанат. Выступил фулстек-программистом (заодно и база/бэкенд/авторизация). #Vuejs, #Django/Python/DRF/PostgreSQL, #Docker",
+      en: "Freelance time-tracker. Proud UX and inner algrorythms. Being fullstack coder. #Vuejs, #Django/Python/DRF, #PostgreSQL, #Docker, #it-even-has-landing-page"
+    },
     devices: "desktop tablet mobile",
     alive: "http://titamota.ru"
   },
@@ -576,7 +587,10 @@ const data = [
     title: "Mr. Woodman v4.1",
     path: "2018-02--vitaly-kuleshin--mr-woodman/www/",
     pages: ["http://mr-woodman.ru"],
-    description: "dfsdfsdf",
+    description: {
+      ru: "Очередной апдейт. Добавлены работы за последние пару лет, вписаны новые тексты, и главное &mdash; оставлена iframe-РЕКУРСИЯ. #Vuejs, #Webpack, #frontend-porn",
+      en: "Another minor update. Added some works for last few years, text changes. Keeping cool recursion. #Vuejs, #Webpack, #Babel-porn"
+    },
     devices: "desktop tablet mobile",
     alive: "http://mr-woodman.ru"
   }

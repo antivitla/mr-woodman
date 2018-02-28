@@ -10,7 +10,7 @@
 <body>
   <nav id="navbar" class="navbar">
     <a class="toggle"><i class="fas fa-bars"></i></a>
-    <ul class="top">
+    <ul class="menu">
       <li><a href="#welcome"><i class="fas fa-home"></i><span>Welcome</span></a></li>
       <li><a href="#skills"><i class="fas fa-chess-queen"></i><span>Skills</span></a></li>
       <li><a href="#instruments"><i class="fas fa-chess-knight"></i><span>Instruments</span></a></li>
@@ -19,8 +19,8 @@
       <li><a href="#products"><i class="fas fa-medkit"></i><span>Products</span></a></li>
       <li><a href="#projects"><i class="fab fa-github"></i><span>Crafts</span></a></li>
     </ul>
-    <ul class="bottom">
-      <li><a href="index.html" class="free">Русский</a></li>
+    <ul class="language">
+      <li><a href="index.html" class="free">перейти на <strong>русский</strong></a></li>
     </ul>
   </nav>
   <main>
@@ -62,31 +62,31 @@
             <ul class="list-icon">
               <li>
                 <div><i class="far fa-flag"></i></div>
-                <div>Архитектура</div>
+                <div>Architecture</div>
               </li>
               <li>
                 <div><i class="far fa-flag"></i></div>
-                <div>Оценка сроков и затрат, в т. ч. для сложных и неизвестных для команды задач.</div>
+                <div>Adequate estimation of costs and terms, especially for new (relatively unknown) and complex tasks for the team</div>
               </li>
               <li>
                 <div><i class="far fa-flag"></i></div>
-                <div>Перевод застарелого кода на новые рельсы без даунтайма</div>
+                <div>Bring old &amp; time-worn code onto new rails; refactor code without downtime</div>
               </li>
               <li>
                 <div><i class="far fa-flag"></i></div>
-                <div>Доведение застопорившихся задач до результата</div>
+                <div>Develop the stalled tasks to satisfying results</div>
               </li>
               <li>
                 <div><i class="far fa-flag"></i></div>
-                <div>Планирование, разбиение на этапы, расстановка приоритетов и формулирование задач.</div>
+                <div>Planning, staging, prioritizing and setting tasks</div>
               </li>
               <li>
                 <div><i class="far fa-flag"></i></div>
-                <div>Каждой ситуации &mdash; свой баланс перфекционизма <strong>vs</strong> скорости.</div>
+                <div>Perfectionism <strong>vs</strong> speed balance in each situation</div>
               </li>
               <li>
                 <div><i class="fas fa-flag"></i></div>
-                <div><strong>Чувство прекрасного</strong></div>
+                <div><strong>Touch of Beauty</strong> perk</div>
               </li>
             </ul>
           </div>
@@ -106,7 +106,7 @@
               </li>
               <li>
                 <div><i class="fab fa-css3"></i></div>
-                <div>CSS: адаптивность, старые платформы, Bootstrap, Foundation, Skeleton, БЭМ, SASS, Stylus</div>
+                <div>CSS: adaptive, support old if needed, Bootstrap, Foundation, Skeleton, БЭМ, SASS, Stylus</div>
               </li>
               <li>
                 <div><i class="fas fa-image"></i></div>
@@ -116,30 +116,9 @@
                 <div><i class="fab fa-js-square"></i></div>
                 <div>JavaScript: Vanilla, jQuery, Angular 1.x/<small>2 (in progress)</small>, Vue.js/Vuex, <small>React/Redux/RxJS (in-progress)</small></div>
               </li>
-<!--               <li>
-                <div><i class="fab fa-vuejs"></i></div>
-                <div>Vue.js/Vuex</div>
-              </li>
-              <li>
-                <div><i class="fab fa-angular"></i></div>
-                <div>Angular 1.x, <small>Angular 2.x <span class="badge">в процессе</span></small></div>
-              </li>
-               <li>
-                <div><i class="fab fa-react"></i></div>
-                <div><small>React+Redux+RxJS <span class="badge">в процессе</span></small></div>
-              </li> -->
-
-<!--               <li>
-                <div><i class="fab fa-npm"></i></div>
-                <div>Gulp, Webpack, Yeoman</div>
-              </li> -->
-<!--               <li>
-                <div><i class="fas fa-code-branch"></i></div>
-                <div>Git</div>
-              </li> -->
               <li>
                 <div><i class="fas fa-link"></i></div>
-                <div>Интеграция соцсетей и сторонних сервисов (Facebook, VK, Google, Yandex, Github, etc.)</div>
+                <div>Social and other 3rd-party service integrations (Facebook, VK, Google, Yandex, Github, etc.)</div>
               </li>
               <li>
                 <div><i class="fas fa-cogs"></i></div>
@@ -149,30 +128,6 @@
                 <div><i class="fas fa-server"></i></div>
                 <div><small>Python/Django/DRF, Node.js, Ruby/Rails, PostgeSQL, Firebase</small></div>
               </li>
-<!--               <li>
-                <div>&nbsp;</div>
-                <div>
-                  <p>&nbsp;</p>
-                  <div>
-                    <i class="fab fa-docker fa-lg"></i> &nbsp;
-                    <i class="fab fa-git fa-lg"></i> &nbsp;
-                    <i class="fab fa-npm fa-lg"></i> &nbsp;
-                    <i class="fab fa-gulp fa-lg"></i> &nbsp; ...
-                  </div>
-                </div>
-              </li> -->
-<!--               <li>
-                <div><i class="fas fa-check"></i></div>
-                <div>учу: Angular 2.x, React, RxJS, больше интеграций</div>
-              </li>
-              <li>
-                <div><i class="fas fa-check"></i></div>
-                <div>гуру: CSS/HTML/PSD2HTML</div>
-              </li>
-              <li>
-                <div><i class="fas fa-minus"></i></div>
-                <div>Освоить <a href="http://reactivex.io/rxjs/" target="_blank">RxJS</a>, React/Redux, Python/Django, Ruby/Rails, PostgreSQL</>
-              </li> -->
             </ul>
           </div>
         </div>
@@ -184,12 +139,12 @@
       <div v-bind:class="['current-work', { desktop: hasDevice(work, 'desktop') }, { tablet: hasDevice(work, 'tablet') }, { mobile: hasDevice(work, 'mobile') }]">
         <!-- Title -->
         <div class="work-header-group text-center container">
-          <h1 class="work-title">{{work.title}}</h1>
-          <p class="lead" v-html="work.description"></p>
+          <h1 class="work-title">{{workTitle}}</h1>
+          <p class="lead" v-html="workDescription"></p>
           <p>&nbsp;</p>
           <p>
             <small>
-              <a v-bind:href="getPath(work)" target="_blank">вёрстка в новом окне</a>
+              <a v-bind:href="getPath(work)" target="_blank">open current page in new tab</a>
               &nbsp; <i class="fas fa-external-link-alt"></i> &nbsp;
               <a v-if="work.alive" v-bind:href="work.alive" target="_blank">{{getAlive(work)}}</a>
             </small>
@@ -214,22 +169,22 @@
         <div class="profile-part row justify-content-center">
           <div class="profile-part-header col-md-12 text-center no-image">
             <i class="fas fa-chess-bishop fa-3x"></i>
-            <h3 class="lovers">Will</h3>
+            <h3 class="lovers">Will to</h3>
             <p><img class="man" src="about/images/men_03.png" height="400"></p>
           </div>
           <div class="profile-part-body no-image">
             <ul class="list-icon">
               <li>
                 <div><i class="fas fa-asterisk"></i></div>
-                <div>Сделать свой сервис заметок (продолжение моего тайм-трекера <a href="https://titamota.ru/" target="_blank">Titamóta</a>)</div>
+                <div>Finish my notes service project (as continuation of <a href="https://titamota.ru/" target="_blank">Titamóta</a> tracker)</div>
               </li>
               <li>
                 <div><i class="fas fa-asterisk"></i></div>
-                <div>Писать десктопные приложения под Electron (потому что JavaScript)</div>
+                <div>Code desktop apps under Electron (because of JavaScript)</div>
               </li>
               <li>
                 <div><i class="fas fa-asterisk"></i></div>
-                <div>Уметь провести команду к удовлетворяющему результату</div>
+                <div>Be able to lead a team into satisfying fulfillment</div>
               </li>
             </ul>
             <p>&nbsp;</p>
@@ -243,27 +198,23 @@
       <div class="row">
         <div class="product consulting col-lg-5 text-center">
           <div class="container">
-            <h3><span style="background-color: #45525c;">Консультации</span></h3>
-            <p>Оценить и спланировать задачу. Куда копать, когда уткнулись в стену. Иногда нужное решение проще чем вы думали. Иногда гораздо сложней. В нашем деле главное &mdash; предсказуемость.</p>
+            <h3><small style="background-color: #45525c;">doing</small><br><span style="background-color: #45525c;">Consulting</span></h3>
             <p></p>
           </div>
         </div>
         <div class="product legacy col-lg-7  text-center">
           <div class="container">
-            <h3><span style="background-color: #a99b3f;">Поддержка Legacy &amp; Long Term</span></h3>
-            <p>Много доделать или переделать. Выйти из долгостроя. Ни один современный проект не является <q>сделал и забыл</q>, а суть живой процесс, который необходимо регулярно поливать.</p>
+            <h3><small style="background-color: #a99b3f;">supporting</small><br><span style="background-color: #a99b3f;">Legacy &amp; Long-term</span></h3>
           </div>
         </div>
         <div class="product projects col-lg-7 text-center">
           <div class="container">
-            <h3><span style="background-color: #e3332d;">Помощь с новыми проектами</span></h3>
-            <p>Море неизвестности, море энергии. Шлюпку молодого проекта предстоит провести между сциллой долгостроя мечты и харибдой унылого подражания. Нужен не просто опыт и знания, а умение их применить.</p>
+            <h3><small style="background-color: #e3332d;">helping with</small><br><span style="background-color: #e3332d;">New Projects</span></h3>
           </div>
         </div>
         <div class="product psd2html col-lg-5 text-center">
           <div class="container">
-            <h3><span>Вёрстка лендингов и шаблонов</span><br><small>PSD/Sketch &rarr; HTML &amp; CSS</small></h3>
-            <p>Когда-нибудь роботы будут делать за нас даже вёрстку. Но эти благословенные времена ещё не настали.</p>
+            <h3><small>oldschool</small><br><span>PSD/Sketch &rarr; HTML &amp; CSS</span></h3>
           </div>
         </div>
       </div>
@@ -281,42 +232,41 @@
           </div>
 
           <div class="project col-lg-7">
-            <h3>Тайм-трекер Titamóta</h3>
+            <h3><strong>Titamóta</strong>: time, tasks and money tracker</small></h3>
             <p><a href="http://titamota.ru" target="_blank"><i class="fas fa-link"></i> titamota.ru</a></p>
-            <p class="lead">Малый, ненавязчивый и мощный таймер времени и денег (сам пользуюсь). Авторизация через соцсети, хотя можно работать и локально. Легкое манипулирование деревом тасков любой вложенности через "командную строку" таймера. Мой многолетний живой проект, сменивший уже <strong>5</strong> версий.</p>
+            <p class="lead">Minimalistik &amp; powerful. Originally was made for myself, now it has small community. Social authorization, though you can work locally. Easy structure-and-restructure. Recently hit <strong>v5.0</strong>.</p>
             <p>#Vue.js, #Python/Django/DRF, #PostgreSQL, #Docker</p>
             <p><a href="https://github.com/abimbolas/titamota" target="_blank"><i class="fab fa-github"></i> github.com/abimbolas/titamota</a></p>
           </div>
 
           <div id="fontfit" class="project col-lg-4">
             <p class="text-center">
-              <div data-fontfit style="font-weight: 700; letter-spacing: -0.0375rem;">FONTFIT.JS</div>
-              <div data-fontfit>&mdash; чтоб текст</div>
-              <div data-fontfit>на всю доступную ширину</div>
-              <div data-fontfit style="font-weight: 800; letter-spacing: -0.0375rem;">ВЛАЗИЛ</div>
+              <div data-fontfit style="font-weight: 600; letter-spacing: -0.0375rem;">FONTFIT.JS</div>
+              <div data-fontfit>&mdash; make your text fit string</div>
+              <div data-fontfit style="font-weight: 600; letter-spacing: -0.0375rem;">WIDTH</div>
             </p>
             <p class="text-center"><a href="https://www.npmjs.com/package/mr-fontfit"><i class="fab fa-npm fa-3x"></i></a></p>
             <p><a href="https://www.npmjs.com/package/mr-fontfit" data-fontfit>npm install mr-fontfit</a></p>
           </div>
 
           <div class="project col-md-5 col-lg-4">
-            <p>Упрощенная система компонентиков HTML. В продакшн не идет, облегчает вёрстку шаблонов:<br><a href="https://www.npmjs.com/package/mr-utils" target="_blank"><i class="fab fa-npm fa-lg"></i>  npm install mr-utils</a></p>
+            <p>Simple HTML components with JavaScript support. No more copy-paste in html-coding (not for production):<br><a href="https://www.npmjs.com/package/mr-utils" target="_blank"><i class="fab fa-npm fa-lg"></i>  npm install mr-utils</a></p>
           </div>
 
           <div class="project col-md-5 col-lg-4">
-            <p>Попытка сымитировать <a href="https://ru.wikipedia.org/wiki/%D0%A0%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B0_%D1%87%D0%B5%D1%80%D0%B5%D0%B7_%D1%82%D0%B5%D1%81%D1%82%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5" target="_blank">TDD</a>, заняться <q>вёрсткой через тестирование</q>:<br><a href="https://www.npmjs.com/package/mr-testwood" target="_blank"><i class="fab fa-npm fa-lg"></i> npm install mr-testwood</a></p>
+            <p>Tried to simulate <a href="https://en.wikipedia.org/wiki/Test-driven_development" target="_blank">Test-Driven Development</a>, aka "Test-Driven HTML/CSS Layout" and wrote a tool for this</q>:<br><a href="https://www.npmjs.com/package/mr-testwood" target="_blank"><i class="fab fa-npm fa-lg"></i> npm install mr-testwood</a></p>
           </div>
 
           <div class="project col-md-5 col-lg-4">
-            <p>Генератор смешных словосочетаний:<br><a href="https://www.npmjs.com/package/mr-funny" target="_blank"><i class="fab fa-npm fa-lg"></i> npm install mr-funny</a></p>
+            <p>Funny phrases generator (placeholder/dummy role):<br><a href="https://www.npmjs.com/package/mr-funny" target="_blank"><i class="fab fa-npm fa-lg"></i> npm install mr-funny</a></p>
           </div>
 
           <div class="project col-md-12 col-lg-8">
-            <p class="lead">Манипуляции с сортированным массивом:<br><a href="https://www.npmjs.com/package/mr-sorted-array" target="_blank"><i class="fab fa-npm fa-lg"></i> npm install mr-sorted-array</a></p>
+            <p class="lead">Very fast add/remove/search operations on a sorted array, using а "binary" algorythm:<br><a href="https://www.npmjs.com/package/mr-sorted-array" target="_blank"><i class="fab fa-npm fa-lg"></i> npm install mr-sorted-array</a></p>
           </div>
 
           <div class="project col-md-5 col-lg-4">
-            <p>Пднимаем-опускаем огромный заголовок, чтоб частично скрыть последнюю строчку под верхней границей окна:<br><a href="https://www.npmjs.com/package/mr-headlift"><i class="fab fa-npm fa-lg"></i> npm install mr-headlift</a></p>
+            <p>Raise-or-lower huge header (optionally powered with my mr-fontfit) so that only part of last string is visible (inspired by old A-List-Apart design):<br><a href="https://www.npmjs.com/package/mr-headlift"><i class="fab fa-npm fa-lg"></i> npm install mr-headlift</a></p>
           </div>
         </div>
       </div>
@@ -324,9 +274,9 @@
       <!-- Footer -->
       <footer class="text-center container">
         <p class="lead">Mr. Woodman v4.1</p>
-        <p class="smallers">cделано на левом берегу&trade;</p>
+        <p class="smallers">from the Area 30&trade;</p>
         <img class="cat" src="about/images/cat-preloader.gif">
-        <p class="smaller"><span style="opacity: 0.5;">powered by:</span> Иван Билибин, Олег Фёдоров, <span style="opacity: 0.5;">and</span> Simon Stålenhag.</small></p>
+        <p class="smaller"><span style="opacity: 0.5;">powered by:</span> Ivan Bilibin, Oleg Fedorov, <span style="opacity: 0.5;">and</span> Simon Stålenhag.</small></p>
       </footer>
     </section>
   </main>
