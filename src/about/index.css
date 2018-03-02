@@ -169,7 +169,7 @@ ul.list-icon {
 
 ul.list-icon li {
   display: flex;
-  margin-bottom: 0.375rem;
+  margin-bottom: 1.0rem;
 }
 
 ul.list-icon li:last-child {

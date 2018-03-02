@@ -19,7 +19,7 @@
   background: #f0dcb7 url(images/top-projects-border.jpg) no-repeat center -2rem;
   background-size: auto 100%;
   box-shadow: 0px -15px 30px -15px rgba(0,0,0,0.75);
-  transform: rotate(2deg);
+  /*transform: rotate(2deg);*/
   top: -2rem;
 }
 

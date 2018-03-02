@@ -1,5 +1,6 @@
 .profile-part {
   padding: 2rem 0px;
+  align-items: center;
 }
 
 .profile-part:first-child {
@@ -14,14 +15,24 @@
   margin-bottom: 3rem;
 }
 
-.profile-part-header img {
+.profile-part-image {
+  margin-bottom: 3rem;
+}
+
+.profile-part h3 {
+  font-size: 3rem;
+  line-height: 3rem;
+  /*margin: 1rem auto;*/
+}
+
+.profile-part-image img {
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
 
-.profile-part-header [class*="fa-"] + h3 {
-  margin-top: 0.5rem;
+.profile-part-image [class*="fa-"] + h3 {
+  /*margin-top: 0.5rem;*/
 }
 
 @media (min-width: 576px) {
@@ -31,16 +42,13 @@
 }
 
 @media (min-width: 768px) {
-  .profile-part-header:not(.no-image) {
-    margin-bottom: 0rem;
+  .profile-part h3 {
+    font-size: 3.5rem;
+    line-height: 4rem;
   }
 
-  .profile-part-body:not(.no-image) {
-    padding-top: 6rem;
-  }
-
-  .profile-part-body[class*="col-"] {
-    padding-top: 10rem;
+  .profile-part-image {
+    margin-bottom: 0;
   }
 }
 

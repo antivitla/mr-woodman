@@ -48,17 +48,19 @@
 
 #welcome .avatar {
   display: block;
-  border-radius: 30%;
-  border: solid white 5px;
-  margin: 2rem auto;
+  border-radius: 25%;
+  transform: rotate(2deg);
+  /*border: solid white 5px;*/
+  margin: 2.5rem auto;
   width: 40vh;
   max-width: 300px;
-  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.375);
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.25);
 }
 
 @media (min-width: 1200px) {
   #welcome .avatar {
     width: 100%;
+    /*margin: 2.5rem auto;*/
   }
 }
 
@@ -84,6 +86,10 @@
   padding: 3px 15px 8px 15px;
   border-radius: 5px;
   display: inline-block;
+}
+
+#welcome .my-card-name h3 {
+  transform: rotate(-0.25deg);
 }
 
 #welcome .my-card-name p span,
@@ -122,7 +128,7 @@
   border-radius: 50%;
 }
 
-@media (min-width: 1200px) {
+/*@media (min-width: 1200px) {
   #welcome .my-card-name {
     text-align: right;
     display: flex;
@@ -138,4 +144,4 @@
     justify-content: center;
     transform: translateY(0.875rem) translateX(0.75rem);
   }
-}
+}*/
