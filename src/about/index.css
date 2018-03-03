@@ -1,4 +1,6 @@
-@import url(https://fonts.googleapis.com/css?family=Exo+2:200,300,400,600&subset=cyrillic);
+/*@import url(https://fonts.googleapis.com/css?family=Exo+2:200,300,400,700&subset=cyrillic);*/
+
+@import url('https://fonts.googleapis.com/css?family=Alegreya+Sans:300,300i,400,400i,500,500i,700,700i&subset=cyrillic');
 
 @font-face {
   font-family: 'PeterSkoropis';
@@ -10,13 +12,12 @@
 
 html, body {
   font-size: 16px;
-  line-height: 24px;
+  line-height: 1.5;
 }
 
 @media (min-width: 768px) {
   html, body {
     font-size: 18px;
-    line-height: 27px;
   }
 }
 
@@ -27,17 +28,14 @@ html, body {
 }
 
 select, input, textarea, option {
-  font-family: "Exo 2", sans-serif;
+  font-family: "Alegreya Sans", sans-serif;
   line-height: 1.5rem;
   font-size: 1rem;
 }
 
 body {
-  font-family: "Exo 2", sans-serif;
+  font-family: "Alegreya Sans", sans-serif;
   font-weight: 300;
-  line-height: 1.5rem;
-  font-size: 1rem;
-  /*color: #222;*/
   color: #54443a;
   background-color: whitesmoke;
   min-width: 320px;
@@ -49,26 +47,7 @@ main {
 }
 
 strong {
-  font-weight: 600;
-  /*vertical-align: top;*/
-}
-
-small {
-  font-weight: 400;
-  font-size: 0.724rem;
-  /*vertical-align: top;*/
-}
-
-em {
-  vertical-align: top;
-}
-
-code {
-  font-family: monospace;
-  font-size: 0.875rem;
-  vertical-align: baseline;
-  font-weight: bold;
-  white-space: nowrap;
+  font-weight: 500;
 }
 
 q:before {
@@ -80,7 +59,6 @@ q:after {
 }
 
 a {
-  /*color: rgb(100, 159, 223);*/
   color: inherit;
   cursor: pointer;
   box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.2);
@@ -119,7 +97,7 @@ h3 {
 
 h4 {
   font-size: 1.25rem;
-  font-weight: 400;
+  font-weight: normal;
 }
 
 h5 {
@@ -129,6 +107,8 @@ h5 {
 
 .peter {
   font-family: 'PeterSkoropis';
+  line-height: 1;
+  letter-spacing: -0.01em;
 }
 
 .lovers {
@@ -163,13 +143,21 @@ h3.meddon {
   text-align: center;
 }
 
+.text-right {
+  text-align: right;
+}
+
+.text-left {
+  text-align: left;
+}
+
 ul.list-icon {
   /*padding-left: 1.5rem;*/
 }
 
 ul.list-icon li {
   display: flex;
-  margin-bottom: 1.0rem;
+  margin-bottom: 0.75rem;
 }
 
 ul.list-icon li:last-child {
@@ -177,9 +165,9 @@ ul.list-icon li:last-child {
 }
 
 ul.list-icon li > *:first-child {
-  /*margin-left: -1.5rem;*/
   margin-right: 0.75rem;
-  width: 1rem;
+  font-size: 2.5rem;
+  line-height: 1.25rem;
 }
 
 article p {
@@ -219,7 +207,7 @@ article p:last-child {
 
   h5 {
     font-size: 1.25rem;
-    font-weight: 600;
+    font-weight: bold;
   }
 
   .lead {
@@ -251,7 +239,7 @@ article p:last-child {
 
   h5 {
     font-size: 1.5rem;
-    font-weight: 600;
+    font-weight: bold;
   }
 }
 
@@ -276,7 +264,7 @@ article p:last-child {
   /*background-color: #54443a;*/
   /*color: whitesmoke;*/
   font-size: 75%;
-  font-weight: 600;
+  font-weight: bold;
 }
 
 /* anchor */
@@ -287,4 +275,28 @@ article p:last-child {
   height: 0px;
   line-height: 0px;
   font-size: 0px;
+}
+
+.action {
+  text-align: center;
+}
+
+.action p {
+  margin-bottom: 0.75rem;
+}
+
+.button {
+  display: inline-block;
+  line-height: 1;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  background-color: crimson !important;
+  color: whitesmoke;
+  cursor: pointer;
+  font-weight: 300;
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.25) !important;
+}
+
+.button strong {
+  font-weight: 700;
 }

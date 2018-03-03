@@ -72,7 +72,7 @@ const data = [
     title: "Друидский калькулятор",
     path: "2010-06--krvss--resto-druid-healer-calculator/www/",
     pages: ["index.html"],
-    description: "Строим ресто-билды. #lolW00t",
+    description: "Строим ресто-билды. <small>#lolW00t</small>",
     devices: "desktop",
     alive: "http://treecalcs.com"
   },
@@ -113,7 +113,7 @@ const data = [
     title: "Mr. Woodman v1.0",
     path: "2010-xx--mr-woodman-v1/www/",
     pages: ["index.html"],
-    description: "Мой мегасайт первой версии. #Дизайн&UX",
+    description: "Мой мегасайт первой версии. <small>#Дизайн&UX</small>",
     devices: "desktop"
   },
 
@@ -129,7 +129,7 @@ const data = [
     title: "YogaDa",
     path: "2011-05--seanat--yogada/www/",
     pages: ["yogada-main.html","yogada-404.html","yogada-all-users.html","yogada-blog.html","yogada-blog-post.html","yogada-blogs.html","yogada-blogs-all-entries.html","yogada-blogs-newpost.html","yogada-comments.html","yogada-eastpractices.html","yogada-freedive.html","yogada-main-login.html","yogada-meroprijatija.html","yogada-news.html","yogada-photo.html","yogada-photos.html","yogada-photos-album.html","yogada-places.html","yogada-profile.html","yogada-search-results.html","yogada-text.html","yogada-text-print.html","yogada-texts.html","yogada-theme.html","yogada-themes.html","yogada-travel.html","yogada-videos.html","yogada-zaglushka.html"],
-    description: "Переусложненный сайт, ошеломляющее ведение проекта. #МильярдШаблонов, #МильярдПравок",
+    description: "Переусложненный сайт, ошеломляющее ведение проекта. <small>#Мильярд-Шаблонов, #Мильярд-Правок</small>",
     devices: "desktop",
   },
 
@@ -145,7 +145,7 @@ const data = [
     title: "Bars II",
     path: "2011-08--dima-komissarov--bars-2/www/",
     pages: ["bars2-index.html","bars2-about.html","bars2-about-old.html","bars2-dealers.html","bars2-doors.html","bars2-doors-locksnhandles.html","bars2-doors-nonstandard.html","bars2-doors-whybars.html","bars2-forum-post-comments.html","bars2-forum-posts-list.html","bars2-konfigurator-models.html","bars2-konfigurator-vars.html","bars2-konfigurator-vars2.html","bars2-minora.html","bars2-minora-about.html","bars2-minora-techs.html","bars2-minora-vars.html","bars2-showroom.html","bars2-showroom-print.html"],
-    description: "Вторая версия сайта. #КрутаяРезина",
+    description: "Вторая версия сайта. <small>#Крутая-Резина</small>",
     devices: "desktop",
     alive: "http://www.barsdoors.ru"
   },
@@ -205,7 +205,7 @@ const data = [
     title: "Capital View",
     path: "2012-xx--dima-komissarov--capital-view/www/",
     pages: ["capitalview-index.html","capitalview-projectmembers.html","capitalview-katok.html","capitalview-about.html"],
-    description: "А это полный улёт потому что 3d transformations. Мы как-бы внутри цилиндра, надо понаводить на меню. #3dУлёт, #Укачивает",
+    description: "А это полный улёт потому что 3d transformations. Мы как-бы внутри цилиндра, надо понаводить на меню. <small>#3d-Улёт, #Укачивает</small>",
     devices: "desktop",
   },
 
@@ -213,7 +213,7 @@ const data = [
     title: "Tiktok Lunatik",
     path: "2012-xx--sambul--lunatik/www/",
     pages: ["lunatiktok-index.html", "lunatiktok-ipod.html","lunatiktok-inner-tiktok.html","lunatiktok-inner-lunatik.html","lunatiktok-inner-lunatik-not-present.html","lunatiktok-history.html","lunatiktok-feedback.html","lunatiktok-complects.html","lunatiktok-buy-step-6.html","lunatiktok-buy-step-5.html","lunatiktok-buy-step-4.html","lunatiktok-buy-step-3.html","lunatiktok-buy-step-2c.html","lunatiktok-faq.html","lunatiktok-buy-step-2b.html","lunatiktok-buy-step-2a.html","lunatiktok-buy-step-1b.html","lunatiktok-buy-step-1a.html","lunatiktok-accessories.html","lunatiktok-accessories-and-all.html","lunatiktok-about.html"],
-    description: "Интересный был дизайн... #ПриAppleнность",
+    description: "Интересный был дизайн... <small>#При-Apple-енность</small>",
     devices: "desktop"
   },
 
@@ -363,7 +363,7 @@ const data = [
     title: "Клуб Ахмад",
     path: "2014-12--masha-niggol--club-ahmad/www/",
     pages: ["index.html#/contest/works"],
-    description: "Клуб окончательных фанатов чая Ахмад. Angularjs для удобства нарезания на запчасти для программиста",
+    description: "Клуб окончательных фанатов чая Ахмад. Angular.js для удобства нарезания на запчасти для программиста",
     devices: "desktop",
     alive: "http://club.ahmadtea.ru"
   },
@@ -381,7 +381,7 @@ const data = [
     title: "Русский Ипотечный Банк",
     path: "2014-01--apollo--rib/www/",
     pages: ["index1-application.html","index2-prichini.html","index3-stavka.html","index4-ipoteka.html","index6-terms.html"],
-    description: "Симпатичные страницы, чёткие запчасти. #Всегда-бы-так",
+    description: "Симпатичные страницы, чёткие запчасти. <small>#Всегда-бы-так</small>",
     devices: "desktop",
     alive: "https://www.russipoteka.ru"
   },
@@ -501,7 +501,7 @@ const data = [
     title: "Bars",
     path: "2011-08--dima-komissarov--bars/www/",
     pages: ["bars-index.html","bars-advantages.html","bars-all-over-russia.html","bars-configurator.html","bars-contacts.html","bars-dealer.html","bars-dealers.html","bars-door-cover-ebony.html","bars-door-covers.html","bars-door-cover-venge.html","bars-door-design-classica.html","bars-door-designs.html","bars-information.html","bars-photogallery.html"],
-    description: "Навороченная вёрстка про двери. #КрутаяРезина, #МильярдШаблонов",
+    description: "Навороченная вёрстка про двери. <small>#Крутая-Резина, #Мильярд-Шаблонов</small>",
     devices: "desktop"
   },
 
@@ -509,7 +509,7 @@ const data = [
     title: "Oh My Mentor",
     path: "2014-03--ilya-nikolaev--ohmymentor/www/",
     pages: ["mentors.html","startups.html","landing.html"],
-    description: "Суровый параллакс + адаптивность. #Поморочка, #Skrollr",
+    description: "Суровый параллакс + адаптивность. <small>#Поморочка, #Skrollr</small>",
     devices: "desktop tablet mobile"
   },
 
@@ -517,7 +517,7 @@ const data = [
     title: "ТАО Медиа",
     path: "2013-09--seanat--tao-media/www/",
     pages: ["index.html"],
-    description: "Лендинг интернет-студии. #Приадаптивленный",
+    description: "Лендинг интернет-студии. <small>#Приадаптивленный</small>",
     devices: "desktop tablet mobile",
     alive: "http://tao-media.ru"
   },
@@ -542,7 +542,7 @@ const data = [
     title: "Броско Home Couture",
     path: "2012-xx--dima-komissarov--brosko/www/",
     pages: ["brosko-index.html","brosko-catalog.html","brosko-category.html","brosko-product.html","brosko-text.html"],
-    description: "Понтовым штукам — понтовый дизайн. #КрутаяРезина",
+    description: "Понтовым штукам — понтовый дизайн. <small>#Крутая-резина</small>",
     devices: "desktop",
     alive: "http://brosko-home.ru"
   },
@@ -551,7 +551,7 @@ const data = [
     title: "Кофемания",
     path: "2014-05--masha-niggol--coffeemania/www/",
     pages: ["coffemania-index.html","coffeemania-email-1.html","coffemania-404.html","coffemania-about.html","coffemania-address.html","coffemania-app.html","coffemania-barista.html","coffemania-cooperation.html","coffemania-delivery.html","coffemania-feedback.html","coffemania-index-notification.html","coffemania-index-with-panorama.html","coffemania-job.html","coffemania-job-apply.html","coffemania-kids.html","coffemania-menu.html","coffemania-menu2.html","coffemania-menu3.html","coffemania-news.html","coffemania-news-post.html","coffemania-press.html","coffemania-team.html","coffemania-zavsegdatai.html"],
-    description: "Типа простой, но сложный. #Адаптивность, #Тутулечность",
+    description: "Типа простой, но сложный. <small>#Адаптивность, #Тутулечность</small>",
     devices: "desktop tablet mobile",
     alive: "http://coffeemania.ru"
   },
@@ -578,7 +578,7 @@ const data = [
     title: "DIMG",
     path: "2013-09--apollo--disney-departments/www/",
     pages: ["index.html"],
-    description: "Векторная, интерактивная, анимационная схема отделений Disney в России. #Поморочка, #SVG, #D3js",
+    description: "Векторная, интерактивная, анимационная схема отделений Disney в России. <small>#Поморочка, #SVG, #D3js</small>",
     devices: "desktop"
   },
 
@@ -590,8 +590,8 @@ const data = [
     path: "2017-12--vitaly-kuleshin--titamota/www/",
     pages: ["http://mr-woodman.ru/scoblimora"],
     description: {
-      ru: "Алхимический помощник для Skyrim. И тебе fus-ro-dah, Довакин. #Vuejs",
-      en: "Meet Skyrim Alchemy Helper. Something very complicated, even I did not fully understand it. #Vuejs"
+      ru: "Алхимический помощник для Skyrim. И тебе fus-ro-dah, Довакин. <small>#Vuejs</small>",
+      en: "Meet Skyrim Alchemy Helper. Something very complicated, even I did not fully understand it. <small>#Vuejs, #Fus-Ro-Dah</small>"
     },
     devices: "desktop tablet mobile",
     alive: "http://mr-woodman.ru/scoblimora"
@@ -614,10 +614,10 @@ const data = [
   },
 
   {
-    title: "Neq4",
+    title: "Компания Neq4",
     path: "2014-09--masha-niggol--neq4/www/",
     pages: ["panorama-neq4-index.html", "panorama-neq4-about.html", "panorama-neq4-contact.html", "panorama-neq4-job.html", "panorama-neq4-pak.html", "panorama-neq4-panorama.html", "panorama-neq4-press.html", "panorama-neq4-projects.html", "panorama-neq4-yandex-panoramas.html", "digital-neq4-index.html"],
-    description: "Любимый клиент, корпорация и просто красавица. Классика HTML/CSS/JavaScript",
+    description: "Любимый клиент, корпорация и просто красавица. <small>#Классика HTML/CSS/JavaScript</small>",
     devices: "desktop tablet mobile",
     alive: "http://neq4.ru"
   },
@@ -626,28 +626,16 @@ const data = [
     title: "Sound Bureau",
     path: "2014-08--masha-niggol--soundbureau/www/",
     pages: ["soundbureau-index.html","soundbureau-about.html","soundbureau-business.html","soundbureau-home.html"],
-    description: "Что-то про звук. Крутая продуманность дизайна. #Аж-блестит",
+    description: "Что-то про звук. Крутая продуманность дизайна. <small>#Аж-блестит</small>",
     devices: "desktop tablet",
     alive: "http://soundbureau.ru"
   },
 
   {
-    title: "Mr. Woodman v4.1",
-    path: "2018-02--vitaly-kuleshin--mr-woodman/www/",
-    pages: ["http://mr-woodman.ru"],
-    description: {
-      ru: "Очередной апдейт. Добавлены работы за последние пару лет, вписаны новые тексты. #iframe-рекурсия. #Vuejs, #Webpack, #frontend-porn",
-      en: "Another minor update. Added some works for last few years, text changes. Keeping cool recursion. #Vuejs, #Webpack, #Babel-porn"
-    },
-    devices: "desktop tablet mobile",
-    alive: "http://mr-woodman.ru"
-  },
-
-  {
-    title: "Кофемания FM",
+    title: "Онлайн-радио «Кофемания FM»",
     path: "2014-07--masha-niggol--coffeemania-fm/www/",
     pages: ["coffemania-fm-index.html"],
-    description: "Радио! Хоть раз со звуком поработал. #Aдаптивноcть, #Angularjs",
+    description: "Хоть раз со звуком поработал! Не так сложно, как думал. <small>#Aдаптивноcть, #HTML5 API, #CSS3, #Angularjs</small>",
     devices: "desktop tablet mobile",
     alive: "http://coffeemania.fm"
   },
@@ -656,22 +644,33 @@ const data = [
     title: "Виртуальная Арктика",
     path: "2015-08--masha-niggol--arctic/www/",
     pages: ["index.html"],
-    description: "Проект <a href=\"http://neq4.ru\">Neq4</a>. На краю земли ожидаемо безлюдно, забыто и заброшено.  #Angularjs",
+    description: "Проект <a href=\"http://neq4.ru\">Neq4</a>. На краю земли ожидаемо безлюдно, забыто и заброшено. Хорошо, что можем на это поглядеть из тёплого броузера. <small>#Angular.js, #SVG</small>",
     devices: "desktop tablet mobile"
   },
 
-
   {
-    title: "Titamota",
+    title: "Таймер времени и денег Titamóta",
     path: "2017-12--vitaly-kuleshin--titamota/www/",
     pages: ["http://titamota.ru", "http://mr-woodman.ru/titamota"],
     description: {
-      ru: "Таймтрекер. Кто знает, тот фанат. Выступил фулстек-программистом (заодно и база/бэкенд/авторизация). #Vuejs, #Django/Python/DRF/PostgreSQL, #Docker",
-      en: "Freelance time-tracker. Proud UX and inner algrorythms. Being fullstack coder. #Vuejs, #Django/Python/DRF, #PostgreSQL, #Docker, #it-even-has-landing-page"
+      ru: "Пятая мажорная версия моего широко известного в узких кругах проекта. Выступил fullstack-программистом (если долго делать OAuth-авторизацию, можно сойти с ума). <small>#Vuejs, #Django/Python/DRF/PostgreSQL, #Docker</small>",
+      en: "Freelance time-tracker. Proud UX and inner algrorythms. Being fullstack coder. <small>#Vue.js, #Django/Python/DRF, #PostgreSQL, #Docker, #it-even-has-landing-page</small>"
     },
     devices: "desktop tablet mobile",
     alive: "http://titamota.ru"
-  }
+  },
+
+  {
+    title: "Mr. Woodman v4.1",
+    path: "2018-02--vitaly-kuleshin--mr-woodman/www/",
+    pages: ["http://mr-woodman.ru"],
+    description: {
+      ru: "Минорный апдейт. Добавлены новые работы, вписаны новые тексты. <small><strong>#iframe-рекурсия</strong>, #Vue.js, #Webpack, #frontend-porn</small>",
+      en: "Another minor update. Added some works for last few years, text changes. <small>#Vuejs, #Webpack, #Babel-porn, #iframe-recursion</small>"
+    },
+    devices: "desktop tablet mobile",
+    alive: "http://mr-woodman.ru"
+  },  
 ];
 
 export default data;

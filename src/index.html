@@ -5,24 +5,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="alternate" hreflang="en" href="http://en.mr-woodman.ru" />
   <title>Mr. Woodman</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 </head>
 <body>
+  <!-- Navbar -->
   <nav id="navbar" class="navbar">
     <a class="toggle"><i class="fas fa-bars"></i></a>
     <ul class="menu">
       <li><a href="#welcome"><i class="fas fa-home"></i><span>Welcome</span></a></li>
-      <li><a href="#skills"><i class="fas fa-chess-queen"></i><span>Skills</span></a></li>
+      <li><a href="#skills" title="Умения"><i class="fas fa-chess-queen"></i><span>Умения</span></a></li>
       <li><a href="#instruments"><i class="fas fa-chess-knight"></i><span>Instruments</span></a></li>
-      <li><a href="#works"><i class="fas fa-desktop"></i><span>Works</span></a></li>
+      <li><a href="#works"><i class="fas fa-folder-open"></i><span>Works</span></a></li>
+      <li><a href="#products"><i class="fas fa-chess"></i><span>Products</span></a></li>
       <li><a href="#wishes"><i class="fas fa-chess-bishop"></i><span>Wishes</span></a></li>
-      <li><a href="#products"><i class="fas fa-medkit"></i><span>Products</span></a></li>
       <li><a href="#projects"><i class="fab fa-github"></i><span>Crafts</span></a></li>
     </ul>
     <ul class="language">
       <li><a href="http://en.mr-woodman.ru" class="free">switch to <strong>english</strong></a></li>
     </ul>
   </nav>
+
   <main>
     <!-- Welcome -->
     <section id="welcome">
@@ -44,106 +47,149 @@
     </section>
 
     <!-- About -->
-    <section class="diagonal-top">
-      <article class="container">
-        <div id="about" class="profile-part row justify-content-center text-center">
-          <div class="col-md-12">
+    <section id="about" class="diagonal-top">
+      <div class="container">
+        <article class="profile-part row justify-content-center text-center">
+          <div class="col-md-12 col-lg-10">
             <p class="lead">Опыт работы больше 10 лет. Свидетель рождения технологий на слуху, взрослел&nbsp;вместе с ними &mdash; знаю их тайные слабости и подлинную силу.</p>
-            <p class="lead">Делаю неизвестное известным, а первый блин &mdash; образцовым.</p>
           </div>
-        </div>
+        </article>
+      </div>
+    </section>
 
-        <div id="skills" class="profile-part row">
-          <div class="profile-part-header text-center col-md-12">
+    <!-- Skills -->
+    <section id="skills">
+      <div class="container">
+        <article class="profile-part row justify-content-center">
+          <div class="profile-part-header col-md-12">
             <i class="fas fa-chess-queen fa-3x"></i>
             <h3 class="peter">Умения</h3>
           </div>
-          <div class="profile-part-image text-center col-md-5">
-            <p><img class="man" src="about/images/men_02.png" height="400"></p>
+          <div class="profile-part-image col-md-12">
+            <img src="about/images/men_02.png" height="400">
           </div>
-          <div class="profile-part-body col-md-7 col-lg-6">
+          <div class="profile-part-body col-md-10 col-lg-8 col-xl-7">
             <ul class="list-icon">
               <li>
-                <div>&mdash;</div>
+                <div>&middot;</div>
                 <div>Архитектура</div>
               </li>
               <li>
-                <div>&mdash;</div>
-                <div>Оценка сроков и затрат; в том числе для сложных и неизвестных для команды задач</div>
+                <div>&middot;</div>
+                <div>Оценка сроков и затрат; в том числе <em>для сложных и новых для команды задач</em></div>
               </li>
               <li>
-                <div>&mdash;</div>
+                <div>&middot;</div>
                 <div>Перевод застарелого кода на новые рельсы; рефекторинг без даунтайма</div>
               </li>
               <li>
-                <div>&mdash;</div>
+                <div>&middot;</div>
                 <div>Доведение застопорившихся задач до результата</div>
               </li>
               <li>
-                <div>&mdash;</div>
-                <div>Планирование, разбиение на этапы, расстановка приоритетов и формулирование задач</div>
+                <div>&middot;</div>
+                <div>Планирование, разбиение на этапы, расстановка приоритетов и формулирование задач; <strong>превращение неопределённости в ясность</strong></div>
               </li>
               <li>
-                <div>&mdash;</div>
+                <div>&middot;</div>
                 <div>Каждой ситуации свой баланс перфекционизма <strong>vs</strong> скорости</div>
               </li>
               <li>
-                <div>&mdash;</div>
+                <div>&middot;</div>
                 <div><strong>Чувство прекрасного</strong></div>
               </li>
             </ul>
           </div>
-        </div>
+        </article>
+      </div>
+    </section>
 
-        <div id="instruments" class="profile-part row">
-          <div class="profile-part-header text-center col-md-6">
+    <!-- Instruments -->
+    <section id="instruments" class="diagonal-bottom">
+      <div class="container">
+        <article class="profile-part row justify-content-center">
+          <div class="profile-part-header col-md-12">
             <i class="fas fa-chess-knight fa-3x"></i>
-            <h3 class="peter">Инструменты</h3>
-            <p><img class="man md-left-2" src="about/images/men_01.png" height="400"></p>
+            <h3 class="peter">Приспособления</h3>
+            <!-- <div class="row">
+              <div class="d-none d-md-flex col-md-3">
+                <i class="instrument-icon fab fa-html5"></i>
+                <i class="instrument-icon fab fa-css3"></i>
+                <i class="instrument-icon fab fa-sass"></i>
+                <i class="instrument-icon fab fa-js-square"></i>
+                <i class="instrument-icon fab fa-angular"></i>
+                <i class="instrument-icon fab fa-vuejs"></i>
+                <i class="instrument-icon fab fa-node"></i>
+                <i class="instrument-icon fab fa-npm"></i>
+              </div>
+              <div class="col-12 col-md-6">
+              </div>
+              <div class="d-none d-md-flex col-md-3">
+                <i class="instrument-icon fab fa-docker"></i>
+                <i class="instrument-icon fab fa-git"></i>
+                <i class="instrument-icon fab fa-facebook-square"></i>
+                <i class="instrument-icon fab fa-google-plus-g"></i>
+                <i class="instrument-icon fab fa-vk"></i>
+                <i class="instrument-icon fab fa-yandex"></i>
+                <i class="instrument-icon fab fa-youtube"></i>
+              </div>
+            </div> -->
           </div>
-          <div class="profile-part-body col-md-6 md-order-first">
+          <div class="profile-part-image col-md-5">
+            <p><img src="about/images/men_01.png" height="400"></p>
+          </div>
+          <div class="profile-part-body col-md-7">
             <ul class="list-icon">
               <li>
-                <div><i class="fab fa-html5"></i></div>
-                <div>HTML: Structured Data, EPUB</div>
+                <div>&middot;</div>
+                <div>HTML5, EPUB, Structured (micro) Data</div>
               </li>
               <li>
-                <div><i class="fab fa-css3"></i></div>
-                <div>CSS: адаптивность, старые платформы, Bootstrap, Foundation, Skeleton, БЭМ, SASS, Stylus</div>
+                <div>&middot;</div>
+                <div>CSS/Sass/Stylus, Responsive, Олдскул по-требованию, Bootstrap, Foundation, Materialize CSS, Semantic UI, Skeleton</div>
               </li>
               <li>
-                <div><i class="fas fa-image"></i></div>
+                <div>&middot;</div>
                 <div>Sketch, Photoshop, Illustrator</div>
               </li>
               <li>
-                <div><i class="fab fa-js-square"></i></div>
-                <div>JavaScript: Vanilla, jQuery, Angular 1.x/<small>2 (in progress)</small>, Vue.js/Vuex, <small>React/Redux/RxJS (in-progress)</small></div>
+                <div>&middot;</div>
+                <div>JavaScript: Vanilla, jQuery, Angular.js 1.x/<small>2 (in progress)</small>, Vue.js/Vuex, <small>React/Redux/RxJS (in-progress)</small></div>
               </li>
               <li>
-                <div><i class="fas fa-link"></i></div>
+                <div>&middot;</div>
+                <div><strong>SVG, D3.js</strong></div>
+              </li>
+              <li>
+                <div>&middot;</div>
                 <div>Интеграция соцсетей и сторонних сервисов (Facebook, VK, Google, Yandex, Github, etc.)</div>
               </li>
               <li>
-                <div><i class="fas fa-cogs"></i></div>
-                <div>Docker, Webpack, Gulp, Yeoman</div>
+                <div>&middot;</div>
+                <div>Docker, Webpack, Gulp, Yeoman, Jasmine/Mocha, Karma</div>
               </li>
               <li>
-                <div><i class="fas fa-server"></i></div>
+                <div>&middot;</div>
                 <div><small>Python/Django/DRF, Node.js, Ruby/Rails, PostgeSQL, Firebase</small></div>
               </li>
             </ul>
+            <p>&nbsp;</p>
           </div>
-        </div>
-      </article>
+        </article>
+      </div>
     </section>
 
     <!-- Works -->
-    <section id="works">
+    <section id="works" class="diagonal-bottom">
       <div v-bind:class="['current-work', { desktop: hasDevice(work, 'desktop') }, { tablet: hasDevice(work, 'tablet') }, { mobile: hasDevice(work, 'mobile') }]">
         <!-- Title -->
         <div class="work-header-group text-center container">
-          <h1 class="work-title">{{workTitle}}</h1>
-          <p class="lead" v-html="workDescription"></p>
+          <div class="profile-part-header">
+            <!-- <i class="material-icons" style="font-size: 3rem;">devices_other</i> -->
+            <i class="fa fa-folder-open fa-3x"></i>
+            <h3 class="peter">Готовая работа</h3>
+          </div>
+          <p class="lead"><strong class="work-title">{{workTitle}}.</strong> &mdash; <span class="work-description" v-html="workDescription"></span></p>
           <p>&nbsp;</p>
           <p>
             <small>
@@ -165,68 +211,105 @@
         <a v-bind:class="['work-prev', { disabled: !hasPrev }]" v-on:click="prevWork()" title="Предыдущая работа"></a>
         <a v-bind:class="['work-next', { disabled: !hasNext }]" v-on:click="nextWork()" title="Следующая работа"></a>
       </div>
-    </section>
+    </section>    
 
-    <section id="wishes" class="diagonal-bottom">
-      <article class="container">
-        <div class="profile-part row justify-content-center">
-          <div class="profile-part-header col-md-12 text-center no-image">
-            <i class="fas fa-chess-bishop fa-3x"></i>
-            <h3 class="peter">Хочу</h3>
-            <p><img class="man" src="about/images/men_03.png" height="400"></p>
+    <!-- Products-->
+    <section id="products">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12">
+            <div class="profile-part-header">
+              <i class="fas fa-chess fa-3x"></i>
+              <h3 class="peter">Предложения</h3>
+            </div>
           </div>
-          <div class="profile-part-body no-image">
+
+          <div class="product col-sm-10 col-md-8 col-lg-7">
+            <h4><span style="transform: rotate(-0.5deg);">Консультация</span></h4>
+            <p class="text-centerz">Вопросы по frontend-технологиям, архитектурным решениям. Помощь с <span>оценкой и планированием</span> &mdash; как мелких, так и <span>больших и непонятных</span> задач.</p>
+          </div>
+
+          <div class="product col-sm-10 col-md-8 col-lg-7">
+            <h4><span style="transform: rotate(0.5deg);">Документация</span></h4>
+            <p>Написание и поддержка документов, делающих ясным то, что необходимо для реализации проекта. Как внутри-командных, так и для внешнего пользователя или заказчика.</p>
             <ul class="list-icon">
               <li>
-                <div><i class="fas fa-asterisk"></i></div>
+                <div>&middot;</div>
+                <div>Коммерческое предложение</div>
+              </li>
+              <li>
+                <div>&middot;</div>
+                <div>Техническое задание</div>
+              </li>
+              <li>
+                <div>&middot;</div>
+                <div><span>Описания фич и планов, фиксация соглашений, формализация API</span></div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="product col-sm-10 col-md-8 col-lg-7">
+            <h4><span style="transform: rotate(-0.5deg);">Ведение ИТ-проекта</span></h4>
+            <p class="leadz">Всё вышеперечисленное в рамках работы над проектом &mdash; системно. Плюс, собственно, программирование.</p>
+            <ul class="list-icon lead">
+              <li>
+                <div>&middot;</div>
+                <div>Консультации &amp; документация</div>
+              </li>
+              <li>
+                <div>&middot;</div>
+                <div><span>Frontend-кодинг</span></div>
+              </li>
+              <li>
+                <div>&middot;</div>
+                <div>Поддержка Legacy-проектов</div>
+              </li>
+              <li>
+                <div>&middot;</div>
+                <div>Вёрстка PSD/Sketch &rarr; HTML &amp; CSS</div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="action product col-12">
+            <p class="lead">Что-такое надо?</p>
+            <p  style="transform: rotate(0.5deg);"><a href="mailto:antivitla@gmail.com" class="button lead">Пишите мне на <strong>antivitla@gmail.com</strong></a></p>
+            <p>&nbsp;</p>
+          </div>
+        </div>
+      </div>
+      <p>&nbsp;</p>
+    </section>
+
+    <!-- Wishes -->
+    <section id="wishes" class="diagonal-top diagonal-bottom">
+      <div class="container">
+        <article class="profile-part row justify-content-center">
+          <div class="profile-part-header col-12">
+            <i class="fas fa-chess-bishop fa-3x"></i>
+            <h3 class="peter">Желания</h3>
+            <p><img class="man" src="about/images/men_03.png" height="400"></p>
+          </div>
+          <div class="profile-part-body col-md-10 col-lg-8 col-xl-7">
+            <ul class="list-icon">
+              <li>
+                <div>&middot;</div>
                 <div>Сделать свой сервис заметок (продолжение моего тайм-трекера <a href="https://titamota.ru/" target="_blank">Titamóta</a>)</div>
               </li>
               <li>
-                <div><i class="fas fa-asterisk"></i></div>
+                <div>&middot;</div>
                 <div>Писать десктопные приложения под Electron (потому что JavaScript)</div>
               </li>
               <li>
-                <div><i class="fas fa-asterisk"></i></div>
-                <div>Уметь провести команду к удовлетворяющему результату</div>
+                <div>&middot;</div>
+                <div>Провести команду к удовлетворяющему результату</div>
               </li>
             </ul>
             <p>&nbsp;</p>
           </div>
-        </div>
-      </article>
-    </section>
-
-
-    <!-- Products-->
-    <div id="products" class="container-fluid">
-      <div class="row">
-        <div class="product consulting col-lg-5 text-center">
-          <div class="container">
-            <h3><span style="background-color: #45525c;">Консультации</span></h3>
-            <p>Оценить и спланировать задачу. Куда копать, когда уткнулись в стену. Иногда нужное решение проще чем вы думали. Иногда гораздо сложней. В нашем деле главное &mdash; предсказуемость.</p>
-            <p></p>
-          </div>
-        </div>
-        <div class="product legacy col-lg-7  text-center">
-          <div class="container">
-            <h3><span style="background-color: #a99b3f;">Поддержка Legacy &amp; Long Term</span></h3>
-            <p>Много доделать или переделать. Выйти из долгостроя. Ни один современный проект не является <q>сделал и забыл</q>, а суть живой процесс, который необходимо регулярно поливать.</p>
-          </div>
-        </div>
-        <div class="product projects col-lg-7 text-center">
-          <div class="container">
-            <h3><span style="background-color: #e3332d;">Помощь с новыми проектами</span></h3>
-            <p>Море неизвестности, море энергии. Шлюпку молодого проекта предстоит провести между сциллой долгостроя мечты и харибдой унылого подражания. Нужен не просто опыт и знания, а умение их применить.</p>
-          </div>
-        </div>
-        <div class="product psd2html col-lg-5 text-center">
-          <div class="container">
-            <h3><span>Вёрстка лендингов и шаблонов</span><br><small>PSD/Sketch &rarr; HTML &amp; CSS</small></h3>
-            <p>Когда-нибудь роботы будут делать за нас даже вёрстку. Но эти благословенные времена ещё не настали.</p>
-          </div>
-        </div>
+        </article>
       </div>
-    </div>
+    </section>
 
     <!-- Projects -->
     <section id="projects">
@@ -234,7 +317,7 @@
         <div class="row justify-content-between">
           <div class="col-md-12 text-center">
             <i class="fab fa-github fa-3x"></i>
-            <h2 class="peter" style="font-size: 3.5rem;">Поделки</h2>
+            <h2 class="peter" style="font-size: 3.5rem;">Домашние поделки</h2>
             <p>&nbsp;</p>
             <p>&nbsp;</p>
           </div>
@@ -248,8 +331,10 @@
           </div>
 
           <div id="fontfit" class="project col-lg-4">
+            <h3>Fontfit.js</h3>
+            <p><a href="https://github.com/antivitla/mr-fontfit" target="_blank"><i class="fab fa-github"></i> antivitla/mr-fontfit</a></p>
             <p class="text-center">
-              <div data-fontfit style="font-weight: 700; letter-spacing: -0.0375rem;">FONTFIT.JS</div>
+              <div data-fontfit style="font-weight: 700; letter-spacing: -0.0375rem;">Зачем? А</div>
               <div data-fontfit>&mdash; чтоб текст</div>
               <div data-fontfit>на всю доступную ширину</div>
               <div data-fontfit style="font-weight: 800; letter-spacing: -0.0375rem;">ВЛАЗИЛ</div>
@@ -259,23 +344,37 @@
           </div>
 
           <div class="project col-md-5 col-lg-4">
-            <p>Упрощенная система компонентиков HTML. В продакшн не идет, облегчает вёрстку шаблонов:<br><a href="https://www.npmjs.com/package/mr-utils" target="_blank"><i class="fab fa-npm fa-lg"></i>  npm install mr-utils</a></p>
+            <h3>Компоненты для HTML/CSS</h3>
+            <p><a href="https://github.com/antivitla/mr-utils" target="_blank"><i class="fab fa-github"></i> antivitla/mr-utils</a></p>
+            <p>Упрощенная система модулей для HTML/CSS. В продакшн не идет, облегчает вёрстку шаблонов:<br><a href="https://www.npmjs.com/package/mr-utils" target="_blank"><i class="fab fa-npm"></i>  npm install mr-utils</a></p>
           </div>
 
           <div class="project col-md-5 col-lg-4">
-            <p>Попытка сымитировать <a href="https://ru.wikipedia.org/wiki/%D0%A0%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B0_%D1%87%D0%B5%D1%80%D0%B5%D0%B7_%D1%82%D0%B5%D1%81%D1%82%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5" target="_blank">TDD</a>, заняться <q>вёрсткой через тестирование</q>:<br><a href="https://www.npmjs.com/package/mr-testwood" target="_blank"><i class="fab fa-npm fa-lg"></i> npm install mr-testwood</a></p>
+            <h3>Вёрстка-через-тестирование</h3>
+            <p><a href="https://github.com/antivitla/mr-testwood" target="_blank"><i class="fab fa-github"></i> antivitla/mr-testwood</a></p>
+            <p>Попытка сымитировать <a href="https://ru.wikipedia.org/wiki/%D0%A0%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B0_%D1%87%D0%B5%D1%80%D0%B5%D0%B7_%D1%82%D0%B5%D1%81%D1%82%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5" target="_blank">Test Driven Development</a> (<q>разработка через тестирование</q>), только для вёрстки:<br><a href="https://www.npmjs.com/package/mr-testwood" target="_blank"><i class="fab fa-npm"></i> npm install mr-testwood</a></p>
           </div>
 
           <div class="project col-md-5 col-lg-4">
-            <p>Генератор смешных словосочетаний:<br><a href="https://www.npmjs.com/package/mr-funny" target="_blank"><i class="fab fa-npm fa-lg"></i> npm install mr-funny</a></p>
+            <h3>Генератор смешных словосочетаний</h3>
+            <p><a href="https://github.com/antivitla/mr-funny" target="_blank"><i class="fab fa-github"></i> antivitla/mr-funny</a></p>
+            <p>Строго говоря, не обязательно смешных &mdash; какие слова скормишь, такие и получишь:<br><a href="https://www.npmjs.com/package/mr-funny" target="_blank"><i class="fab fa-npm"></i> npm install mr-funny</a></p>
           </div>
 
           <div class="project col-md-12 col-lg-8">
-            <p class="lead">Манипуляции с сортированным массивом:<br><a href="https://www.npmjs.com/package/mr-sorted-array" target="_blank"><i class="fab fa-npm fa-lg"></i> npm install mr-sorted-array</a></p>
+            <h3>Бинарные операции с массивом</h3>
+            <p><a href="https://github.com/antivitla/mr-sorted-array" target="_blank"><i class="fab fa-github"></i> antivitla/mr-sorted-array</a></p>
+            <p>Сверхбыстрое добавление, удаление и поиск в сортированном массиве, используя <q>бинарный</q> алгоритм:<br><a href="https://www.npmjs.com/package/mr-sorted-array" target="_blank"><i class="fab fa-npm"></i> npm install mr-sorted-array</a></p>
           </div>
 
           <div class="project col-md-5 col-lg-4">
-            <p>Пднимаем-опускаем огромный заголовок, чтоб частично скрыть последнюю строчку под верхней границей окна:<br><a href="https://www.npmjs.com/package/mr-headlift"><i class="fab fa-npm fa-lg"></i> npm install mr-headlift</a></p>
+            <h3>И прочее</h3>
+            <div>              
+              <a href="https://github.com/antivitla" target="_blank"><i class="fab fa-github"></i> github.com/antivitla</a>
+            </div>
+            <div>
+              <a href="https://npmjs.com/~antivitla/" target="_blank"><i class="fab fa-npm"></i> npmjs.com/~antivitla</a>
+            </div>
           </div>
         </div>
       </div>

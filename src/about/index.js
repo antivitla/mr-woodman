@@ -2,6 +2,7 @@
 
 // CSS
 import 'bootstrap/dist/css/bootstrap-grid.min.css';
+import './bootstrap-none.css';
 import './index.css';
 import './navbar.css';
 import './section.css';

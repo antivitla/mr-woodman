@@ -4,7 +4,7 @@
   top: 0;
   text-align: center;
   z-index: 100;
-  color: rgba(255, 255, 255, 0.75);
+  color: rgba(255, 255, 255, 0.875);
 }
 
 #navbar a {
@@ -34,7 +34,7 @@
 
 .products-section-visible #navbar .toggle {
   color: white;
-  background-color: #54443a;
+  background-color: transparent;
 }
 
 .projects-section-visible #navbar .toggle {
@@ -55,7 +55,7 @@
   height: 48px;
   color: rgba(255, 255, 255, 0.75);
   background-color: #54443a;
-  font-weight: 400;
+  /*font-weight: 400;*/
   text-align: center;
 }
 
@@ -103,7 +103,6 @@
 
 #navbar ul.language a {
   background-color: #71928c;
-  color: white;
 }
 
 .navbar-active #navbar ul.menu {
@@ -118,4 +117,9 @@
   pointer-events: all;
   opacity: 1;
   transition: all 0.3s;
+}
+
+#navbar a[href="#projects"],
+#navbar ul.language a {
+  border-bottom-right-radius: 4px;
 }
