@@ -1,23 +1,23 @@
 #works {
   display: block;
-  margin: 2rem auto;
+  /*margin: 2rem auto;*/
   width: 100%;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 760px) {
   #works {
     display: none;
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 761px) {
   #work {
     padding-bottom: 4.5rem;
   }
 }
 
 .current-work {
-  background: whitesmoke url(images/device-background-lighter.jpg) no-repeat center bottom;
+  /*background: whitesmoke url(images/device-background-lighter.jpg) no-repeat center bottom;*/
   padding-top: 3rem;
   position: relative;
   overflow: hidden;
@@ -71,7 +71,7 @@
   height: 6rem;
   display: block;
   position: absolute;
-  bottom: 50%;
+  bottom: 40%;
   left: 4.5rem;
   border-left: solid 2px;
   border-bottom: solid 2px;
@@ -87,7 +87,7 @@
   height: 6rem;
   display: block;
   position: absolute;
-  bottom: 50%;
+  bottom: 40%;
   right: 4.5rem;
   border-right: solid 2px;
   border-top: solid 2px;
@@ -135,7 +135,7 @@
 .dots {
   position: absolute;
   text-align: center;
-  bottom: 1rem;
+  bottom: 0rem;
   left: 0px;
   width: 100%;
 }
@@ -174,27 +174,28 @@
 }
 
 .current-work.desktop.mobile {
-  padding-bottom: 61.5rem;
+  padding-bottom: 65.5rem;
 }
 
 .current-work {
-  padding-bottom: 61.5rem;
+  padding-bottom: 65.5rem;
 }
 
 .current-work .device.desktop {
-  bottom: 100px;
-  margin-left: -594px;
-  width: 1188px;
-  height: 948px;
-  background: url(images/desktop.png) no-repeat center center;
+  bottom: 120px;
+  margin-left: -620px;
+  width: 1240px;
+  height: 1020px;
+  background: url(images/desktop-drawn.png) no-repeat center center;
+  background-size: contain;
 }
 
 .current-work .device.desktop .iframe-holder {
-  width: 1947px;
-  height: 1096px;
+  width: 1940px;
+  height: 1082px;
   position: absolute;
-  left: 46px;
-  top: 49px;
+  left: 72px;
+  top: 76px;
   border: 0px;
   -ms-transform: scale(0.5616,0.5616);
   -ms-transform-origin: 0% 0%;
@@ -222,27 +223,28 @@
 */
 
   .current-work {
-    padding-bottom: 43.5rem;
+    padding-bottom: 45.5rem;
   }
 
   .current-work.desktop.mobile {
-    padding-bottom: 43.5rem;
+    padding-bottom: 45.5rem;
   }
 
   .current-work .device.desktop {
     bottom: 210px;
-    margin-left: -444px;
-    width: 887px;
-    height: 524px;
-    background: url(images/notebook.png) no-repeat center center;
+    margin-left: -530px;
+    width: 1060px;
+    height: 578px;
+    background: url(images/notebook-drawn.png) no-repeat center center;
+    background-size: contain;
   }
 
   .current-work .device.desktop .iframe-holder {
-    width: 1200px;
-    height: 750px;
+    width: 1193px;
+    height: 749px;
     position: absolute;
-    left: 106px;
-    top: 30px;
+    left: 192px;
+    top: 50px;
     border: 0px;
     overflow: hidden;
     -ms-transform: scale(0.5616,0.5616);
@@ -268,7 +270,7 @@
 
 */
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1030px) {
   .current-work {
     padding-bottom: 40.5rem;
   }
@@ -278,11 +280,12 @@
   }
 
   .current-work .device.desktop {
-    bottom: 90px;
+    bottom: 0px;
     margin-left: -221px;
     width: 442px;
     height: 584px;
-    background: url(images/tablet.png) no-repeat center center;
+    background: url(images/tablet-drawn.png) no-repeat center center;
+    background-size: contain;
   }
 
   .current-work .device.desktop .iframe-holder {
@@ -319,21 +322,22 @@
 
 
 .current-work .device.tablet {
-  bottom: 90px;
+  bottom: 80px;
   margin-left: 0;
-  right: 150px;
+  right: 60px;
   left: auto;
-  width: 442px;
-  height: 584px;
-  background: url(images/tablet.png) no-repeat center center;
+  width: 670px;
+  height: 645px;
+  background: url(images/tablet-drawn.png) no-repeat center center;
+  background-size: contain;
 }
 
 .current-work .device.tablet .iframe-holder {
   width: 768px;
   height: 1026px;
   position: absolute;
-  left: 46px;
-  top: 53px;
+  left: 163px;
+  top: 73px;
   border: 0px;
   overflow: hidden;
   -ms-transform: scale(0.45,0.45);
@@ -349,11 +353,11 @@
 
 @media screen and (max-width: 1150px) {
   .current-work.desktop.tablet .device.tablet {
-    right: 100px;
+    right: 20px;
   }
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1030px) {
   .current-work.desktop.tablet .device.desktop {
     display: none;
   }
@@ -361,26 +365,27 @@
   .current-work.desktop.tablet .device.tablet {
     left: 50%;
     right: auto;
-    bottom: 90px;
-    margin-left: -221px;
+    bottom: 55px;
+    margin-left: -330px;
   }
 }
 
 .current-work .device.mobile {
   left: 50%;
   margin-left: -82px;
-  width: 165px;
-  height: 339px;
-  bottom: 70px;
-  background: url(images/mobile.png) no-repeat center center;
+  width: 200px;
+  height: 360px;
+  bottom: 55px;
+  background: url(images/mobile-drawn.png) no-repeat center center;
+  background-size: contain;
 }
 
 .current-work .device.mobile .iframe-holder {
-  width: 350px;
-  height: 528px;
+  width: 334px;
+  height: 523px;
   position: absolute;
-  left: 14px;
-  top: 59px;
+  left: 33px;
+  top: 70px;
   border: 0px;
   overflow: hidden;
   -ms-transform: scale(0.3942,0.3942);
@@ -404,5 +409,18 @@
 @media screen and (max-width: 1150px) {
   .current-work.desktop.mobile .device.mobile {
     right: 50px;
+  }
+}
+
+@media screen and (max-width: 1030px) {
+  .current-work.desktop.mobile .device.mobile {
+    right: 170px;
+    bottom: 40px;
+  }
+}
+
+@media screen and (max-width: 810px) {
+  .current-work.desktop.mobile .device.mobile {
+    right: 100px;
   }
 }

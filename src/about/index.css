@@ -290,7 +290,7 @@ article p:last-child {
   line-height: 1;
   padding: 1rem 2rem;
   border-radius: 5px;
-  background-color: crimson !important;
+  background-color: #d24716 !important;
   color: whitesmoke;
   cursor: pointer;
   font-weight: 300;
