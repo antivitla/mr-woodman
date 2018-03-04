@@ -10,6 +10,12 @@
   }
 }
 
+@media (min-width: 768px) {
+  #work {
+    padding-bottom: 4.5rem;
+  }
+}
+
 .current-work {
   background: whitesmoke url(images/device-background-lighter.jpg) no-repeat center bottom;
   padding-top: 3rem;
@@ -47,6 +53,15 @@
   max-width: 35em;
   margin-left: auto;
   margin-right: auto;
+}
+
+.work-header-group .delimiter:before {
+  content: "|";
+}
+
+.work-header-group .delimiter {
+  margin: 0 0.25rem;
+  vertical-align: text-bottom;
 }
 
 /* Arrows */

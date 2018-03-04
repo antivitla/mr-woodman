@@ -21,6 +21,11 @@
   margin-top: 0.75rem;
 }
 
+.profile-part-header h3.lovers {
+  font-size: 5rem;
+  line-height: 1;
+}
+
 .profile-part-image {
   margin-bottom: 1rem;
 }

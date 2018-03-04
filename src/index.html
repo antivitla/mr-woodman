@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="alternate" hreflang="en" href="http://en.mr-woodman.ru" />
+  <link rel="alternate" hreflang="en" href="http://en.mr-woodman.ru">
   <title>Mr. Woodman</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
@@ -13,16 +13,46 @@
   <nav id="navbar" class="navbar">
     <a class="toggle"><i class="fas fa-bars"></i></a>
     <ul class="menu">
-      <li><a href="#welcome"><i class="fas fa-home"></i><span>Welcome</span></a></li>
-      <li><a href="#skills" title="Умения"><i class="fas fa-chess-queen"></i><span>Умения</span></a></li>
-      <li><a href="#instruments"><i class="fas fa-chess-knight"></i><span>Instruments</span></a></li>
-      <li><a href="#works"><i class="fas fa-folder-open"></i><span>Works</span></a></li>
-      <li><a href="#products"><i class="fas fa-chess"></i><span>Products</span></a></li>
-      <li><a href="#wishes"><i class="fas fa-chess-bishop"></i><span>Wishes</span></a></li>
-      <li><a href="#projects"><i class="fab fa-github"></i><span>Crafts</span></a></li>
+      <li>
+        <a href="#welcome" title="Наверх">
+          <i class="fas fa-home"></i><span>Добро пожаловать</span>
+        </a>
+      </li>
+      <li>
+        <a href="#skills" title="Умения">
+          <i class="fas fa-chess-queen"></i><span>Умения</span>
+        </a>
+      </li>
+      <li>
+        <a href="#instruments" title="Приспособления">
+          <i class="fas fa-chess-knight"></i><span>Приспособления</span>
+        </a>
+      </li>
+      <li>
+        <a href="#works" title="Готовые работы">
+          <i class="fas fa-folder-open"></i><span>Готовые работы</span>
+        </a>
+      </li>
+      <li>
+        <a href="#products" title="Предложения">
+          <i class="fas fa-chess"></i><span>Предложения</span>
+        </a>
+      </li>
+      <li>
+        <a href="#wishes" title="Желания">
+          <i class="fas fa-chess-bishop"></i><span>Желания</span>
+        </a>
+      </li>
+      <li>
+        <a href="#projects" title="Домашние поделки">
+          <i class="fab fa-github"></i><span>Домашние поделки</span>
+        </a>
+      </li>
     </ul>
     <ul class="language">
-      <li><a href="http://en.mr-woodman.ru" class="free">switch to <strong>english</strong></a></li>
+      <li>
+        <a href="http://en.mr-woodman.ru" class="free">switch to <strong>english</strong></a>
+      </li>
     </ul>
   </nav>
 
@@ -39,7 +69,7 @@
             <img class="avatar" src="about/images/vitla-18.jpg" alt="Виталий Кулешин" width="100%">
           </div>
           <div class="col-xl my-card-title">
-            <h3><span><a href="https://github.com/antivitla" target="_blank">antivitla <i class="fab fa-github"></i></a> <a href="mailto:antivitla@gmail.com" target="_blank">gmail.com</a></span></h3>
+            <h3><span><a href="https://github.com/antivitla" target="_blank" title="К профилю Github">antivitla <i class="fab fa-github"></i></a> <a href="mailto:antivitla@gmail.com" target="_blank" title="Написать письмо">gmail.com</a></span></h3>
             <p><span>и я frontend-разработчик,</span><br><span>которого вы ищете</span></p>
           </div>
         </div>
@@ -111,29 +141,6 @@
           <div class="profile-part-header col-md-12">
             <i class="fas fa-chess-knight fa-3x"></i>
             <h3 class="peter">Приспособления</h3>
-            <!-- <div class="row">
-              <div class="d-none d-md-flex col-md-3">
-                <i class="instrument-icon fab fa-html5"></i>
-                <i class="instrument-icon fab fa-css3"></i>
-                <i class="instrument-icon fab fa-sass"></i>
-                <i class="instrument-icon fab fa-js-square"></i>
-                <i class="instrument-icon fab fa-angular"></i>
-                <i class="instrument-icon fab fa-vuejs"></i>
-                <i class="instrument-icon fab fa-node"></i>
-                <i class="instrument-icon fab fa-npm"></i>
-              </div>
-              <div class="col-12 col-md-6">
-              </div>
-              <div class="d-none d-md-flex col-md-3">
-                <i class="instrument-icon fab fa-docker"></i>
-                <i class="instrument-icon fab fa-git"></i>
-                <i class="instrument-icon fab fa-facebook-square"></i>
-                <i class="instrument-icon fab fa-google-plus-g"></i>
-                <i class="instrument-icon fab fa-vk"></i>
-                <i class="instrument-icon fab fa-yandex"></i>
-                <i class="instrument-icon fab fa-youtube"></i>
-              </div>
-            </div> -->
           </div>
           <div class="profile-part-image col-md-5">
             <p><img src="about/images/men_01.png" height="400"></p>
@@ -193,9 +200,9 @@
           <p>&nbsp;</p>
           <p>
             <small>
-              <a v-bind:href="getPath(work)" target="_blank">вёрстка в новом окне</a>
-              &nbsp; <i class="fas fa-external-link-alt"></i> &nbsp;
-              <a v-if="work.alive" v-bind:href="work.alive" target="_blank">{{getAlive(work)}}</a>
+              <a v-bind:href="getPath(work)" target="_blank" title="Открыть страницу исходной вёрстки в новом табе/окне">вёрстка в новом окне</a>
+              <span class="delimiter" v-if="work.alive"></span>
+              <a v-if="work.alive" v-bind:href="work.alive" title="Открыть получившийся реальный сайт проекта" target="_blank">{{getAlive(work)}}</a>
             </small>
           </p>
         </div>
@@ -317,13 +324,13 @@
         <div class="row justify-content-between">
           <div class="col-md-12 text-center">
             <i class="fab fa-github fa-3x"></i>
-            <h2 class="peter" style="font-size: 3.5rem;">Домашние поделки</h2>
+            <h3 class="peter">Поделки</h3>
             <p>&nbsp;</p>
             <p>&nbsp;</p>
           </div>
 
           <div class="project col-lg-7">
-            <h3>Тайм-трекер Titamóta</h3>
+            <h4>Тайм-трекер Titamóta</h4>
             <p><a href="http://titamota.ru" target="_blank"><i class="fas fa-link"></i> titamota.ru</a></p>
             <p class="lead">Малый, ненавязчивый и мощный таймер времени и денег (сам пользуюсь). Авторизация через соцсети, хотя можно работать и локально. Легкое манипулирование деревом тасков любой вложенности через "командную строку" таймера. Мой многолетний живой проект, сменивший уже <strong>5</strong> версий.</p>
             <p>#Vue.js, #Python/Django/DRF, #PostgreSQL, #Docker</p>
@@ -331,7 +338,7 @@
           </div>
 
           <div id="fontfit" class="project col-lg-4">
-            <h3>Fontfit.js</h3>
+            <h4>Fontfit.js</h4>
             <p><a href="https://github.com/antivitla/mr-fontfit" target="_blank"><i class="fab fa-github"></i> antivitla/mr-fontfit</a></p>
             <p class="text-center">
               <div data-fontfit style="font-weight: 700; letter-spacing: -0.0375rem;">Зачем? А</div>
@@ -344,33 +351,36 @@
           </div>
 
           <div class="project col-md-5 col-lg-4">
-            <h3>Компоненты для HTML/CSS</h3>
+            <h4>Компоненты для HTML/CSS</h4>
             <p><a href="https://github.com/antivitla/mr-utils" target="_blank"><i class="fab fa-github"></i> antivitla/mr-utils</a></p>
             <p>Упрощенная система модулей для HTML/CSS. В продакшн не идет, облегчает вёрстку шаблонов:<br><a href="https://www.npmjs.com/package/mr-utils" target="_blank"><i class="fab fa-npm"></i>  npm install mr-utils</a></p>
           </div>
 
           <div class="project col-md-5 col-lg-4">
-            <h3>Вёрстка-через-тестирование</h3>
+            <h4>Вёрстка-через-тестирование</h4>
             <p><a href="https://github.com/antivitla/mr-testwood" target="_blank"><i class="fab fa-github"></i> antivitla/mr-testwood</a></p>
             <p>Попытка сымитировать <a href="https://ru.wikipedia.org/wiki/%D0%A0%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B0_%D1%87%D0%B5%D1%80%D0%B5%D0%B7_%D1%82%D0%B5%D1%81%D1%82%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5" target="_blank">Test Driven Development</a> (<q>разработка через тестирование</q>), только для вёрстки:<br><a href="https://www.npmjs.com/package/mr-testwood" target="_blank"><i class="fab fa-npm"></i> npm install mr-testwood</a></p>
           </div>
 
           <div class="project col-md-5 col-lg-4">
-            <h3>Генератор смешных словосочетаний</h3>
+            <h4>Генератор смешных словосочетаний</h4>
             <p><a href="https://github.com/antivitla/mr-funny" target="_blank"><i class="fab fa-github"></i> antivitla/mr-funny</a></p>
             <p>Строго говоря, не обязательно смешных &mdash; какие слова скормишь, такие и получишь:<br><a href="https://www.npmjs.com/package/mr-funny" target="_blank"><i class="fab fa-npm"></i> npm install mr-funny</a></p>
           </div>
 
           <div class="project col-md-12 col-lg-8">
-            <h3>Бинарные операции с массивом</h3>
+            <h4>Бинарные операции с массивом</h4>
             <p><a href="https://github.com/antivitla/mr-sorted-array" target="_blank"><i class="fab fa-github"></i> antivitla/mr-sorted-array</a></p>
             <p>Сверхбыстрое добавление, удаление и поиск в сортированном массиве, используя <q>бинарный</q> алгоритм:<br><a href="https://www.npmjs.com/package/mr-sorted-array" target="_blank"><i class="fab fa-npm"></i> npm install mr-sorted-array</a></p>
           </div>
 
           <div class="project col-md-5 col-lg-4">
-            <h3>И прочее</h3>
+            <h4>И прочее</h4>
             <div>              
               <a href="https://github.com/antivitla" target="_blank"><i class="fab fa-github"></i> github.com/antivitla</a>
+            </div>
+            <div>
+              <a href="https://gist.github.com/antivitla" target="_blank">gist.github.com/antivitla</a>
             </div>
             <div>
               <a href="https://npmjs.com/~antivitla/" target="_blank"><i class="fab fa-npm"></i> npmjs.com/~antivitla</a>

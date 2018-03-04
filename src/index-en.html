@@ -3,27 +3,60 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="alternate" hreflang="ru" href="http://mr-woodman.ru" />
+  <link rel="alternate" hreflang="ru" href="http://mr-woodman.ru">
   <title>Mr. Woodman</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <link href="https://fonts.googleapis.com/css?family=Lovers+Quarrel" rel="stylesheet">
   <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 </head>
 <body>
+  <!-- Navbar -->
   <nav id="navbar" class="navbar">
     <a class="toggle"><i class="fas fa-bars"></i></a>
     <ul class="menu">
-      <li><a href="#welcome"><i class="fas fa-home"></i><span>Welcome</span></a></li>
-      <li><a href="#skills"><i class="fas fa-chess-queen"></i><span>Skills</span></a></li>
-      <li><a href="#instruments"><i class="fas fa-chess-knight"></i><span>Instruments</span></a></li>
-      <li><a href="#works"><i class="fas fa-desktop"></i><span>Works</span></a></li>
-      <li><a href="#wishes"><i class="fas fa-chess-bishop"></i><span>Wishes</span></a></li>
-      <li><a href="#products"><i class="fas fa-medkit"></i><span>Products</span></a></li>
-      <li><a href="#projects"><i class="fab fa-github"></i><span>Crafts</span></a></li>
+      <li>
+        <a href="#welcome" title="Up">
+          <i class="fas fa-home"></i><span>Welcome</span>
+        </a>
+      </li>
+      <li>
+        <a href="#skills" title="Skill">
+          <i class="fas fa-chess-queen"></i><span>Skills</span>
+        </a>
+      </li>
+      <li>
+        <a href="#instruments" title="Instrument">
+          <i class="fas fa-chess-knight"></i><span>Instruments</span>
+        </a>
+      </li>
+      <li>
+        <a href="#works" title="Work">
+          <i class="fas fa-folder-open"></i><span>Work</span>
+        </a>
+      </li>
+      <li>
+        <a href="#products" title="Proposal">
+          <i class="fas fa-chess"></i><span>Proposal</span>
+        </a>
+      </li>
+      <li>
+        <a href="#wishes" title="Desire">
+          <i class="fas fa-chess-bishop"></i><span>Desire</span>
+        </a>
+      </li>
+      <li>
+        <a href="#projects" title="Craft">
+          <i class="fab fa-github"></i><span>Craft</span>
+        </a>
+      </li>
     </ul>
     <ul class="language">
-      <li><a href="http://mr-woodman.ru" class="free">перейти на <strong>русский</strong></a></li>
+      <li>
+        <a href="http://en.mr-woodman.ru" class="free">switch to <strong>english</strong></a>
+      </li>
     </ul>
   </nav>
+
   <main>
     <!-- Welcome -->
     <section id="welcome">
@@ -33,121 +66,144 @@
             <p><span>My name is</span></p>
             <h3><span>Vitaly Kuleshin</span></h3>
           </div>
-          <div class="col-xl-3 my-card-avatar">
-            <img class="avatar" src="about/images/vitla-18.jpg" alt="Виталий Кулешин" width="100%">
+          <div class="col-xl-12 my-card-avatar">
+            <img class="avatar" src="about/images/vitla-18.jpg" alt="Vitaly Kuleshin" width="100%">
           </div>
           <div class="col-xl my-card-title">
-            <h3><span><a href="https://github.com/antivitla" target="_blank">antivitla <i class="fab fa-github"></i></a> <a href="mailto:antivitla@gmail.com" target="_blank">gmail.com</a></span></h3>
-            <p><span>and i am the frontend-developer</span><br><span>you are looking for</span></p>
+            <h3><span><a href="https://github.com/antivitla" target="_blank" title="К профилю Github">antivitla <i class="fab fa-github"></i></a> <a href="mailto:antivitla@gmail.com" target="_blank" title="Send a message">gmail.com</a></span></h3>
+            <p><span>and I am the frontend-developer,</span><br><span>you are looking for</span></p>
           </div>
         </div>
       </div>
     </section>
 
     <!-- About -->
-    <section class="diagonal-top">
-      <article class="container">
-        <div id="about" class="profile-part row justify-content-center text-center">
-          <div class="col-md-10">
+    <section id="about" class="diagonal-top">
+      <div class="container">
+        <article class="profile-part row justify-content-center text-center">
+          <div class="col-md-12 col-lg-10">
             <p class="lead">Experience more than 10 years. I've seen <del>things you people wouldn't believe... Attack ships on fire</del> technology births; grew up with them. I know their secret weaknesses and true strength.</p>
           </div>
-        </div>
+        </article>
+      </div>
+    </section>
 
-        <div id="skills" class="profile-part row">
-          <div class="profile-part-header text-center col-md-6">
+    <!-- Skills -->
+    <section id="skills">
+      <div class="container">
+        <article class="profile-part row justify-content-center">
+          <div class="profile-part-header col-md-12">
             <i class="fas fa-chess-queen fa-3x"></i>
-            <h3 class="lovers">Skills</h3>
-            <p><img class="man" src="about/images/men_02.png" height="400"></p>
+            <h3 class="lovers">Skill</h3>
           </div>
-          <div class="profile-part-body col-md-6">
+          <div class="profile-part-image col-md-12">
+            <img src="about/images/men_02.png" height="400">
+          </div>
+          <div class="profile-part-body col-md-10 col-lg-8 col-xl-7">
             <ul class="list-icon">
               <li>
-                <div><i class="far fa-flag"></i></div>
+                <div>&middot;</div>
                 <div>Architecture</div>
               </li>
               <li>
-                <div><i class="far fa-flag"></i></div>
-                <div>Adequate estimation of costs and terms, especially for new (relatively unknown) and complex tasks for the team</div>
+                <div>&middot;</div>
+                <div>Estimating the time and cost; also for <em>complex and new tasks for the team</em></div>
               </li>
               <li>
-                <div><i class="far fa-flag"></i></div>
-                <div>Bring old &amp; time-worn code onto new rails; refactor code without downtime</div>
+                <div>&middot;</div>
+                <div>Transformation of old code; refactoring without downtime</div>
               </li>
               <li>
-                <div><i class="far fa-flag"></i></div>
+                <div>&middot;</div>
                 <div>Develop the stalled tasks to satisfying results</div>
               </li>
               <li>
-                <div><i class="far fa-flag"></i></div>
-                <div>Planning, staging, prioritizing and setting tasks</div>
+                <div>&middot;</div>
+                <div>Planning, staging, prioritizing and setting tasks; <strong>the transformation of uncertainty into clarity</strong></div>
               </li>
               <li>
-                <div><i class="far fa-flag"></i></div>
-                <div>Perfectionism <strong>vs</strong> speed balance in each situation</div>
+                <div>&middot;</div>
+                <div>Each situation has its own balance of perfectionism <strong> vs </strong> speed</div>
               </li>
               <li>
-                <div><i class="fas fa-flag"></i></div>
-                <div><strong>Touch of Beauty</strong> perk</div>
+                <div>&middot;</div>
+                <div><strong>Touch of style</strong></div>
               </li>
             </ul>
           </div>
-        </div>
+        </article>
+      </div>
+    </section>
 
-        <div id="instruments" class="profile-part row">
-          <div class="profile-part-header text-center col-md-6">
+    <!-- Instruments -->
+    <section id="instruments" class="diagonal-bottom">
+      <div class="container">
+        <article class="profile-part row justify-content-center">
+          <div class="profile-part-header col-md-12">
             <i class="fas fa-chess-knight fa-3x"></i>
-            <h3 class="lovers">Instruments</h3>
-            <p><img class="man md-left-2" src="about/images/men_01.png" height="400"></p>
+            <h3 class="lovers">Instrument</h3>
           </div>
-          <div class="profile-part-body col-md-6 md-order-first">
+          <div class="profile-part-image col-md-5">
+            <p><img src="about/images/men_01.png" height="400"></p>
+          </div>
+          <div class="profile-part-body col-md-7">
             <ul class="list-icon">
               <li>
-                <div><i class="fab fa-html5"></i></div>
-                <div>HTML: Structured Data, EPUB</div>
+                <div>&middot;</div>
+                <div>HTML5, EPUB, Structured (micro) Data</div>
               </li>
               <li>
-                <div><i class="fab fa-css3"></i></div>
-                <div>CSS: adaptive, support old if needed, Bootstrap, Foundation, Skeleton, БЭМ, SASS, Stylus</div>
+                <div>&middot;</div>
+                <div>CSS/Sass/Stylus, Responsive, Олдскул по-требованию, Bootstrap, Foundation, Materialize CSS, Semantic UI, Skeleton</div>
               </li>
               <li>
-                <div><i class="fas fa-image"></i></div>
+                <div>&middot;</div>
                 <div>Sketch, Photoshop, Illustrator</div>
               </li>
               <li>
-                <div><i class="fab fa-js-square"></i></div>
-                <div>JavaScript: Vanilla, jQuery, Angular 1.x/<small>2 (in progress)</small>, Vue.js/Vuex, <small>React/Redux/RxJS (in-progress)</small></div>
+                <div>&middot;</div>
+                <div>JavaScript: Vanilla, jQuery, Angular.js 1.x/<small>2 (in progress)</small>, Vue.js/Vuex, <small>React/Redux/RxJS (in-progress)</small></div>
               </li>
               <li>
-                <div><i class="fas fa-link"></i></div>
-                <div>Social and other 3rd-party service integrations (Facebook, VK, Google, Yandex, Github, etc.)</div>
+                <div>&middot;</div>
+                <div><strong>SVG, D3.js</strong></div>
               </li>
               <li>
-                <div><i class="fas fa-cogs"></i></div>
-                <div>Docker, Webpack, Gulp, Yeoman</div>
+                <div>&middot;</div>
+                <div>Интеграция соцсетей и сторонних сервисов (Facebook, VK, Google, Yandex, Github, etc.)</div>
               </li>
               <li>
-                <div><i class="fas fa-server"></i></div>
+                <div>&middot;</div>
+                <div>Docker, Webpack, Gulp, Yeoman, Jasmine/Mocha, Karma</div>
+              </li>
+              <li>
+                <div>&middot;</div>
                 <div><small>Python/Django/DRF, Node.js, Ruby/Rails, PostgeSQL, Firebase</small></div>
               </li>
             </ul>
+            <p>&nbsp;</p>
           </div>
-        </div>
-      </article>
+        </article>
+      </div>
     </section>
 
     <!-- Works -->
-    <section id="works">
+    <section id="works" class="diagonal-bottom">
       <div v-bind:class="['current-work', { desktop: hasDevice(work, 'desktop') }, { tablet: hasDevice(work, 'tablet') }, { mobile: hasDevice(work, 'mobile') }]">
         <!-- Title -->
         <div class="work-header-group text-center container">
-          <h1 class="work-title">{{workTitle}}</h1>
-          <p class="lead" v-html="workDescription"></p>
+          <div class="profile-part-header">
+            <!-- <i class="material-icons" style="font-size: 3rem;">devices_other</i> -->
+            <i class="fa fa-folder-open fa-3x"></i>
+            <h3 class="lovers">Work</h3>
+          </div>
+          <p class="lead"><strong class="work-title">{{workTitle}}.</strong> &mdash; <span class="work-description" v-html="workDescription"></span></p>
           <p>&nbsp;</p>
           <p>
             <small>
-              <a v-bind:href="getPath(work)" target="_blank">open current page in new tab</a>
-              &nbsp; <i class="fas fa-external-link-alt"></i> &nbsp;
-              <a v-if="work.alive" v-bind:href="work.alive" target="_blank">{{getAlive(work)}}</a>
+              <a v-bind:href="getPath(work)" target="_blank" title="Open current page in new tab">open page in new tab</a>
+              <span class="delimiter" v-if="work.alive"></span>
+              <a v-if="work.alive" v-bind:href="work.alive" title="Open finished website in new tab" target="_blank">{{getAlive(work)}}</a>
             </small>
           </p>
         </div>
@@ -160,66 +216,108 @@
           <a v-for="page in work.pages" v-on:click="setPage(page)" v-bind:class="['dot', { active: isActivePage(page) }]">&nbsp;</a>
         </nav>
         <!-- Next/Prev -->
-        <a v-bind:class="['work-prev', { disabled: !hasPrev }]" v-on:click="prevWork()" title="Предыдущая работа"></a>
-        <a v-bind:class="['work-next', { disabled: !hasNext }]" v-on:click="nextWork()" title="Следующая работа"></a>
+        <a v-bind:class="['work-prev', { disabled: !hasPrev }]" v-on:click="prevWork()" title="Previous work"></a>
+        <a v-bind:class="['work-next', { disabled: !hasNext }]" v-on:click="nextWork()" title="Next work"></a>
       </div>
-    </section>
+    </section>    
 
-    <section id="wishes" class="diagonal-bottom">
-      <article class="container">
-        <div class="profile-part row justify-content-center">
-          <div class="profile-part-header col-md-12 text-center no-image">
-            <i class="fas fa-chess-bishop fa-3x"></i>
-            <h3 class="lovers">Will to</h3>
-            <p><img class="man" src="about/images/men_03.png" height="400"></p>
+    <!-- Products-->
+    <section id="products">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12">
+            <div class="profile-part-header">
+              <i class="fas fa-chess fa-3x"></i>
+              <h3 class="lovers">Proposal</h3>
+            </div>
           </div>
-          <div class="profile-part-body no-image">
+
+          <div class="product col-sm-10 col-md-8 col-lg-7">
+            <h4><span style="transform: rotate(-0.5deg);">Consulting</span></h4>
+            <p>Questions on frontend-technologies, architectural solutions. Help with <span>estimation and planning</span> &mdash; both as about small, as <span> large and incomprehensible</span> tasks.</p>
+          </div>
+
+          <div class="product col-sm-10 col-md-8 col-lg-7">
+            <h4><span style="transform: rotate(0.5deg);">Documentation</span></h4>
+            <p>Writing and supporting documents that make clear what is necessary to implement the project. Both as for solely inside team, as for an external user or customer.</p>
             <ul class="list-icon">
               <li>
-                <div><i class="fas fa-asterisk"></i></div>
-                <div>Finish my notes service project (as continuation of <a href="https://titamota.ru/" target="_blank">Titamóta</a> tracker)</div>
+                <div>&middot;</div>
+                <div>Business proposal</div>
               </li>
               <li>
-                <div><i class="fas fa-asterisk"></i></div>
-                <div>Code desktop apps under Electron (because of JavaScript)</div>
+                <div>&middot;</div>
+                <div>Technical Description</div>
               </li>
               <li>
-                <div><i class="fas fa-asterisk"></i></div>
+                <div>&middot;</div>
+                <div><span>Feature and plans description, fixation of project agreements, API formalization</span></div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="product col-sm-10 col-md-8 col-lg-7">
+            <h4><span style="transform: rotate(-0.5deg);">IT project development</span></h4>
+            <p class="leadz">All of the above, as part of development process, plus, obviously, programming.</p>
+            <ul class="list-icon lead">
+              <li>
+                <div>&middot;</div>
+                <div>Consulting &amp; documentation</div>
+              </li>
+              <li>
+                <div>&middot;</div>
+                <div><span>Frontend-coding</span></div>
+              </li>
+              <li>
+                <div>&middot;</div>
+                <div>Support Legacy projects</div>
+              </li>
+              <li>
+                <div>&middot;</div>
+                <div>PSD/Sketch &rarr; HTML &amp; CSS</div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="action product col-12">
+            <p class="lead">Need smth like this?</p>
+            <p  style="transform: rotate(0.5deg);"><a href="mailto:antivitla@gmail.com" class="button lead">Contact me on <strong>antivitla@gmail.com</strong></a></p>
+            <p>&nbsp;</p>
+          </div>
+        </div>
+      </div>
+      <p>&nbsp;</p>
+    </section>
+
+    <!-- Wishes -->
+    <section id="wishes" class="diagonal-top diagonal-bottom">
+      <div class="container">
+        <article class="profile-part row justify-content-center">
+          <div class="profile-part-header col-12">
+            <i class="fas fa-chess-bishop fa-3x"></i>
+            <h3 class="lovers">Desire</h3>
+            <p><img class="man" src="about/images/men_03.png" height="400"></p>
+          </div>
+          <div class="profile-part-body col-md-10 col-lg-8 col-xl-7">
+            <ul class="list-icon">
+              <li>
+                <div>&middot;</div>
+                <div>Finish my mind-blowing "Notes Service" project (as extension of <a href="https://titamota.ru/" target="_blank">Titamóta</a> project)</div>
+              </li>
+              <li>
+                <div>&middot;</div>
+                <div>Code desktop apps under Electron (because it's all JavaScript!)</div>
+              </li>
+              <li>
+                <div>&middot;</div>
                 <div>Be able to lead a team into satisfying fulfillment</div>
               </li>
             </ul>
             <p>&nbsp;</p>
           </div>
-        </div>
-      </article>
-    </section>
-
-    <!-- Products-->
-    <div id="products" class="container-fluid">
-      <div class="row">
-        <div class="product consulting col-lg-5 text-center">
-          <div class="container">
-            <h3><small style="background-color: #45525c;">doing</small><br><span style="background-color: #45525c;">Consulting</span></h3>
-            <p></p>
-          </div>
-        </div>
-        <div class="product legacy col-lg-7  text-center">
-          <div class="container">
-            <h3><small style="background-color: #a99b3f;">supporting</small><br><span style="background-color: #a99b3f;">Legacy &amp; Long-term</span></h3>
-          </div>
-        </div>
-        <div class="product projects col-lg-7 text-center">
-          <div class="container">
-            <h3><small style="background-color: #e3332d;">helping with</small><br><span style="background-color: #e3332d;">New Projects</span></h3>
-          </div>
-        </div>
-        <div class="product psd2html col-lg-5 text-center">
-          <div class="container">
-            <h3><small>oldschool</small><br><span>PSD/Sketch &rarr; HTML &amp; CSS</span></h3>
-          </div>
-        </div>
+        </article>
       </div>
-    </div>
+    </section>
 
     <!-- Projects -->
     <section id="projects">
@@ -227,47 +325,67 @@
         <div class="row justify-content-between">
           <div class="col-md-12 text-center">
             <i class="fab fa-github fa-3x"></i>
-            <h2 class="lovers" style="font-size: 4rem; margin-top: 1.5rem;">Craft</h2>
+            <h3 class="lovers">Craft</h3>
             <p>&nbsp;</p>
             <p>&nbsp;</p>
           </div>
 
           <div class="project col-lg-7">
-            <h3><strong>Titamóta</strong>: time, tasks and money tracker</small></h3>
+            <h4>Titamóta &mdash; time, task and money tracker</h4>
             <p><a href="http://titamota.ru" target="_blank"><i class="fas fa-link"></i> titamota.ru</a></p>
-            <p class="lead">Minimalistik &amp; powerful. Originally was made for myself, now it has small community. Social authorization, though you can work locally. Easy structure-and-restructure. Recently hit <strong>v5.0</strong>.</p>
+            <p class="lead">Minimalistik, yet powerful. Social authorization, though you can work locally. <strong>Flexible structuring</strong> through timer "command-line". My live project, recently hit 5th major version.</p>
             <p>#Vue.js, #Python/Django/DRF, #PostgreSQL, #Docker</p>
             <p><a href="https://github.com/abimbolas/titamota" target="_blank"><i class="fab fa-github"></i> github.com/abimbolas/titamota</a></p>
           </div>
 
           <div id="fontfit" class="project col-lg-4">
+            <h4>Fontfit.js</h4>
+            <p><a href="https://github.com/antivitla/mr-fontfit" target="_blank"><i class="fab fa-github"></i> antivitla/mr-fontfit</a></p>
             <p class="text-center">
-              <div data-fontfit style="font-weight: 600; letter-spacing: -0.0375rem;">FONTFIT.JS</div>
-              <div data-fontfit>&mdash; make your text fit string</div>
-              <div data-fontfit style="font-weight: 600; letter-spacing: -0.0375rem;">WIDTH</div>
+              <div data-fontfit style="font-weight: 700; letter-spacing: -0.0375rem;">Why? For</div>
+              <div data-fontfit>your text &rarr;</div>
+              <div data-fontfit>to occupy all available string</div>
+              <div data-fontfit style="font-weight: 800; letter-spacing: -0.0375rem;">LENGTH</div>
             </p>
             <p class="text-center"><a href="https://www.npmjs.com/package/mr-fontfit"><i class="fab fa-npm fa-3x"></i></a></p>
             <p><a href="https://www.npmjs.com/package/mr-fontfit" data-fontfit>npm install mr-fontfit</a></p>
           </div>
 
           <div class="project col-md-5 col-lg-4">
-            <p>Simple HTML components with JavaScript support. No more copy-paste in html-coding (not for production):<br><a href="https://www.npmjs.com/package/mr-utils" target="_blank"><i class="fab fa-npm fa-lg"></i>  npm install mr-utils</a></p>
+            <h4>Simple HTML/CSS components</h4>
+            <p><a href="https://github.com/antivitla/mr-utils" target="_blank"><i class="fab fa-github"></i> antivitla/mr-utils</a></p>
+            <p>Modularizing HTML/CSS coding. Not intended for production, but making copy-paste-check doom go:<br><a href="https://www.npmjs.com/package/mr-utils" target="_blank"><i class="fab fa-npm"></i>  npm install mr-utils</a></p>
           </div>
 
           <div class="project col-md-5 col-lg-4">
-            <p>Tried to simulate <a href="https://en.wikipedia.org/wiki/Test-driven_development" target="_blank">Test-Driven Development</a>, aka "Test-Driven HTML/CSS Layout" and wrote a tool for this</q>:<br><a href="https://www.npmjs.com/package/mr-testwood" target="_blank"><i class="fab fa-npm fa-lg"></i> npm install mr-testwood</a></p>
+            <h4>Test-Driven HTML/CSS development</h4>
+            <p><a href="https://github.com/antivitla/mr-testwood" target="_blank"><i class="fab fa-github"></i> antivitla/mr-testwood</a></p>
+            <p>Implementation of the <a href="https://ru.wikipedia.org/wiki/%D0%A0%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B0_%D1%87%D0%B5%D1%80%D0%B5%D0%B7_%D1%82%D0%B5%D1%81%D1%82%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5" target="_blank">Test Driven Development</a> concept for HTML/CSS coding:<br><a href="https://www.npmjs.com/package/mr-testwood" target="_blank"><i class="fab fa-npm"></i> npm install mr-testwood</a></p>
           </div>
 
           <div class="project col-md-5 col-lg-4">
-            <p>Funny phrases generator (placeholder/dummy role):<br><a href="https://www.npmjs.com/package/mr-funny" target="_blank"><i class="fab fa-npm fa-lg"></i> npm install mr-funny</a></p>
+            <h4>Funny phrases generator</h4>
+            <p><a href="https://github.com/antivitla/mr-funny" target="_blank"><i class="fab fa-github"></i> antivitla/mr-funny</a></p>
+            <p>Strictly speaking, what dictionary you give is what phrases you get:<br><a href="https://www.npmjs.com/package/mr-funny" target="_blank"><i class="fab fa-npm"></i> npm install mr-funny</a></p>
           </div>
 
           <div class="project col-md-12 col-lg-8">
-            <p class="lead">Very fast add/remove/search operations on a sorted array, using а "binary" algorythm:<br><a href="https://www.npmjs.com/package/mr-sorted-array" target="_blank"><i class="fab fa-npm fa-lg"></i> npm install mr-sorted-array</a></p>
+            <h4>Binary operations with array</h4>
+            <p><a href="https://github.com/antivitla/mr-sorted-array" target="_blank"><i class="fab fa-github"></i> antivitla/mr-sorted-array</a></p>
+            <p>Uberquick add, remove and search operations in sorted array, using binary algorithm:<br><a href="https://www.npmjs.com/package/mr-sorted-array" target="_blank"><i class="fab fa-npm"></i> npm install mr-sorted-array</a></p>
           </div>
 
           <div class="project col-md-5 col-lg-4">
-            <p>Raise-or-lower huge header (optionally powered with my mr-fontfit) so that only part of last string is visible (inspired by old A-List-Apart design):<br><a href="https://www.npmjs.com/package/mr-headlift"><i class="fab fa-npm fa-lg"></i> npm install mr-headlift</a></p>
+            <h4>Et cetera</h4>
+            <div>              
+              <a href="https://github.com/antivitla" target="_blank"><i class="fab fa-github"></i> github.com/antivitla</a>
+            </div>
+            <div>
+              <a href="https://gist.github.com/antivitla" target="_blank">gist.github.com/antivitla</a>
+            </div>
+            <div>
+              <a href="https://npmjs.com/~antivitla/" target="_blank"><i class="fab fa-npm"></i> npmjs.com/~antivitla</a>
+            </div>
           </div>
         </div>
       </div>
@@ -275,9 +393,9 @@
       <!-- Footer -->
       <footer class="text-center container">
         <p class="lead">Mr. Woodman v4.1</p>
-        <p class="smallers">from the Area 30&trade;</p>
+        <p class="smallers">made at Area 30&trade;</p>
         <img class="cat" src="about/images/cat-preloader.gif">
-        <p class="smaller"><span style="opacity: 0.5;">powered by:</span> Ivan Bilibin, Oleg Fedorov, <span style="opacity: 0.5;">and</span> Simon Stålenhag.</small></p>
+        <p class="smaller"><span style="opacity: 0.5;">powered by:</span> Ivan Bilibin, Oleg Fedorov <span style="opacity: 0.5;">and</span> Simon Stålenhag.</small></p>
       </footer>
     </section>
   </main>
