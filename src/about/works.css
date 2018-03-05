@@ -10,9 +10,9 @@
   }
 }
 
-@media (min-width: 761px) {
+@media (min-width: 765px) {
   #works {
-    margin-top: 3.5rem;
+    margin-top: 2rem;
   }
 }
 
@@ -343,7 +343,7 @@
 }
 
 .current-work .device.tablet .iframe-holder {
-  width: 768px;
+  width: 767px;
   height: 1026px;
   position: absolute;
   left: 163px;

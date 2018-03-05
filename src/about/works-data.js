@@ -583,10 +583,7 @@ const data = [
   },
 
   {
-    title: {
-      en: "Scoblimora (Skyrim Alchemy)",
-      ru: "Scoblimora"
-    },
+    title: "Scoblimora",
     path: "2017-12--vitaly-kuleshin--titamota/www/",
     pages: ["http://mr-woodman.ru/scoblimora"],
     description: {
@@ -610,11 +607,11 @@ const data = [
     path: "2016-04--chuprik--loveeat/www/",
     pages: ["pages/loveeat-main.html", "pages/loveeat-blog.html", "pages/loveeat-collection.html", "pages/loveeat-collections.html", "pages/loveeat-components.html", "pages/loveeat-edit-profile.html", "pages/loveeat-followers-following-modal.html", "pages/loveeat-my-profile-collection.html", "pages/loveeat-my-profile-collections.html", "pages/loveeat-my-profile-posts.html", "pages/loveeat-my-recipe.html", "pages/loveeat-notifications-messages-modal.html", "pages/loveeat-other-profile-posts.html", "pages/loveeat-people.html", "pages/loveeat-post.html", "pages/loveeat-recipe.html", "pages/loveeat-recipes-with-filter-another-layout.html", "pages/loveeat-recipes-with-filter.html", "pages/loveeat-search.html", "pages/loveeat-tabs-modal.html"],
     description: "Ещё что-то модное про еду. Дофигища шаблонов. Моя утилита <a href=\"https://github.com/antivitla/mr-testwood\">вёрстки-через-тестирование</a> просто спасение",
-    devices: "desktop mobile"
+    devices: "desktop tablet mobile"
   },
 
   {
-    title: "Компания Neq4",
+    title: "Neq4",
     path: "2014-09--masha-niggol--neq4/www/",
     pages: ["panorama-neq4-index.html", "panorama-neq4-about.html", "panorama-neq4-contact.html", "panorama-neq4-job.html", "panorama-neq4-pak.html", "panorama-neq4-panorama.html", "panorama-neq4-press.html", "panorama-neq4-projects.html", "panorama-neq4-yandex-panoramas.html", "digital-neq4-index.html"],
     description: "Любимый клиент, корпорация и просто красавица. <small>#Классика HTML/CSS/JavaScript</small>",
@@ -632,29 +629,44 @@ const data = [
   },
 
   {
-    title: "Онлайн-радио «Кофемания FM»",
+    title: {
+      ru: "Онлайн-радио «Кофемания FM»",
+      en: "Online Radio \"Coffeemania FM\""
+    },
     path: "2014-07--masha-niggol--coffeemania-fm/www/",
     pages: ["coffemania-fm-index.html"],
-    description: "Хоть раз со звуком поработал! Не так сложно, как думал. <small>#Aдаптивноcть, #HTML5 API, #CSS3, #Angularjs</small>",
+    description: {
+      ru: "Хоть раз со звуком поработал! Не так сложно, как думал. <small>#Aдаптивноcть, #HTML5 API, #CSS3, #Angularjs</small>",
+      en: "Interesting experience with sound API. Easier than I thought. <small>#Responsive, #HTML5 API, #CSS3, #Angular.js</small>"
+    },
     devices: "desktop tablet mobile",
     alive: "http://coffeemania.fm"
   },
 
   {
-    title: "Виртуальная Арктика",
+    title: {
+      ru: "Виртуальная Арктика",
+      en: "Russian Arctic"
+    },
     path: "2015-08--masha-niggol--arctic/www/",
     pages: ["index.html"],
-    description: "Проект <a href=\"http://neq4.ru\">Neq4</a>. На краю земли ожидаемо безлюдно, забыто и заброшено. Хорошо, что можем на это поглядеть из тёплого броузера. <small>#Angular.js, #SVG</small>",
+    description: {
+      en: "<a href=\"http://neq4.ru\">Neq4</a> project. Cold edge of the earth. <small>#Angular.js, #SVG</small>",
+      ru: "Проект <a href=\"http://neq4.ru\">Neq4</a>. На краю земли ожидаемо безлюдно, забыто и заброшено. Хорошо, что можем на это поглядеть из тёплого броузера. <small>#Angular.js, #SVG</small>"
+    },
     devices: "desktop tablet mobile"
   },
 
   {
-    title: "Таймер времени и денег Titamóta",
+    title: {
+      ru: "Таймер времени и денег Titamóta",
+      en: "Titamóta"
+    },
     path: "2017-12--vitaly-kuleshin--titamota/www/",
     pages: ["http://titamota.ru", "http://mr-woodman.ru/titamota"],
     description: {
       ru: "Пятая мажорная версия моего широко известного в узких кругах проекта. Выступил fullstack-программистом (если долго делать OAuth-авторизацию, можно сойти с ума). <small>#Vuejs, #Django/Python/DRF/PostgreSQL, #Docker</small>",
-      en: "Freelance time-tracker. Proud UX and inner algrorythms. Being fullstack coder. <small>#Vue.js, #Django/Python/DRF, #PostgreSQL, #Docker, #it-even-has-landing-page</small>"
+      en: "Time, task and money tracker. Proud UX and inner algrorythms. Being fullstack coder. <small>#Vue.js, #Django/Python/DRF, #PostgreSQL, #Docker, #it-even-has-landing-page</small>"
     },
     devices: "desktop tablet mobile",
     alive: "http://titamota.ru"
@@ -666,7 +678,7 @@ const data = [
     pages: ["http://mr-woodman.ru"],
     description: {
       ru: "Минорный апдейт. Добавлены новые работы, вписаны новые тексты. <small><strong>#iframe-рекурсия</strong>, #Vue.js, #Webpack, #frontend-porn</small>",
-      en: "Another minor update. Added some works for last few years, text changes. <small>#Vuejs, #Webpack, #Babel-porn, #iframe-recursion</small>"
+      en: "Another minor update. New works, new texts. <small>#Vuejs, #Webpack, #Babel-porn, #iframe-recursion</small>"
     },
     devices: "desktop tablet mobile",
     alive: "http://mr-woodman.ru"
