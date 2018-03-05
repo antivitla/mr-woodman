@@ -436,7 +436,7 @@ const data = [
   {
     title: "Територрия удовольствия",
     path: "2012-xx--dima-komissarov--terra-pleasure/www/",
-    pages: ["tu-index.html","tu-wine.html","tu-gift.html","tu-wines.html","tu-review.html","tu-recommend-articles.html","tu-recommend-article.html","tu-index.html","tu-gifts.html","tu-contacts.html","tu-about.html"],
+    pages: ["tu-index.html","tu-wine.html","tu-gift.html","tu-wines.html","tu-review.html","tu-recommend-articles.html","tu-recommend-article.html","tu-gifts.html","tu-contacts.html","tu-about.html"],
     description: "Про бухло. Красиво, с бутылками.",
     devices: "desktop",
   },
@@ -682,7 +682,7 @@ const data = [
     },
     devices: "desktop tablet mobile",
     alive: "http://mr-woodman.ru"
-  },  
+  },
 ];
 
 export default data;

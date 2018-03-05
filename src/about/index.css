@@ -21,6 +21,12 @@ html, body {
   }
 }
 
+@media (min-width: 1440px) {
+  html, body {
+    font-size: 21px;
+  }
+}
+
 * {
   margin: 0px;
   padding: 0px;
@@ -251,6 +257,10 @@ article p:last-child {
   .md-left-2 {
     position: relative;
     left: -2rem;
+  }
+
+  .md-float-right {
+    float: right;
   }
 }
 

@@ -59,7 +59,6 @@
 
   .profile-part-image img {
     height: 420px;
-    /*float: right;*/
   }
 }
 
@@ -77,9 +76,32 @@
   }
 }
 
+.profile-part-body li {
+  max-width: 35em;
+}
+
 section#about,
 section#instruments {
   min-height: 0px;
+}
+
+
+section#wishes {
+  padding-bottom: 1.5rem;
+}
+
+/*section#wishes .profile-part-body {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}*/
+
+section#wishes .profile-part-header {
+  margin-bottom: 3rem;
+}
+
+section#wishes .profile-part-image {
+  margin-bottom: 0;
+  margin-top: 2rem;
 }
 
 @media (min-width: 767px) {
@@ -89,5 +111,40 @@ section#instruments {
 
   section#instruments {
     margin-top: 2rem;
+  }
+
+  section#wishes .profile-part-header {
+    margin-bottom: 4rem;
+  }
+
+  section#wishes .profile-part-image {
+    margin-bottom: 0;
+    margin-top: 3rem;
+  }
+}
+
+@media (min-width: 992px) {
+  section#wishes .profile-part-body {
+    position: relative;
+    left: 1rem;
+  }
+
+  section#wishes .profile-part-image {
+    margin-bottom: 2rem;
+    margin-top: 3rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  section#wishes .profile-part-body {
+    position: relative;
+    left: 4rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  section#wishes .profile-part-body {
+    position: relative;
+    left: 2rem;
   }
 }

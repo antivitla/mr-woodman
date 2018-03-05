@@ -143,9 +143,9 @@
             <h3 class="peter">Приспособления</h3>
           </div>
           <div class="profile-part-image col-md-5">
-            <p><img src="about/images/men_01.png" height="400"></p>
+            <img class="md-float-right" src="about/images/men_01.png" height="400">
           </div>
-          <div class="profile-part-body col-md-7">
+          <div class="profile-part-body col-md-7 col-lg-5">
             <ul class="list-icon">
               <li>
                 <div>&middot;</div>
@@ -217,7 +217,7 @@
         <a v-bind:class="['work-prev', { disabled: !hasPrev }]" v-on:click="prevWork()" title="Предыдущая работа"></a>
         <a v-bind:class="['work-next', { disabled: !hasNext }]" v-on:click="nextWork()" title="Следующая работа"></a>
       </div>
-    </section>    
+    </section>
 
     <!-- Products-->
     <section id="products-section">
@@ -230,12 +230,12 @@
             </div>
           </div>
 
-          <div class="product col-sm-10 col-md-8 col-lg-7">
+          <div class="product consulting col-sm-10 col-md-8 col-lg-7">
             <h4><span style="transform: rotate(-0.5deg);">Консультация</span></h4>
             <p class="text-centerz">Вопросы по frontend-технологиям, архитектурным решениям. Помощь с <span>оценкой и планированием</span> &mdash; как мелких, так и <span>больших и непонятных</span> задач.</p>
           </div>
 
-          <div class="product col-sm-10 col-md-8 col-lg-7">
+          <div class="product documentation col-sm-10 col-md-8 col-lg-7">
             <h4><span style="transform: rotate(0.5deg);">Документация</span></h4>
             <p>Написание и поддержка документов, делающих ясным то, что необходимо для реализации проекта. Как внутри-командных, так и для внешнего пользователя или заказчика.</p>
             <ul class="list-icon">
@@ -256,7 +256,7 @@
 
           <div class="product col-sm-10 col-md-8 col-lg-7">
             <h4><span style="transform: rotate(-0.5deg);">Ведение ИТ-проекта</span></h4>
-            <p class="leadz">Всё вышеперечисленное в рамках работы над проектом &mdash; системно. Плюс, собственно, программирование.</p>
+            <p class="lead">Всё вышеперечисленное в рамках работы над проектом. Плюс, собственно, программирование.</p>
             <ul class="list-icon lead">
               <li>
                 <div>&middot;</div>
@@ -280,11 +280,9 @@
           <div class="action product col-12">
             <p class="lead">Что-такое надо?</p>
             <p  style="transform: rotate(0.5deg);"><a href="mailto:antivitla@gmail.com" class="button lead">Пиши мне на <strong>antivitla@gmail.com</strong></a></p>
-            <p>&nbsp;</p>
           </div>
         </div>
       </div>
-      <p>&nbsp;</p>
     </section>
 
     <!-- Wishes -->
@@ -294,9 +292,8 @@
           <div class="profile-part-header col-12">
             <i class="fas fa-chess-bishop fa-3x"></i>
             <h3 class="peter">Желания</h3>
-            <p><img class="man" src="about/images/men_03.png" height="400"></p>
           </div>
-          <div class="profile-part-body col-md-10 col-lg-8 col-xl-7">
+          <div class="profile-part-body col-md-10 col-lg-8">
             <ul class="list-icon">
               <li>
                 <div>&middot;</div>
@@ -311,6 +308,9 @@
                 <div>Провести команду к удовлетворяющему результату</div>
               </li>
             </ul>
+          </div>
+          <div class="profile-part-image col-12">
+            <img class="man" src="about/images/men_03.png" height="400">
           </div>
         </article>
       </div>
@@ -372,7 +372,7 @@
 
           <div class="project col-md-5 col-lg-4">
             <h4>И прочее</h4>
-            <div>              
+            <div>
               <a href="https://github.com/antivitla" target="_blank"><i class="fab fa-github"></i> github.com/antivitla</a>
             </div>
             <div>

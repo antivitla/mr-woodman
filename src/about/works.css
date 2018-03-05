@@ -71,7 +71,7 @@
   height: 6rem;
   display: block;
   position: absolute;
-  bottom: 40rem;
+  bottom: 720px;
   left: 4.5rem;
   border-left: solid 2px;
   border-bottom: solid 2px;
@@ -87,7 +87,7 @@
   height: 6rem;
   display: block;
   position: absolute;
-  bottom: 40rem;
+  bottom: 720px;
   right: 4.5rem;
   border-right: solid 2px;
   border-top: solid 2px;
@@ -108,13 +108,13 @@
   .current-work a.work-next {
     width: 5rem;
     height: 5rem;
-    bottom: 28.5rem;
+    bottom: 513px;
   }
 
   .current-work a.work-prev {
     width: 5rem;
     height: 5rem;
-    bottom: 28.5rem;
+    bottom: 513px;
   }
 }
 
@@ -172,15 +172,15 @@
 */
 
 .current-work.mobile {
-  padding-bottom: 27rem;
+  padding-bottom: 486px;
 }
 
 .current-work.desktop.mobile {
-  padding-bottom: 65.5rem;
+  padding-bottom: 1179px;
 }
 
 .current-work {
-  padding-bottom: 65.5rem;
+  padding-bottom: 1179px;
 }
 
 .current-work .device.desktop {
@@ -225,11 +225,11 @@
 */
 
   .current-work {
-    padding-bottom: 45.5rem;
+    padding-bottom: 819px;
   }
 
   .current-work.desktop.mobile {
-    padding-bottom: 45.5rem;
+    padding-bottom: 819px;
   }
 
   .current-work .device.desktop {
@@ -274,18 +274,18 @@
 
 @media screen and (max-width: 1030px) {
   .current-work {
-    padding-bottom: 40.5rem;
+    padding-bottom: 729px;
   }
 
   .current-work.desktop.mobile {
-    padding-bottom: 40.5rem;
+    padding-bottom: 729px;
   }
 
   .current-work .device.desktop {
-    bottom: 0px;
-    margin-left: -221px;
-    width: 442px;
-    height: 584px;
+    bottom: 55px;
+    margin-left: -330px;
+    width: 670px;
+    height: 645px;
     background: url(images/tablet-drawn.png) no-repeat center center;
     background-size: contain;
   }
@@ -294,8 +294,8 @@
     width: 1200px;
     height: 1600px;
     position: absolute;
-    left: 46px;
-    top: 53px;
+    left: 163px;
+    top: 73px;
     border: 0px;
     overflow: hidden;
     -ms-transform: scale(0.2887,0.2887);
@@ -310,12 +310,12 @@
   }
 
   .current-work a.work-next {
-    bottom: 22rem
+    bottom: 396px;
   }
 
   .current-work a.work-prev {
-    bottom: 22rem;
-  }  
+    bottom: 396px;
+  }
 }
 
 
@@ -334,7 +334,7 @@
 .current-work .device.tablet {
   bottom: 80px;
   margin-left: 0;
-  right: 60px;
+  right: 120px;
   left: auto;
   width: 670px;
   height: 645px;
