@@ -1,7 +1,7 @@
 
 main > section {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+  padding-top: 3.5rem;
+  padding-bottom: 3.5rem;
   box-sizing: border-box;
   min-height: 100vh;
   position: relative;
@@ -12,241 +12,40 @@ main > section {
 }
 
 main > section.diagonal-top {
-  padding-top: 1.5rem;
+  /*padding-top: 1.5rem;*/
 }
 
 main > section.diagonal-bottom {
-  padding-bottom: 1.5rem;
+  /*padding-bottom: 1.5rem;*/
 }
 
 @media (min-width: 768px) {
   main > section.diagonal-top {
-    padding-top: 2.5rem;
+    /*padding-top: 2.5rem;*/
   }
 
   main > section.diagonal-bottom {
-    padding-bottom: 2.5rem;
+    /*padding-bottom: 2.5rem;*/
   }
 }
 
 @media (min-width: 1200px) {
   main > section.diagonal-top {
-    padding-top: 3.5rem;
+    /*padding-top: 3.5rem;*/
   }
 
   main > section.diagonal-bottom {
-    padding-bottom: 3.5rem;
+    /*padding-bottom: 3.5rem;*/
   }
 }
 
 @media (min-width: 1600px) {
   main > section.diagonal-top {
-    padding-top: 4rem;
+    /*padding-top: 4rem;*/
   }
 
   main > section.diagonal-bottom {
-    padding-bottom: 4rem;
+    /*padding-bottom: 4rem;*/
   }
 }
 
-/*
-section {
-  padding-top: 2rem;
-  padding-bottom: 4rem;
-  text-align: center;
-  position: relative;
-}
-
-section > h1 {
-  margin-bottom: 3rem;
-}
-
-section.dark {
-  color: #ccc;
-  background-color: #333;
-  position: relative;
-  z-index: 9;
-  -webkit-box-shadow: inset 0 15px 30px -15px rgba(0,0,0,0.625), 0 0 0px 1px rgba(0,0,0,0.1);
-  -moz-box-shadow: inset 0 15px 30px -15px rgba(0,0,0,0.625), 0 0 0px 1px rgba(0,0,0,0.1);
-  box-shadow: inset 0 15px 30px -15px rgba(0,0,0,0.625), 0 0 0px 1px rgba(0,0,0,0.1);
-}
-
-section.dark a {
-  color: #888;
-  box-shadow: 0px 1px 0px 0px #444;
-}
-
-section.dark a:hover {
-  color: #aaa;
-  box-shadow: 0px 1px 0px 0px #888;
-}
-
-section.dark .links a {
-  border-radius: 2px;
-  padding: 0 3px;
-  margin-left: -3px;
-}
-
-section.dark .links a:hover {
-  background-color: ghostwhite;
-  color: #333;
-  transition: all 0.2s ease-out;
-}
-
-section.red {
-  color: rgba(255, 255, 255, 0.86);
-  background-color: rgb(140, 72, 58);
-  position: relative;
-  z-index: 9;
-  -webkit-box-shadow: inset 0 15px 30px -15px rgba(0,0,0,0.5), 0 0 0px 1px rgba(0,0,0,0.1);
-  -moz-box-shadow: inset 0 15px 30px -15px rgba(0,0,0,0.5), 0 0 0px 1px rgba(0,0,0,0.1);
-  box-shadow: inset 0 15px 30px -15px rgba(0,0,0,0.5), 0 0 0px 1px rgba(0,0,0,0.1);
-}
-
-
-
-.collapsing > *:not(h1):not(toggle) {
-  transform-origin: 50% 0%;
-  transform: scale(1,0);
-  transition: transform 0.3s ease-out, max-height 0.2s, padding-top 0.2s, padding-bottom 0.2s;
-  max-height: 0;
-}
-
-.collapsing:not(.active) h1 {
-  margin-bottom: 0;
-}
-
-.collapsing:not(.active) > *:not(h1):not(toggle) {
-  padding-top: 0!important;
-  padding-bottom: 0 !important;
-  margin-top: 0!important;
-  margin-bottom: 0!important;
-}
-
-.collapsing.active > *:not(h1):not(toggle) {
-  transform: scale(1,1);
-  max-height: 6000px;
-}
-
-.collapsing {
-  position: relative;
-}
-
-toggle {
-  cursor: pointer;
-  display: inline-block;
-  z-index: 10;
-  transition: top 0.2s, right 0.2s, font-size 0.2s;
-  box-shadow: 0px 1px 0px 0px #ccc;
-}
-
-toggle .material-icons {
-  font-size: 1.125rem;
-}
-
-toggle:hover {
-  box-shadow: 0px 1px 0px 0px #000;
-  background-color: rgba(0,0,0,0.075);
-}
-
-.collapsing:not(.active) > toggle > .active,
-.collapsing.active > toggle > *:not(.active) {
-  display: none;
-}
-
-.collapsing.active > toggle .fa:before {
-  content: "\f077";
-}
-
-.collapsing:not(.active) h1 {
-  font-size: 1.125rem;
-  line-height: 1.5rem;
-  font-weight: 300;
-}
-
-.collapsing h1 {
-  transition: all 0.2s ease-out;
-  cursor: pointer;
-}
-
-toggle:not(.active) > .active,
-toggle.active > *:not(.active) {
-  display: none;
-}
-
-
-
-section.diagonal:before {
-  content: " ";
-  position: absolute;
-  left: -1.5rem;
-  right: -1.5rem;
-  top: -1rem;
-  height: 2.5rem;
-  transform: rotate(-1deg);
-  z-index: -1;
-}
-
-section.diagonal:after {
-  content: " ";
-  position: absolute;
-  left: -1.5rem;
-  right: -1.5rem;
-  bottom: -1rem;
-  height: 2.5rem;
-  transform: rotate(1deg);
-  z-index: -1;
-}
-
-section.diagonal {
-  box-shadow: none;
-}
-
-section.diagonal.dark:before,
-section.diagonal.dark:after {
-  background-color: #333;
-}
-
-section.diagonal.light:before,
-section.diagonal.light:after,
-section.diagonal.light {
-  background-color: ghostwhite;
-}
-
-section.diagonal.red:before,
-section.diagonal.red:after,
-section.diagonal.red {
-  background-color: rgb(140, 72, 58);
-}
-
-section.diagonal.dark:before,
-section.diagonal.dark:after,
-section.diagonal.dark {
-  background-color: #333;
-}
-
-section.diagonal:before {
-  -webkit-box-shadow: inset 0 10px 20px -10px rgba(0,0,0,0.5), 0 -1px 0px 0px rgba(0,0,0,0.1);
-  -moz-box-shadow: inset 0 10px 20px -10px rgba(0,0,0,0.5), 0 -1px 0px 0px rgba(0,0,0,0.1);
-  box-shadow: inset 0 10px 20px -10px rgba(0,0,0,0.5), 0 -1px 0px 0px rgba(0,0,0,0.1);
-}
-
-section.diagonal:after {
-  -webkit-box-shadow: inset 0 -10px 20px -10px rgba(0,0,0,0.5), 0 1px 0px 0px rgba(0,0,0,0.1);
-  -moz-box-shadow: inset 0 -10px 20px -10px rgba(0,0,0,0.5), 0 1px 0px 0px rgba(0,0,0,0.1);
-  box-shadow: inset 0 -10px 20px -10px rgba(0,0,0,0.5), 0 1px 0px 0px rgba(0,0,0,0.1);
-}
-
-section.diagonal toggle {
-  top: 0;
-}
-
-section.collapsing:not(.active).diagonal {
-  padding-top: 0;
-  padding-bottom: 0;
-}
-
-section.collapsing:not(.active).diagonal > toggle {
-  top: 0.25rem;
-}
-*/

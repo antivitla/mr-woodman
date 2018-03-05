@@ -1,4 +1,4 @@
-#products {
+#products-section {
   position: relative;
   color: #f5f5f5;
   text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.125), 
@@ -8,7 +8,7 @@
   opacity: 0.75;
 }
 
-#products:before {
+#products-section:before {
   content: " ";
   z-index: 0;
   position: absolute;
@@ -24,7 +24,7 @@
   background-color: #dad6c3;
 }
 
-#products:after {
+#products-section:after {
   content: " ";
   z-index: 0;
   position: absolute;
@@ -39,14 +39,14 @@
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#40000000',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
 
-#products > * {
+#products-section > * {
   z-index: 1;
   position: relative;
 }
 
-#products .profile-part-header {
-  margin-top: 3rem;
-  margin-bottom: 3rem;
+#products-section .profile-part-header {
+  margin-top: 3.5rem;
+  margin-bottom: 3.5rem;
 }
 
 .product {
@@ -107,7 +107,7 @@
 }
 
 @media (min-width: 768px) {
-  #products .profile-part-header {
+  #products-section .profile-part-header {
     margin-bottom: 4rem;
   }
 

@@ -29,7 +29,7 @@ function whoIsInView (spies) {
   spies.forEach(spy => {
     const items = document.querySelectorAll('a[href="' + spy + '"]');
     const name = spy.split('#')[1];
-    if (isInView(document.getElementById(name))) {
+    if (isInView(document.getElementById(name), 40)) {
       document.body.classList.add(name + '-section-visible');
     } else {
       document.body.classList.remove(name + '-section-visible');

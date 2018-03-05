@@ -1,14 +1,14 @@
-#projects {
+#projects-section {
   /*position: relative;*/
   /*z-index: 50;*/
   /*color: #4c4744;*/
-  padding-top: 7rem;
-  padding-bottom: 7rem;
+  padding-top: 3rem;
+  padding-bottom: 6rem;
   /*font-weight: 400;*/
   background: #f0dcb7 url(images/projects-background.jpg) left top;
 }
 
-#projects:before {
+#projects-section:before {
   content: " ";
   width: 100%;
   width: calc(100% + 2rem);
@@ -23,7 +23,7 @@
   top: 0rem;
 }
 
-#projects:after {
+#projects-section:after {
   content: " ";
   width: 100%;
   width: calc(100% + 2rem);
@@ -38,64 +38,79 @@
   bottom: 0rem;
 }
 
-#projects a {
+#projects-section a {
   color: #b95e4b;
   font-weight: 400;
   box-shadow: none;
   border: none;
 }
 
-#projects a [class*="fa-"] {
+#projects-section a [class*="fa-"] {
   width: 1rem;
   margin-right: 0.375rem;
 }
 
-#projects a:hover {
+#projects-section a:hover {
   background-color: transparent;
   border-bottom: solid rgba(185, 94, 75, 0.5) 1px;
 }
 
-#projects .project {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+#projects-section .profile-part-header {
+  margin-top: 3.5rem;
+  margin-bottom: 3.5rem;
 }
 
-#projects .project.smaller {
+#projects-section .project {
+  margin-bottom: 4.5rem;
+}
+
+#projects-section .project:last-child {
+  margin-bottom: 0;
+}
+
+@media (min-width: 992px) {
+  #projects-section .project:nth-last-child(2) {
+    margin-bottom: 0;
+  }
+}
+
+
+#projects-section .project.smaller {
   font-size: 87.5%;
 }
 
-#projects h3 {
+#projects-section h3 {
   font-size: 3rem;
   line-height: 1;
   margin-top: 0.75rem;
 }
 
-#projects h3.lovers {
+#projects-section h3.lovers {
   font-size: 5rem;
   line-height: 1;
 }
 
-#projects .project h4 {
+#projects-section .project h4 {
   font-size: 1.5rem;
   margin-bottom: 1rem;
   font-weight: 500;
 }
 
-#projects .project p {
+#projects-section .project p {
   margin-bottom: 0.5rem;
 }
 
-#projects .project p.lead {
+#projects-section .project p.lead {
   margin: 1.5rem auto;
 }
 
-#projects .project a svg {
+#projects-section .project a svg {
   position: relative;
   top: 2px;
 }
 
 @media (min-width: 768px) {
-  #projects h3 {
+  #projects-section h3 {
     font-size: 3.5rem;
   }
 }

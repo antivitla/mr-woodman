@@ -8,7 +8,7 @@ module.exports = {
   entry: './about/index.js',
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: 'about/index.js'
+    filename: 'about/index.[chunkhash].js'
   },
   devtool: 'inline-source-map',
   devServer: {
@@ -17,7 +17,7 @@ module.exports = {
   },
   plugins: [
     new CleanWebpackPlugin(['dist']),
-    new ExtractTextPlugin('about/index.css'),
+    new ExtractTextPlugin('about/index.[contenthash].css'),
     new HtmlWebpackPlugin({
       template: './index.html'
     }),

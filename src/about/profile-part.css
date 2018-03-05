@@ -77,13 +77,18 @@
   }
 }
 
-section#about {
+section#about,
+section#instruments {
   min-height: 0px;
 }
 
 @media (min-width: 768px) {
   section#instruments:after {
     content: none;
+  }
+
+  section#instruments {
+    margin-top: 3rem;
   }
 }
 

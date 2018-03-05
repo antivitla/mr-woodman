@@ -11,14 +11,14 @@
 }
 
 @media (min-width: 761px) {
-  #work {
-    padding-bottom: 4.5rem;
+  #works {
+    margin-top: 3.5rem;
   }
 }
 
 .current-work {
   /*background: whitesmoke url(images/device-background-lighter.jpg) no-repeat center bottom;*/
-  padding-top: 3rem;
+  /*padding-top: 3rem;*/
   position: relative;
   overflow: hidden;
 }
@@ -71,7 +71,7 @@
   height: 6rem;
   display: block;
   position: absolute;
-  bottom: 40%;
+  bottom: 40rem;
   left: 4.5rem;
   border-left: solid 2px;
   border-bottom: solid 2px;
@@ -87,7 +87,7 @@
   height: 6rem;
   display: block;
   position: absolute;
-  bottom: 40%;
+  bottom: 40rem;
   right: 4.5rem;
   border-right: solid 2px;
   border-top: solid 2px;
@@ -108,11 +108,13 @@
   .current-work a.work-next {
     width: 5rem;
     height: 5rem;
+    bottom: 28.5rem;
   }
 
   .current-work a.work-prev {
     width: 5rem;
     height: 5rem;
+    bottom: 28.5rem;
   }
 }
 
@@ -306,6 +308,14 @@
     transform-origin: 0% 0%;
     background-color: #fff;
   }
+
+  .current-work a.work-next {
+    bottom: 22rem
+  }
+
+  .current-work a.work-prev {
+    bottom: 22rem;
+  }  
 }
 
 
