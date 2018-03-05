@@ -27,7 +27,6 @@
 }
 
 .not-first-screen #navbar .toggle {
-  /*background-color: #54443a;*/
   color: #54443a;
   background-color: whitesmoke;
 }
@@ -55,7 +54,6 @@
   height: 48px;
   color: rgba(255, 255, 255, 0.75);
   background-color: #54443a;
-  /*font-weight: 400;*/
   text-align: center;
 }
 
@@ -122,4 +120,32 @@
 #navbar a[href="#projects"],
 #navbar ul.language a {
   border-bottom-right-radius: 4px;
+}
+
+@media (min-width: 768px) {
+  #navbar .toggle,
+  #navbar ul li a {
+    width: 54px;
+    height: 54px;
+    padding: 14px;
+    line-height: 27px;
+  }
+
+  #navbar ul.language {
+    left: 53px;
+  }
+}
+
+@media (min-width: 1440px) {
+  #navbar .toggle,
+  #navbar ul li a {
+    width: 64px;
+    height: 64px;
+    padding: 15px;
+    line-height: 32px;
+  }
+
+  #navbar ul.language {
+    left: 63px;
+  }
 }
