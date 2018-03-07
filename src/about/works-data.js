@@ -659,6 +659,21 @@ const data = [
 
   {
     title: {
+      ru: "Нетюленьи путешествия",
+      en: "Netuleny Tours"
+    },
+    path: "",
+    pages: ["https://netuleny.com"],
+    description: {
+      ru: "Сервис подбора туров активного отдыха. Выступил как Senior-Frontend-UI-UX-FeautureArchitect (oh yeah), было много системного рефакторинга. <small>#Angular.js, #Планирование, #Ruby-Rails</small>",
+      en: "Active trips finder. My role was Senior-Frontend-UI-UX-FeatureArchitect (yeah baby), which required much business planning and refactoring. <small>#Angular.js, #UI-UX, #Ruby-Rails</small>"
+    },
+    devices: "desktop tablet mobile",
+    alive: "https://netuleny.com"
+  },
+
+  {
+    title: {
       ru: "Таймер времени и денег Titamóta",
       en: "Titamóta"
     },
@@ -666,7 +681,7 @@ const data = [
     pages: ["http://titamota.ru", "http://mr-woodman.ru/titamota"],
     description: {
       ru: "Пятая мажорная версия моего широко известного в узких кругах проекта. Выступил fullstack-программистом (если долго делать OAuth-авторизацию, можно сойти с ума). <small>#Vuejs, #Django/Python/DRF/PostgreSQL, #Docker</small>",
-      en: "Time, task and money tracker. Proud UX and inner algrorythms. Being fullstack coder. <small>#Vue.js, #Django/Python/DRF, #PostgreSQL, #Docker, #it-even-has-landing-page</small>"
+      en: "Time, task and money tracker. Proud UX and inner algrorythms. Being fullstack coder. <small>#Vue.js, #DjangoRestFramework, #PostgreSQL, #Docker, #it-even-has-landing-page</small>"
     },
     devices: "desktop tablet mobile",
     alive: "http://titamota.ru"
