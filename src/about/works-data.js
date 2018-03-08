@@ -4,10 +4,10 @@ const data = [
   // {
   //  title: "Магазин-ателье Ito-sama",
   //  path: "2009-xx--ito-sama/www/",
-  //  pages: ["http://ito-sama.ru/index.php","http://ito-sama.ru/catalog.php","http://ito-sama.ru/fabric.php"],
+  //  pages: ["//ito-sama.ru/index.php","//ito-sama.ru/catalog.php","//ito-sama.ru/fabric.php"],
   //  description: "Мужская и женская одежда, революционная бахрома детектед.",
   //  devices: "desktop",
-  //  alive: "http://ito-sama.ru"
+  //  alive: "//ito-sama.ru"
   // },
   {
     title: "PCNews",
@@ -15,7 +15,7 @@ const data = [
     pages: ["pcnews-start.html","pcnews-index-news.html","pcnews-article-top20.html","pcnews-search-results.html","pcnews-tear.html","pcnews-text.html"],
     description: "Beware! 2009 год, первый летописный заказ, ох и намучался я с ним.",
     devices: "desktop",
-    alive: "http://pcnews.ru"
+    alive: "//pcnews.ru"
   },
 
   {
@@ -24,7 +24,7 @@ const data = [
     pages: ["index-202.html","index-302.html","index-402.html","index-502.html","index-602.html"],
     description: "Операторское оборудование",
     devices: "desktop",
-    alive: "http://www.kinozavod.ru"
+    alive: "//www.kinozavod.ru"
   },
 
   {
@@ -57,7 +57,7 @@ const data = [
     pages: ["main.html","background-ver1.html","background-ver2.html","background-ver3.html","blog.html","post-and-comments.html"],
     description: "Нужно признать современное искусство я совершенно не врубаю, но верстать это не мешает.",
     devices: "desktop",
-    alive: "http://mashushka.com"
+    alive: "//mashushka.com"
   },
 
   // {
@@ -74,7 +74,7 @@ const data = [
     pages: ["index.html"],
     description: "Строим ресто-билды. <small>#lolW00t</small>",
     devices: "desktop",
-    alive: "http://treecalcs.com"
+    alive: "//treecalcs.com"
   },
 
   {
@@ -147,7 +147,7 @@ const data = [
     pages: ["bars2-index.html","bars2-about.html","bars2-about-old.html","bars2-dealers.html","bars2-doors.html","bars2-doors-locksnhandles.html","bars2-doors-nonstandard.html","bars2-doors-whybars.html","bars2-forum-post-comments.html","bars2-forum-posts-list.html","bars2-konfigurator-models.html","bars2-konfigurator-vars.html","bars2-konfigurator-vars2.html","bars2-minora.html","bars2-minora-about.html","bars2-minora-techs.html","bars2-minora-vars.html","bars2-showroom.html","bars2-showroom-print.html"],
     description: "Вторая версия сайта. <small>#Крутая-Резина</small>",
     devices: "desktop",
-    alive: "http://www.barsdoors.ru"
+    alive: "//www.barsdoors.ru"
   },
 
   {
@@ -172,7 +172,7 @@ const data = [
     pages: ["ahmad-index.html","ahmad-category.html","ahmad-search.html","ahmad-item.html","ahmad-step1.html","ahmad-history.html","ahmad-step3.html","ahmad-email.html","ahmad-step4.html","ahmad-step2.html","ahmad-about.html"],
     description: "Просто и клево",
     devices: "desktop tablet",
-    alive: "https://apps.facebook.com/ahmadteastore/"
+    alive: "//apps.facebook.com/ahmadteastore/"
   },
 
   {
@@ -181,7 +181,7 @@ const data = [
     pages: ["dymov-index.html","dymov-recepty.html","dymov-recepty-inside.html","dymov-produkcia.html","dymov-produkcia-inside.html","dymov-o-nas.html","dymov-novosti.html","dymov-novosti-inside.html","dymov-kontakty.html","dymov-karjera.html","dymov-kachestvo-i-bezopasnost.html","dymov-istorija.html","dymov-investoram.html"],
     description: "Мясо. Колбаса. Даже ТВ-канал про котлеты! В общем, простой информационный сайт/интернет-магазин",
     devices: "desktop",
-    alive: "http://v-dymov.ru"
+    alive: "//v-dymov.ru"
   },
 
   {
@@ -198,7 +198,7 @@ const data = [
     pages: ["transdepot-index.html","transdepot-tamozhennoe-oformlenie.html","transdepot-dostavka-gruzov.html","transdepot-cabinet.html","transdepot-autsorsing-ved.html","transdepot-about.html"],
     description: "Пролетарно, про машинки & помороченный калькулятор на главной.",
     devices: "desktop",
-    alive: "http://transdepot.ru"
+    alive: "//transdepot.ru"
   },
 
   {
@@ -255,7 +255,7 @@ const data = [
   //   pages: ["index.html#no-animation","raspolozhenie.html","novosti.html","kontakty.html","kommunikacii-i-materialy.html","infrastruktura-rajona.html","infrastruktura-poselka.html","genplan.html","ekologija.html","developer.html","detjam.html"],
   //   description: "Прикольный дизайн. #Поморочка, #КрутаяРезина",
   //   devices: "desktop",
-  //   alive: "http://www.vesenino.ru"
+  //   alive: "//www.vesenino.ru"
   // },
 
   // {
@@ -264,7 +264,7 @@ const data = [
   //   pages: ["index.html","vid-sverhu.html","s-zabotoj-o-detjah.html","readme-changes.html","novosti.html","kontakty.html","kak-proehat.html","chto-poblizosti.html","article-novosti.html"],
   //   description: "Жуткое дело — третья версия сайта. #КрутаяРезина",
   //   devices: "desktop",
-  //   alive: "http://www.vesenino.ru"
+  //   alive: "//www.vesenino.ru"
   // },
 
   // {
@@ -302,10 +302,10 @@ const data = [
   // {
   //   title: "Mr. Woodman v4.0",
   //   path: "../",
-  //   pages: ["http://mr-woodman.ru/index.html"],
+  //   pages: ["//mr-woodman.ru/index.html"],
   //   description: "Мой мегасайт. #Адаптивность, #Angularjs, #ПравилаРаботыСНеопределённостью",
   //   devices: "desktop tablet mobile",
-  //   alive: "http://mr-woodman.ru"
+  //   alive: "//mr-woodman.ru"
   // },
 
   // {
@@ -338,7 +338,7 @@ const data = [
   //   pages: ["index.html"],
   //   description: "Цены на недвижимость в реальном времени. #Angularjs",
   //   devices: "desktop",
-  //   alive: "http://choister.ru/modules/infographics/"
+  //   alive: "//choister.ru/modules/infographics/"
   // },
 
   {
@@ -347,7 +347,7 @@ const data = [
     pages: ["idealmaster-index.html", "idealmaster-article-list.html", "idealmaster-article.html", "idealmaster-brand.html", "idealmaster-collection-special.html", "idealmaster-collection.html", "idealmaster-glossary.html", "idealmaster-model.html", "idealmaster-model2.html", "idealmaster-service.html"],
     description: "Крутые часики, много-и-долго-дизайн",
     devices: "desktop tablet mobile",
-    alive: "http://watches.idealmaster.ru"
+    alive: "//watches.idealmaster.ru"
   },
 
   {
@@ -356,7 +356,7 @@ const data = [
     pages: ["allsweets-index.html","allsweets-404.html","allsweets-cabinet.html","allsweets-cart.html","allsweets-cart-checkout.html","allsweets-category.html","allsweets-contacts.html","allsweets-css.html","allsweets-gallery.html","allsweets-item.html","allsweets-manufacturers.html","allsweets-news.html","allsweets-news-post.html","allsweets-portfolio.html"],
     description: "Конфетоиды",
     devices: "desktop",
-    alive: "http://allsweets.ru/"
+    alive: "//allsweets.ru/"
   },
 
   {
@@ -365,7 +365,7 @@ const data = [
     pages: ["index.html#/contest/works"],
     description: "Клуб окончательных фанатов чая Ахмад. Angular.js для удобства нарезания на запчасти для программиста",
     devices: "desktop",
-    alive: "http://club.ahmadtea.ru"
+    alive: "//club.ahmadtea.ru"
   },
 
   {
@@ -374,7 +374,7 @@ const data = [
     pages: ["activity.html","documents.html","leaders.html","main.html","map.html","nagrady.html","news.html","news-post.html","smi.html","styles.html","temp.html","ustav.html"],
     description: "Простой сайт",
     devices: "desktop",
-    alive: "http://interfiresport.com"
+    alive: "//interfiresport.com"
   },
 
   {
@@ -383,7 +383,7 @@ const data = [
     pages: ["index1-application.html","index2-prichini.html","index3-stavka.html","index4-ipoteka.html","index6-terms.html"],
     description: "Симпатичные страницы, чёткие запчасти. <small>#Всегда-бы-так</small>",
     devices: "desktop",
-    alive: "https://www.russipoteka.ru"
+    alive: "//www.russipoteka.ru"
   },
 
   {
@@ -392,7 +392,7 @@ const data = [
     pages: ["index.html","blog.html","contacts.html"],
     description: "Красивые три страницы",
     devices: "desktop",
-    alive: "http://www.inteduca.ru"
+    alive: "//www.inteduca.ru"
   },
 
 
@@ -413,7 +413,7 @@ const data = [
     pages: ["pages/4good-home.html", "pages/4good-blog.html", "pages/4good-catalog.html", "pages/4good-components.html", "pages/4good-contacts.html", "pages/4good-faq-search-results.html", "pages/4good-faq.html", "pages/4good-feedback.html", "pages/4good-notification.html", "pages/4good-post.html", "pages/4good-product.html", "pages/4good-service.html", "pages/4good-software-and-docs.html", "pages/4good-where-to-buy.html"],
     description: "",
     devices: "desktop tablet mobile",
-    alive: "https://4good.ru"
+    alive: "//4good.ru"
   },
 
   // {
@@ -430,7 +430,7 @@ const data = [
     pages: ["ahmad-index.html","ahmad-404.html","ahmad-chajnaja-karta.html","ahmad-chajnyj-slovar.html","ahmad-contemporary.html","ahmad-faq.html","ahmad-filtr-po-tegu.html","ahmad-kontakty.html","ahmad-novejshaja-istorija.html","ahmad-rezultaty-poiska-po-articulu.html","ahmad-rezultaty-poiska-po-materialam.html","ahmad-tea.html","ahmad-tea-times.html","ahmad-tea-times-afisha.html","ahmad-tea-times-article.html","ahmad-tea-times-article-afisha.html","ahmad-tea-times-article-gallery.html","ahmad-tea-times-article-photos.html","ahmad-tea-times-events.html","ahmad-tea-times-gallery.html","ahmad-tea-times-moscow-map.html","ahmad-tea-times-polls.html","ahmad-tea-times-recommends.html"],
     description: "Куча чаезапчастей, отдельный микросайт в виде газеты",
     devices: "desktop",
-    alive: "http://ahmadtea.ru"
+    alive: "//ahmadtea.ru"
   },
 
   {
@@ -519,7 +519,7 @@ const data = [
     pages: ["index.html"],
     description: "Лендинг интернет-студии. <small>#Приадаптивленный</small>",
     devices: "desktop tablet mobile",
-    alive: "http://tao-media.ru"
+    alive: "//tao-media.ru"
   },
 
   {
@@ -544,7 +544,7 @@ const data = [
     pages: ["brosko-index.html","brosko-catalog.html","brosko-category.html","brosko-product.html","brosko-text.html"],
     description: "Понтовым штукам — понтовый дизайн. <small>#Крутая-резина</small>",
     devices: "desktop",
-    alive: "http://brosko-home.ru"
+    alive: "//brosko-home.ru"
   },
 
   {
@@ -553,7 +553,7 @@ const data = [
     pages: ["coffemania-index.html","coffeemania-email-1.html","coffemania-404.html","coffemania-about.html","coffemania-address.html","coffemania-app.html","coffemania-barista.html","coffemania-cooperation.html","coffemania-delivery.html","coffemania-feedback.html","coffemania-index-notification.html","coffemania-index-with-panorama.html","coffemania-job.html","coffemania-job-apply.html","coffemania-kids.html","coffemania-menu.html","coffemania-menu2.html","coffemania-menu3.html","coffemania-news.html","coffemania-news-post.html","coffemania-press.html","coffemania-team.html","coffemania-zavsegdatai.html"],
     description: "Типа простой, но сложный. <small>#Адаптивность, #Тутулечность</small>",
     devices: "desktop tablet mobile",
-    alive: "http://coffeemania.ru"
+    alive: "//coffeemania.ru"
   },
 
   {
@@ -562,7 +562,7 @@ const data = [
     pages: ["html/main.html", "html/about.html", "html/events.html", "html/personal-results.html", "html/results.html", "html/schedule.html"],
     description: "Тренировки и другие события в парках.",
     devices: "desktop tablet mobile",
-    alive: "http://www.reebokinparks.com"
+    alive: "//www.reebokinparks.com"
   },
 
   // {
@@ -571,7 +571,7 @@ const data = [
   //   pages: ["index.html"],
   //   description: "Несусветная помороченность. Навроде игры — нужно всё <q>включить</q> и тогда будет бонус. На этом проекте стало понятно что аниматор — это отдельная профессия. ))) И что html5 реально заменяет flash. #СамыйСложный, #AdobeEdgeAnimation",
   //   devices: "desktop",
-  //   alive: "http://ahmadtea.ru/tour/"
+  //   alive: "//ahmadtea.ru/tour/"
   // },
 
   {
@@ -585,13 +585,13 @@ const data = [
   {
     title: "Scoblimora",
     path: "2017-12--vitaly-kuleshin--titamota/www/",
-    pages: ["http://mr-woodman.ru/scoblimora"],
+    pages: ["//mr-woodman.ru/scoblimora"],
     description: {
       ru: "Алхимический помощник для Skyrim. И тебе fus-ro-dah, Довакин. <small>#Vuejs</small>",
       en: "Meet Skyrim Alchemy Helper. Something very complicated, even I did not fully understand it. <small>#Vuejs, #Fus-Ro-Dah</small>"
     },
     devices: "desktop tablet mobile",
-    alive: "http://mr-woodman.ru/scoblimora"
+    alive: "//mr-woodman.ru/scoblimora"
   },
 
   {
@@ -606,7 +606,7 @@ const data = [
     title: "Love Eat",
     path: "2016-04--chuprik--loveeat/www/",
     pages: ["pages/loveeat-main.html", "pages/loveeat-blog.html", "pages/loveeat-collection.html", "pages/loveeat-collections.html", "pages/loveeat-components.html", "pages/loveeat-edit-profile.html", "pages/loveeat-followers-following-modal.html", "pages/loveeat-my-profile-collection.html", "pages/loveeat-my-profile-collections.html", "pages/loveeat-my-profile-posts.html", "pages/loveeat-my-recipe.html", "pages/loveeat-notifications-messages-modal.html", "pages/loveeat-other-profile-posts.html", "pages/loveeat-people.html", "pages/loveeat-post.html", "pages/loveeat-recipe.html", "pages/loveeat-recipes-with-filter-another-layout.html", "pages/loveeat-recipes-with-filter.html", "pages/loveeat-search.html", "pages/loveeat-tabs-modal.html"],
-    description: "Ещё что-то модное про еду. Дофигища шаблонов. Моя утилита <a href=\"https://github.com/antivitla/mr-testwood\">вёрстки-через-тестирование</a> просто спасение",
+    description: "Ещё что-то модное про еду. Дофигища шаблонов. Моя утилита <a href=\"//github.com/antivitla/mr-testwood\">вёрстки-через-тестирование</a> просто спасение",
     devices: "desktop tablet mobile"
   },
 
@@ -616,7 +616,7 @@ const data = [
     pages: ["panorama-neq4-index.html", "panorama-neq4-about.html", "panorama-neq4-contact.html", "panorama-neq4-job.html", "panorama-neq4-pak.html", "panorama-neq4-panorama.html", "panorama-neq4-press.html", "panorama-neq4-projects.html", "panorama-neq4-yandex-panoramas.html", "digital-neq4-index.html"],
     description: "Любимый клиент, корпорация и просто красавица. <small>#Классика HTML/CSS/JavaScript</small>",
     devices: "desktop tablet mobile",
-    alive: "http://neq4.ru"
+    alive: "//neq4.ru"
   },
 
   {
@@ -625,7 +625,7 @@ const data = [
     pages: ["soundbureau-index.html","soundbureau-about.html","soundbureau-business.html","soundbureau-home.html"],
     description: "Что-то про звук. Крутая продуманность дизайна. <small>#Аж-блестит</small>",
     devices: "desktop tablet",
-    alive: "http://soundbureau.ru"
+    alive: "//soundbureau.ru"
   },
 
   {
@@ -640,7 +640,7 @@ const data = [
       en: "Interesting experience with sound API. Easier than I thought. <small>#Responsive, #HTML5 API, #CSS3, #Angular.js</small>"
     },
     devices: "desktop tablet mobile",
-    alive: "http://coffeemania.fm"
+    alive: "//coffeemania.fm"
   },
 
   {
@@ -651,8 +651,8 @@ const data = [
     path: "2015-08--masha-niggol--arctic/www/",
     pages: ["index.html"],
     description: {
-      en: "<a href=\"http://neq4.ru\">Neq4</a> project. Cold edge of the earth. <small>#Angular.js, #SVG</small>",
-      ru: "Проект <a href=\"http://neq4.ru\">Neq4</a>. На краю земли ожидаемо безлюдно, забыто и заброшено. Хорошо, что можем на это поглядеть из тёплого броузера. <small>#Angular.js, #SVG</small>"
+      en: "<a href=\"//neq4.ru\">Neq4</a> project. Cold edge of the earth. <small>#Angular.js, #SVG</small>",
+      ru: "Проект <a href=\"//neq4.ru\">Neq4</a>. На краю земли ожидаемо безлюдно, забыто и заброшено. Хорошо, что можем на это поглядеть из тёплого броузера. <small>#Angular.js, #SVG</small>"
     },
     devices: "desktop tablet mobile"
   },
@@ -663,13 +663,13 @@ const data = [
       en: "Netuleny Tours"
     },
     path: "",
-    pages: ["https://netuleny.com"],
+    pages: ["//netuleny.com"],
     description: {
       ru: "Сервис подбора туров активного отдыха. Выступил как Senior-Frontend-UI-UX-FeautureArchitect (oh yeah), было много системного рефакторинга. <small>#Angular.js, #Планирование, #Ruby-Rails</small>",
       en: "Active trips finder. My role was Senior-Frontend-UI-UX-FeatureArchitect (yeah baby), which required much business planning and refactoring. <small>#Angular.js, #UI-UX, #Ruby-Rails</small>"
     },
     devices: "desktop tablet mobile",
-    alive: "https://netuleny.com"
+    alive: "//netuleny.com"
   },
 
   {
@@ -678,25 +678,25 @@ const data = [
       en: "Titamóta"
     },
     path: "2017-12--vitaly-kuleshin--titamota/www/",
-    pages: ["http://titamota.ru", "http://mr-woodman.ru/titamota"],
+    pages: ["//titamota.ru", "//mr-woodman.ru/titamota"],
     description: {
       ru: "Пятая мажорная версия моего широко известного в узких кругах проекта. Выступил fullstack-программистом (если долго делать OAuth-авторизацию, можно сойти с ума). <small>#Vuejs, #Django/Python/DRF/PostgreSQL, #Docker</small>",
       en: "Time, task and money tracker. Proud UX and inner algrorythms. Being fullstack coder. <small>#Vue.js, #DjangoRestFramework, #PostgreSQL, #Docker, #it-even-has-landing-page</small>"
     },
     devices: "desktop tablet mobile",
-    alive: "http://titamota.ru"
+    alive: "//titamota.ru"
   },
 
   {
     title: "Mr. Woodman v4.1",
     path: "2018-02--vitaly-kuleshin--mr-woodman/www/",
-    pages: ["http://mr-woodman.ru"],
+    pages: ["//mr-woodman.ru"],
     description: {
       ru: "Минорный апдейт. Добавлены новые работы, вписаны новые тексты. <small><strong>#iframe-рекурсия</strong>, #Vue.js, #Webpack, #frontend-porn</small>",
       en: "Another minor update. New works, new texts. <small>#Vuejs, #Webpack, #Babel-porn, #iframe-recursion</small>"
     },
     devices: "desktop tablet mobile",
-    alive: "http://mr-woodman.ru"
+    alive: "//mr-woodman.ru"
   },
 ];
 
