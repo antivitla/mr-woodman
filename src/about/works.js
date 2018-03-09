@@ -81,7 +81,10 @@ works.app = new Vue({
       if(!this.work.alive) {
         return "";
       } else {
-        return this.work.alive.split("#")[0].split("?")[0].split("://")[1];
+        return this.work.alive
+          .split("#")[0]
+          .split("?")[0]
+          .split("//").slice(-1)[0];
       }
     },
     isActivePage: function (page) {
