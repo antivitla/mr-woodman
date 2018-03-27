@@ -43,23 +43,23 @@ works.app = new Vue({
       return this.work.pages[this.pageId];
     },
     hasNext: function () {
-      return this.workId > 0;
+      return this.workId < works.data.length - 1;
     },
     hasPrev: function () {
-      return this.workId < works.data.length - 1;
+      return this.workId > 0;
     }
   },
   methods: {
     nextWork: function () {
       if (this.hasNext) {
-        this.workId = this.workId - 1;
+        this.workId = this.workId + 1;
         localStorage.setItem('mrWoodmanAboutWorkId', this.workId)
         this.pageId = 0;
       }
     },
     prevWork: function () {
       if (this.hasPrev) {
-        this.workId = this.workId + 1;
+        this.workId = this.workId - 1;
         localStorage.setItem('mrWoodmanAboutWorkId', this.workId)
         this.pageId = 0;
       }
