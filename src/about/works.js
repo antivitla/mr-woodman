@@ -14,6 +14,10 @@ works.app = new Vue({
       domain: 'works.mr-woodman.ru/',
       devices: ['desktop', 'tablet', 'mobile'],
       lang: 'ru',
+      httpWarning: {
+        ru: ' (https не поддерживается, для просмотра используйте ссылку(и) чуть ниже или перейдите на http)',
+        en: ' (https is not supported, for best results use link(s) below or switch to http)'
+      }
     };
   },
   created () {
@@ -38,6 +42,13 @@ works.app = new Vue({
     },
     workDescription: function () {
       return typeof this.work.description === 'string' ? this.work.description : this.work.description[this.lang];
+    },
+    httpsHostile: function () {
+      if (this.work.httpOnly && location.protocol.match(/https/)) {
+        return this.httpWarning[this.lang];
+      } else {
+        return '';
+      }
     },
     page: function () {
       return this.work.pages[this.pageId];
@@ -67,12 +78,19 @@ works.app = new Vue({
     hasDevice: function (work, device) {
       return this.work.devices.search(device) > -1;
     },
-    getPath: function (work) {
+    getPath: function () {
       if(this.page.search("//") > -1) {
         return this.protocolize(this.page);
       } else {
         return this.protocolize(this.domain + this.work.path + this.page);
       }
+    },
+    getPathToOpen: function () {
+      var path = this.getPath();
+      if (this.work.httpOnly) {
+        path = path.replace('https:', 'http:')
+      }
+      return path;
     },
     protocolize: function (href) {
       return window.location.protocol + '//' + href.split('//').slice(-1)[0]

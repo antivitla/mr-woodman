@@ -39,6 +39,10 @@
   overflow: hidden !important;
 }
 
+.work-title .warning {
+  color: #d24716;
+}
+
 .work-description {
   font-weight: 300;
 }
@@ -334,7 +338,7 @@
     background-size: contain;
     pointer-events: none;
     /*z-index: 1;*/
-  }  
+  }
 
   .current-work .device.desktop .iframe-holder {
     width: 1200px;

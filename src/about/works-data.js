@@ -623,9 +623,12 @@ const data = [
     title: "Sound Bureau",
     path: "2014-08--masha-niggol--soundbureau/www/",
     pages: ["soundbureau-index.html","soundbureau-about.html","soundbureau-business.html","soundbureau-home.html"],
-    description: "Что-то про звук. Крутая продуманность дизайна. <small>#Аж-блестит</small>",
+    description: {
+      ru: "Что-то про звук. Крутая продуманность дизайна. <small>#Аж-блестит</small>",
+      en: "Something about Hi-Fi sound equipment. Great design. <small>#Inner-light</small>"
+    },
     devices: "desktop tablet",
-    alive: "//soundbureau.ru"
+    alive: "http://soundbureau.ru"
   },
 
   {
@@ -640,7 +643,8 @@ const data = [
       en: "Interesting experience with sound API. Easier than I thought. <small>#Responsive, #HTML5 API, #CSS3, #Angular.js</small>"
     },
     devices: "desktop tablet mobile",
-    alive: "//coffeemania.fm"
+    alive: "http://coffeemania.fm",
+    httpOnly: true
   },
 
   {
@@ -689,7 +693,7 @@ const data = [
 
   {
     title: "Mr. Woodman v4.1",
-    path: "2018-02--vitaly-kuleshin--mr-woodman/www/",
+    path: "",
     pages: ["//mr-woodman.ru"],
     description: {
       ru: "Минорный апдейт. Добавлены новые работы, вписаны новые тексты. <small><strong>#iframe-рекурсия</strong>, #Vue.js, #Webpack, #frontend-porn</small>",

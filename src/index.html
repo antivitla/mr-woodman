@@ -194,14 +194,14 @@
             <!-- <i class="material-icons" style="font-size: 3rem;">devices_other</i> -->
             <i class="fa fa-folder-open fa-3x"></i>
             <h3 class="peter">Готовая работа*</h3>
-            <p>* Примеры кликабельны</p>
+            <p style="margin-top: 30px;">* Примеры кликабельны</p>
           </div>
-          <p class="lead"><strong class="work-title">{{workTitle}}.</strong> &mdash; <span class="work-description" v-html="workDescription"></span></p>
+          <p class="lead"><strong class="work-title">{{workTitle}}<span v-bind:class="[{ 'warning': httpsHostile }]"> {{httpsHostile}}</span>.</strong> &mdash; <span class="work-description" v-html="workDescription"></span></p>
           <p>&nbsp;</p>
           <p>
             <small>
-              <a v-bind:href="getPath(work)" target="_blank" title="Открыть страницу исходной вёрстки в новом табе/окне">вёрстка в новом окне</a>
-              <span class="delimiter" v-if="work.alive"></span>
+              <a v-bind:href="getPathToOpen()" target="_blank" title="Открыть страницу исходной вёрстки в новом табе/окне" v-if="work.path">вёрстка в новом окне</a>
+              <span class="delimiter" v-if="work.path && work.alive"></span>
               <a v-if="work.alive" v-bind:href="work.alive" title="Открыть получившийся реальный сайт проекта" target="_blank">{{getAlive(work)}}</a>
             </small>
           </p>

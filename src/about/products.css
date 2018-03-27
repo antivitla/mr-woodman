@@ -90,10 +90,11 @@
 
 .product li span,
 .product p span {
-  background-color: #eae4bd;
+  background-color: #f5efc7;
   text-shadow: none;
   font-weight: 400;
   color: #3e303e;
+  font-weight: 500;
   padding: 2px 5px;
   border-radius: 4px;
   display: inline;
