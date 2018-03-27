@@ -11,7 +11,7 @@ works.app = new Vue({
     return {
       workId: 0,
       pageId: 0,
-      domain: 'http://works.mr-woodman.ru/',
+      domain: 'works.mr-woodman.ru/',
       devices: ['desktop', 'tablet', 'mobile'],
       lang: 'ru',
     };
@@ -68,17 +68,23 @@ works.app = new Vue({
       return this.work.devices.search(device) > -1;
     },
     getPath: function (work) {
-      if(this.page.search("http://") > -1 || this.page.search("https://") > -1) {
-        return this.page;
+      if(this.page.search("//") > -1) {
+        return this.protocolize(this.page);
       } else {
-        return this.domain + this.work.path + this.page;
+        return this.protocolize(this.domain + this.work.path + this.page);
       }
+    },
+    protocolize: function (href) {
+      return window.location.protocol + '//' + href.split('//').slice(-1)[0]
     },
     getAlive: function (work) {
       if(!this.work.alive) {
         return "";
       } else {
-        return this.work.alive.split("#")[0].split("?")[0].split("://")[1];
+        return this.work.alive
+          .split("#")[0]
+          .split("?")[0]
+          .split("//").slice(-1)[0];
       }
     },
     isActivePage: function (page) {
